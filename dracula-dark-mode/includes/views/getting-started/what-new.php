@@ -3,6 +3,15 @@
 defined( 'ABSPATH' ) || exit;
 
 $logs = [
+	'v1.2.5' => [
+		'date'        => '2024-11-24',
+		'new'         => [
+			'Added aria-label attribute to the toggle button.',
+		],
+		'enhancement' => [
+			'Updated Tested up to version to the latest WordPress version.',
+		],
+	],
 	'v1.2.4' => [
 		'date'        => '2024-09-09',
 		'new'         => [

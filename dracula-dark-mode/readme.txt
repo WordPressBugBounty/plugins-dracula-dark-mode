@@ -2,9 +2,9 @@
 Contributors: softlab, princeahmed, monzuralam
 Tags: dark mode, reading mode, accessibility, wp dark mode, night mode
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.0
-Stable tag: 1.2.4
+Stable tag: 1.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -190,12 +190,16 @@ Dracula Dark Mode plugin relies on multiple JavaScript files and dependencies to
 
 == Changelog ==
 
+= 1.2.5 (24-11-2024) =
+* **New:** Added aria-label attribute to the toggle button.
+* **Update:** Updated Tested up to version to the latest WordPress version.
+
 = 1.2.4 (09-09-2024) =
-* New: Added floating toggle position setting for admin dashboard dark mode.
-* New: Added keyboard accessible supports for the dark mode toggle buttons.
-* New: Added hide elements settings to hide any specific elements in a post/ page in dark mode.
-* Fix: Fixed string not translate-able issue.
-* Update: Improved overall plugin performance.
+* **New:** Added floating toggle position setting for admin dashboard dark mode.
+* **New:** Added keyboard accessible supports for the dark mode toggle buttons.
+* **New:** Added hide elements settings to hide any specific elements in a post/ page in dark mode.
+* **Fix:** Fixed string not translate-able issue.
+* **Update:** Improved overall plugin performance.
 
 = 1.2.3 (14-08-2024) =
 * **Fix:** Fixed toggle style 14 auto-dark transition based on the system dark mode selection.

@@ -167,16 +167,16 @@ class Dracula_Admin {
 		do_action( 'dracula_admin_menu', $this );
 
 		//Recommended plugins page
-//		if ( empty( get_option( "dracula_hide_recommended_plugins" ) ) ) {
-//			add_submenu_page(
-//				'dracula',
-//				esc_html__( 'Recommended Plugins', 'dracula-dark-mode' ),
-//				esc_html__( 'Recommended Plugins', 'dracula-dark-mode' ),
-//				'manage_options',
-//				'dracula-recommended-plugins',
-//				[ $this, 'render_recommended_plugins_page' ]
-//			);
-//		}
+		if ( empty( get_option( "dracula_hide_recommended_plugins" ) ) ) {
+			add_submenu_page(
+				'dracula',
+				esc_html__( 'Recommended Plugins', 'dracula-dark-mode' ),
+				esc_html__( 'Recommended Plugins', 'dracula-dark-mode' ),
+				'manage_options',
+				'dracula-recommended-plugins',
+				[ $this, 'render_recommended_plugins_page' ]
+			);
+		}
 
 	}
 

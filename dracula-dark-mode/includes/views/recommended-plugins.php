@@ -24,7 +24,7 @@ if ( defined( 'ABSPATH' ) === false ) {
 </style>
 <?php
 
-wp_enqueue_script('wp-util');
+wp_enqueue_script( 'wp-util' );
 
 // You may comment this out IF you're sure the function exists.
 require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
@@ -66,8 +66,8 @@ $data = plugins_api( 'plugin_information', $args );
 
 if ( $data && ! is_wp_error( $data ) ) {
 	$recommendedPlugins['integrate-google-drive']                    = $data;
-	$recommendedPlugins['integrate-google-drive']->name              = 'Integrate Google Drive – Browse, Upload, Download, Embed, Play, Share, Gallery, and Manage Your Google Drive Files Into Your WordPress Site';
-	$recommendedPlugins['integrate-google-drive']->short_description = 'Effortlessly manage and share your Google Drive documents and media files right on your website. With just a few clicks, you can browse, embed, display, upload, download, search, play, and share your Google Drive files, freeing you from any coding hassles.';
+	$recommendedPlugins['integrate-google-drive']->name              = 'Integrate Google Drive';
+	$recommendedPlugins['integrate-google-drive']->short_description = 'Browse, Upload, Download, Embed, Play, Share, Gallery, and Manage Your Google Drive Files Into Your WordPress Site.';
 }
 
 /* Radio Player */
@@ -84,13 +84,13 @@ $data = plugins_api( 'plugin_information', $args );
 
 if ( $data && ! is_wp_error( $data ) ) {
 	$recommendedPlugins['radio-player']                    = $data;
-	$recommendedPlugins['radio-player']->name              = 'Radio Player – Live Shoutcast, Icecast and Any Audio Stream Player for WordPress';
-	$recommendedPlugins['radio-player']->short_description = 'A simple, easy-to-use and fully customizable web Radio Player for WordPress. Radio Player is specially configured to play any MP3, Shoutcast, IceCast, Radionomy, Airtime, Live365, radio.co, and any Audio stream in your WordPress website.';
+	$recommendedPlugins['radio-player']->name              = 'Radio Player';
+	$recommendedPlugins['radio-player']->short_description = 'Shoutcast, Icecast, and Audio Stream Player for WordPress with seamless integration and reliable streaming.';
 }
 
-/* Upload Fields for WPForms */
+/* Essential Addons for Contact Form 7 */
 $args = [
-	'slug'   => 'upload-fields-for-wpforms',
+	'slug'   => 'essential-addons-for-contact-form-7',
 	'fields' => [
 		'short_description' => true,
 		'icons'             => true,
@@ -100,80 +100,9 @@ $args = [
 
 $data = plugins_api( 'plugin_information', $args );
 if ( $data && ! is_wp_error( $data ) ) {
-	$recommendedPlugins['upload-fields-for-wpforms']                    = $data;
-	$recommendedPlugins['upload-fields-for-wpforms']->name              = 'Upload Fields for WPForms – Drag and Drop Multiple File Upload, Image Upload, and Google Drive Upload for WPForms';
-	$recommendedPlugins['upload-fields-for-wpforms']->short_description = 'Upload Fields for WPForms is an addon plugin for WPForms that allows you to add drag and drop multiple file upload, image upload, and Google Drive upload fields to your forms.';
-}
-
-/* WP Radio */
-$args = [
-	'slug'   => 'wp-radio',
-	'fields' => [
-		'short_description' => true,
-		'icons'             => true,
-		'reviews'           => false, // excludes all reviews
-	],
-];
-
-$data = plugins_api( 'plugin_information', $args );
-
-if ( $data && ! is_wp_error( $data ) ) {
-	$recommendedPlugins['wp-radio']                    = $data;
-	$recommendedPlugins['wp-radio']->name              = 'WP Radio – Worldwide Online Radio Stations Directory for WordPress';
-	$recommendedPlugins['wp-radio']->short_description = 'WP Radio is a worldwide online radio stations directory plugin for WordPress. You can easily create a full-featured online radio directory website with the WP Radio plugin. WP Radio has pre-included 52000+ online radio stations from around 190+ countries all over the world.';
-}
-
-/* Podcast Box */
-$args = [
-    'slug'   => 'podcast-box',
-    'fields' => [
-        'short_description' => true,
-        'icons'             => true,
-        'reviews'           => false, // excludes all reviews
-    ],
-];
-
-$data = plugins_api( 'plugin_information', $args );
-
-if ( $data && ! is_wp_error( $data ) ) {
-    $recommendedPlugins['podcast-box']                    = $data;
-    $recommendedPlugins['podcast-box']->name              = 'Podcast Box – Podcast Player for WordPress';
-    $recommendedPlugins['podcast-box']->short_description = 'Podcast Box is all in one solution that provides you an easy way to show and play your podcast episodes. You can also make a worldwide podcasts directory website of 5000+ podcasts included from 70+ countries.';
-}
-
-
-/* Reader Mode */
-$args = [
-	'slug'   => 'reader-mode',
-	'fields' => [
-		'short_description' => true,
-		'icons'             => true,
-		'reviews'           => false, // excludes all reviews
-	],
-];
-
-$data = plugins_api( 'plugin_information', $args );
-if ( $data && ! is_wp_error( $data ) ) {
-	$recommendedPlugins['reader-mode']                    = $data;
-	$recommendedPlugins['reader-mode']->name              = 'Reader Mode – Distraction-Free Content Reader For WordPress';
-	$recommendedPlugins['reader-mode']->short_description = 'Reader Mode Plugin adds a distraction-free reading experience for users by stripping away clutter and unnecessary elements from the article or post content. To achieve better readability, accessibility, and easy operations for your readers Reader Mode can be a handy choice.';
-}
-
-/* Hide Anything */
-$args = [
-    'slug'   => 'hide-anything',
-    'fields' => [
-        'short_description' => true,
-        'icons'             => true,
-        'reviews'           => false, // excludes all reviews
-    ],
-];
-
-$data = plugins_api( 'plugin_information', $args );
-if ( $data && ! is_wp_error( $data ) ) {
-    $recommendedPlugins['hide-anything']                    = $data;
-    $recommendedPlugins['hide-anything']->name              = 'Hide Anything – Hide Any Element on Your WordPress Website';
-    $recommendedPlugins['hide-anything']->short_description = 'If you dont know coding or want to hide any unnecessary element on your site then this plugin is for you. You can hide any element on any page by visually selection with a simple click without any coding. The user won’t see the hidden elements when they will browse the site until you make it visible again.';
+	$recommendedPlugins['essential-addons-for-contact-form-7']                    = $data;
+	$recommendedPlugins['essential-addons-for-contact-form-7']->name              = 'Essential Addons for Contact Form 7';
+	$recommendedPlugins['essential-addons-for-contact-form-7']->short_description = 'All-in-one enhancement suite for improving Contact Form 7 and WordPress.';
 }
 
 
@@ -494,11 +423,13 @@ if ( $data && ! is_wp_error( $data ) ) {
 			} ?>
         </div>
     </div>
-    <div id="hide-recommeded-plugins" style="display:none;" title="<?php _e( 'Are you sure?', 'dracula-dark-mode' ); ?>">
+    <div id="hide-recommeded-plugins" style="display:none;"
+         title="<?php _e( 'Are you sure?', 'dracula-dark-mode' ); ?>">
         <p><?php _e( "If you hide the recommended plugins page from your menu, it won't appear there again. Are you sure you'd like to do it?", 'dracula-dark-mode' ); ?></p>
     </div>
 
 </div>
+
 <script>
     (function ($) {
         "use strict";
@@ -516,13 +447,15 @@ if ( $data && ! is_wp_error( $data ) ) {
                     confirmButtonText: wp.i18n.__('Yes, hide it!', "dracula-dark-mode"),
                     cancelButtonText: wp.i18n.__('No, cancel!', "dracula-dark-mode"),
                     reverseButtons: true,
+                    customClass: {
+                        container: 'dracula-swal',
+                    }
                 }).then((result) => {
                     if (result.value) {
-
                         wp.ajax.send('dracula_hide_recommended_plugins', {
-							data: {
-								nonce: dracula.nonce
-							},
+                            data: {
+                                nonce: dracula.nonce
+                            },
                             success: function () {
                                 Swal.fire({
                                     title: wp.i18n.__('Done!', "dracula-dark-mode"),

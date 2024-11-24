@@ -28,6 +28,10 @@ class Dracula_Ajax {
         if ( !wp_verify_nonce( $nonce, 'dracula' ) ) {
             wp_send_json_error( 'Invalid nonce' );
         }
+        // check user permission
+        if ( !current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( 'Invalid user' );
+        }
         update_option( "dracula_hide_recommended_plugins", true );
         wp_send_json_success();
     }

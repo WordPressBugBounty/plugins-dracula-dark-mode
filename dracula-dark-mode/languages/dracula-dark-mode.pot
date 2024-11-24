@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dracula Dark Mode 1.2.4\n"
+"Project-Id-Version: Dracula Dark Mode 1.2.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dracula\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-09T10:02:57+00:00\n"
+"POT-Creation-Date: 2024-11-24T06:51:59+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: dracula-dark-mode\n"
@@ -99,18 +99,23 @@ msgstr ""
 msgid "Getting Started"
 msgstr ""
 
+#: includes/class-admin.php:173
+#: includes/class-admin.php:174
+msgid "Recommended Plugins"
+msgstr ""
+
 #. translators: %s: User feedback
-#: includes/class-ajax.php:72
+#: includes/class-ajax.php:78
 msgid "Feedback: %s"
 msgstr ""
 
 #. translators: %s: Website URL
-#: includes/class-ajax.php:75
+#: includes/class-ajax.php:81
 msgid "Website URL: %s"
 msgstr ""
 
 #. translators: %s: Plugin name
-#: includes/class-ajax.php:77
+#: includes/class-ajax.php:83
 msgid "Feedback for %s"
 msgstr ""
 
@@ -1163,190 +1168,190 @@ msgstr ""
 msgid "Never miss a valuable features"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:168
+#: includes/views/getting-started/what-new.php:177
 msgid "What's new in the latest changes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:169
+#: includes/views/getting-started/what-new.php:178
 msgid "Check out the latest change logs."
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:191
+#: includes/views/getting-started/what-new.php:200
 msgid "New Features"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:202
+#: includes/views/getting-started/what-new.php:211
 msgid "Fixes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:213
+#: includes/views/getting-started/what-new.php:222
 msgid "Enhancements"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:223
+#: includes/views/getting-started/what-new.php:232
 msgid "Removes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:235
+#: includes/views/getting-started/what-new.php:244
 msgid "Video Overview"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:183
+#: includes/views/recommended-plugins.php:112
 msgid "Try out our recommended plugins"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:184
+#: includes/views/recommended-plugins.php:113
 msgid "Hide From Menu"
 msgstr ""
 
 #. translators: %s: Plugin author.
-#: includes/views/recommended-plugins.php:229
+#: includes/views/recommended-plugins.php:158
 msgid "By %s"
 msgstr ""
 
 #. translators: %s: Plugin name and version.
-#: includes/views/recommended-plugins.php:253
+#: includes/views/recommended-plugins.php:182
 msgctxt "plugin"
 msgid "Install %s now"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:255
+#: includes/views/recommended-plugins.php:184
 msgid "Install Now"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:260
+#: includes/views/recommended-plugins.php:189
 msgctxt "plugin"
 msgid "Cannot Install"
 msgstr ""
 
 #. translators: %s: Plugin name and version.
-#: includes/views/recommended-plugins.php:275
+#: includes/views/recommended-plugins.php:204
 msgctxt "plugin"
 msgid "Update %s now"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:277
+#: includes/views/recommended-plugins.php:206
 msgid "Update Now"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:282
+#: includes/views/recommended-plugins.php:211
 msgctxt "plugin"
 msgid "Cannot Update"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:293
+#: includes/views/recommended-plugins.php:222
 msgctxt "plugin"
 msgid "Active"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:296
+#: includes/views/recommended-plugins.php:225
 msgid "Activate"
 msgstr ""
 
 #. translators: %s: Plugin name.
-#: includes/views/recommended-plugins.php:298
+#: includes/views/recommended-plugins.php:227
 msgctxt "plugin"
 msgid "Activate %s"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:309
+#: includes/views/recommended-plugins.php:238
 msgid "Network Activate"
 msgstr ""
 
 #. translators: %s: Plugin name.
-#: includes/views/recommended-plugins.php:311
+#: includes/views/recommended-plugins.php:240
 msgctxt "plugin"
 msgid "Network Activate %s"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:324
+#: includes/views/recommended-plugins.php:253
 msgctxt "plugin"
 msgid "Installed"
 msgstr ""
 
 #. translators: %s: Plugin name and version.
-#: includes/views/recommended-plugins.php:340
+#: includes/views/recommended-plugins.php:269
 msgid "More information about %s"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:342
+#: includes/views/recommended-plugins.php:271
 msgid "More Details"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:373
+#: includes/views/recommended-plugins.php:302
 msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
 msgstr ""
 
 #. translators: 1: URL to WordPress Updates screen, 2: URL to Update PHP page.
-#: includes/views/recommended-plugins.php:377
+#: includes/views/recommended-plugins.php:306
 msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
 msgstr ""
 
 #. translators: %s: URL to WordPress Updates screen.
-#: includes/views/recommended-plugins.php:385
-#: includes/views/recommended-plugins.php:401
+#: includes/views/recommended-plugins.php:314
+#: includes/views/recommended-plugins.php:330
 msgid "<a href=\"%s\">Please update WordPress</a>."
 msgstr ""
 
 #. translators: %s: URL to Update PHP page.
-#: includes/views/recommended-plugins.php:391
-#: includes/views/recommended-plugins.php:410
+#: includes/views/recommended-plugins.php:320
+#: includes/views/recommended-plugins.php:339
 msgid "<a href=\"%s\">Learn more about updating PHP</a>."
 msgstr ""
 
-#: includes/views/recommended-plugins.php:397
+#: includes/views/recommended-plugins.php:326
 msgid "This plugin doesn&#8217;t work with your version of WordPress."
 msgstr ""
 
-#: includes/views/recommended-plugins.php:406
+#: includes/views/recommended-plugins.php:335
 msgid "This plugin doesn&#8217;t work with your version of PHP."
 msgstr ""
 
-#: includes/views/recommended-plugins.php:456
+#: includes/views/recommended-plugins.php:385
 msgid "Last Updated:"
 msgstr ""
 
 #. translators: %s: Human-readable time difference.
-#: includes/views/recommended-plugins.php:459
+#: includes/views/recommended-plugins.php:388
 msgid "%s ago"
 msgstr ""
 
 #. translators: %s: Number of millions.
-#: includes/views/recommended-plugins.php:468
+#: includes/views/recommended-plugins.php:397
 msgctxt "Active plugin installations"
 msgid "%s+ Million"
 msgid_plural "%s+ Million"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/views/recommended-plugins.php:472
+#: includes/views/recommended-plugins.php:401
 msgctxt "Active plugin installations"
 msgid "Less Than 10"
 msgstr ""
 
 #. translators: %s: Number of installations.
-#: includes/views/recommended-plugins.php:477
+#: includes/views/recommended-plugins.php:406
 msgid "%s Active Installations"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:483
+#: includes/views/recommended-plugins.php:412
 msgid "Untested with your version of WordPress"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:485
+#: includes/views/recommended-plugins.php:414
 msgid "<strong>Incompatible</strong> with your version of WordPress"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:487
+#: includes/views/recommended-plugins.php:416
 msgid "<strong>Compatible</strong> with your version of WordPress"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:497
+#: includes/views/recommended-plugins.php:427
 #: assets/js/admin.js:1
 msgid "Are you sure?"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:498
+#: includes/views/recommended-plugins.php:428
 msgid "If you hide the recommended plugins page from your menu, it won't appear there again. Are you sure you'd like to do it?"
 msgstr ""
 
@@ -1886,6 +1891,12 @@ msgstr ""
 #: assets/js/frontend.js:1
 #: assets/js/live-edit.js:1
 msgid "Move"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/frontend.js:1
+#: assets/js/live-edit.js:1
+msgid "Dark Mode Toggle"
 msgstr ""
 
 #: assets/js/admin.js:1
