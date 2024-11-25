@@ -4,7 +4,7 @@ Tags: dark mode, reading mode, accessibility, wp dark mode, night mode
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 7.0
-Stable tag: 1.2.5
+Stable tag: 1.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -130,6 +130,8 @@ Consider checking out our other plugins:
 
 📻[Radio Player](https://wordpress.org/plugins/radio-player/) - Live Shoutcast, Icecast and Audio Stream Player for WordPress.
 
+📝[Essential Addons for Contact Form 7](https://wordpress.org/plugins/essential-addons-for-contact-form-7/) - 48+ Essential Fields, Features & Integrations Add-ons for Contact Form 7.
+
 == Frequently Asked Questions ==
 
 =01. Does Dracula Dark Mode works with all WordPress themes?=
@@ -190,7 +192,7 @@ Dracula Dark Mode plugin relies on multiple JavaScript files and dependencies to
 
 == Changelog ==
 
-= 1.2.5 (24-11-2024) =
+= 1.2.6 (25-11-2024) =
 * **New:** Added aria-label attribute to the toggle button.
 * **Update:** Updated Tested up to version to the latest WordPress version.
 
