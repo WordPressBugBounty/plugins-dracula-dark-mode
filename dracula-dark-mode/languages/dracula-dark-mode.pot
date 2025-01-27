@@ -1,15 +1,15 @@
-# Copyright (C) 2024 SoftLab
+# Copyright (C) 2025 SoftLab
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dracula Dark Mode 1.2.6\n"
+"Project-Id-Version: Dracula Dark Mode 1.2.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dracula\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-11-25T10:58:07+00:00\n"
+"POT-Creation-Date: 2025-01-27T12:43:34+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: dracula-dark-mode\n"
@@ -909,16 +909,16 @@ msgstr ""
 msgid "Introduction"
 msgstr ""
 
-#: includes/views/getting-started/index.php:38
-msgid "Changelog"
-msgstr ""
-
-#: includes/views/getting-started/index.php:54
+#: includes/views/getting-started/index.php:47
 msgid "Basic Usage"
 msgstr ""
 
-#: includes/views/getting-started/index.php:75
+#: includes/views/getting-started/index.php:68
 msgid "Help"
+msgstr ""
+
+#: includes/views/getting-started/index.php:75
+msgid "Changelog"
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:6
@@ -1051,11 +1051,11 @@ msgid "Quick Overview"
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:93
-msgid "Experience the future of website design with Dracula Dark Mode — the ultimate AI-powered dark mode plugin for your website. Designed for simplicity and elegance, Dracula Dark Mode effortlessly transforms your site into an eye-friendly dark mode, ensuring reduced eye strain and an enhanced browsing experience for your visitors."
+msgid "Experience the future of website design with Dracula Dark Mode — the ultimate dark mode plugin for your website. Designed for simplicity and elegance, Dracula Dark Mode effortlessly transforms your site into an eye-friendly dark mode, reducing eye strain and enhancing the browsing experience for your visitors."
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:96
-msgid "What sets Dracula Dark Mode apart is its smart dynamic algorithm. This AI-driven feature intuitively determines the best dark mode color scheme for your website, eliminating complex configurations. It's not just about looks — it's about smart design."
+msgid "What sets Dracula Dark Mode apart is its dynamic color generator algorithm. This intelligent feature automatically calculates the optimal dark mode color scheme for your website, adapting seamlessly to your design without the need for complex configurations. It's not just about aesthetics — it's about smart, adaptive design."
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:111
@@ -1105,7 +1105,7 @@ msgid "Seamless Dark Mode Colors"
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:201
-msgid "Dracula Dark Mode use an AI-powered algorithm to effortlessly create a dark mode color scheme for your website. Additionally, the plugin offers 24+ popular color presets, with the flexibility to customize your own palette."
+msgid "Dracula Dark Mode use a smart dynamic algorithm to effortlessly create a dark mode color scheme for your website. Additionally, the plugin offers 24+ popular color presets, with the flexibility to customize your own palette."
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:217
@@ -1168,31 +1168,31 @@ msgstr ""
 msgid "Never miss a valuable features"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:177
+#: includes/views/getting-started/what-new.php:186
 msgid "What's new in the latest changes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:178
+#: includes/views/getting-started/what-new.php:187
 msgid "Check out the latest change logs."
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:200
+#: includes/views/getting-started/what-new.php:209
 msgid "New Features"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:211
+#: includes/views/getting-started/what-new.php:220
 msgid "Fixes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:222
+#: includes/views/getting-started/what-new.php:231
 msgid "Enhancements"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:232
+#: includes/views/getting-started/what-new.php:241
 msgid "Removes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:244
+#: includes/views/getting-started/what-new.php:253
 msgid "Video Overview"
 msgstr ""
 
@@ -1594,7 +1594,7 @@ msgstr ""
 #: assets/js/admin.js:1
 #: assets/js/frontend.js:1
 #: assets/js/live-edit.js:1
-msgid "AI "
+msgid "Dynamic"
 msgstr ""
 
 #: assets/js/admin.js:1
@@ -1921,6 +1921,21 @@ msgstr ""
 
 #: assets/js/admin.js:1
 #: assets/js/live-edit.js:1
+msgid "Select Action"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Switch to Dark Mode"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Switch to Light Mode"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
 msgid "Toggle Settings"
 msgstr ""
 
@@ -1932,6 +1947,11 @@ msgstr ""
 #: assets/js/admin.js:1
 #: assets/js/live-edit.js:1
 msgid "Menu Toggle"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Custom Trigger"
 msgstr ""
 
 #: assets/js/admin.js:1
@@ -2136,6 +2156,11 @@ msgstr ""
 
 #: assets/js/admin.js:1
 #: assets/js/live-edit.js:1
+msgid "Floating Toggle Position"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
 msgid "Upgrade to PRO to set custom floating toggle position."
 msgstr ""
 
@@ -2176,6 +2201,16 @@ msgstr ""
 
 #: assets/js/admin.js:1
 #: assets/js/live-edit.js:1
+msgid "Display Toggle In Menu"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Turn on to display the dark mode toggle button in a menu."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
 msgid "Select Menus"
 msgstr ""
 
@@ -2196,12 +2231,22 @@ msgstr ""
 
 #: assets/js/admin.js:1
 #: assets/js/live-edit.js:1
+msgid "Menu Toggle Position"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
 msgid "Start"
 msgstr ""
 
 #: assets/js/admin.js:1
 #: assets/js/live-edit.js:1
 msgid "End"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Choose the position of the dark mode toggle button in the menu."
 msgstr ""
 
 #: assets/js/admin.js:1
@@ -2240,6 +2285,51 @@ msgstr ""
 #: assets/js/admin.js:1
 #: assets/js/live-edit.js:1
 msgid "Choose the size of the floating toggle switch."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Custom Toggle Size"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the custom size (px) of the dark mode toggle button."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "CSS Selector"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Element Selector"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to use the Custom Trigger."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Action"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Add New Trigger"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "You can toggle the dark mode using any custom elements or buttons of your choice."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Learn More"
 msgstr ""
 
 #: assets/js/admin.js:1

@@ -3,7 +3,16 @@
 defined( 'ABSPATH' ) || exit;
 
 $logs = [
-	'v1.2.5' => [
+	'v1.2.7' => [
+		'date'        => '2025-01-26',
+		'new'         => [
+			'Added custom element trigger option to toggle dark mode.',
+		],
+		'fix' => [
+			'Fixed conflicts with the Dark Reader browser extension.',
+		],
+	],
+	'v1.2.6' => [
 		'date'        => '2024-11-24',
 		'new'         => [
 			'Added aria-label attribute to the toggle button.',

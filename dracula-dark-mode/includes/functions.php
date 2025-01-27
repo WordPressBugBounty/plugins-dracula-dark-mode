@@ -134,9 +134,9 @@ function dracula_page_excluded() {
     }
     if ( is_front_page() ) {
         if ( $exclude_all ) {
-            return !in_array( 'home', $excludes_except );
+            return !in_array( 'home', $excludes_except ) && !in_array( get_the_ID(), $excludes_except );
         } else {
-            return in_array( 'home', $excludes );
+            return in_array( 'home', $excludes ) || in_array( get_the_ID(), $excludes );
         }
     }
     //check search page

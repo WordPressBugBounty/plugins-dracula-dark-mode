@@ -4,14 +4,14 @@ Tags: dark mode, reading mode, accessibility, wp dark mode, night mode
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 7.0
-Stable tag: 1.2.6
+Stable tag: 1.2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Experience a user-friendly AI-powered dark mode solution for WordPress. Instantly give your website an elegant look, reducing eye strain for visitors.
+A lightweight Dark Mode plugin for WordPress that adds a sleek toggle to your website, instantly delivering an elegant look while enhancing user experience and reducing eye strain for visitors.
 
 == Description ==
-Dracula Dark Mode seamlessly converts your WordPress site into a stunning dark mode theme using advanced AI algorithm. Designed to reduce eye strain for visitors, its adaptive interface perfectly complements your website's design, making it the top choice for a dark mode solution.
+Dracula Dark Mode effortlessly transforms your WordPress site into a visually stunning dark theme using an advanced dark mode algorithm. Designed to reduce eye strain, its adaptive interface seamlessly integrates with your website's design, making it the ultimate dark mode solution.
 
 == VIDEO OVERVIEW ==
 https://youtu.be/yHs8OdK-TQo
@@ -26,7 +26,7 @@ Dracula Dark Mode makes it easy to add a dark mode to your website, seamlessly m
 
 == 🔥FREE FEATURES: ==
 
-**🤖 AI-Powered Color Generator** - Dracula Dark Mode use a smart AI algorithm to generate the dark mode color scheme automatically for your website without any complicated configuration.
+**✨ Dynamic Color Generator** - Dracula Dark Mode use a smart algorithm to generate the dark mode color scheme automatically for your website without any complicated configuration.
 
 **🖥️ Site Frontend Dark Mode** - Frontend dark mode refers to the implementation of a dark color scheme on a website frontend while users interact.
 
@@ -126,11 +126,11 @@ Should any compatibility concerns occur, our dedicated support team is on standb
 == 🔥 WHAT’S NEXT 🔥==
 Consider checking out our other plugins:
 
-📁[Integrate Google Drive](https://wordpress.org/plugins/integrate-google-drive/) - Browse, Upload, Download, Embed, Play, and Share Your Google Drive Files Into Your WordPress Site.
+📁 [Integrate Google Drive](https://wordpress.org/plugins/integrate-google-drive/) - Browse, Upload, Download, Embed, Play, and Share Your Google Drive Files Into Your WordPress Site.
 
-📻[Radio Player](https://wordpress.org/plugins/radio-player/) - Live Shoutcast, Icecast and Audio Stream Player for WordPress.
+📻 [Radio Player](https://wordpress.org/plugins/radio-player/) - Live Shoutcast, Icecast and Audio Stream Player for WordPress.
 
-📝[Essential Addons for Contact Form 7](https://wordpress.org/plugins/essential-addons-for-contact-form-7/) - 48+ Essential Fields, Features & Integrations Add-ons for Contact Form 7.
+📝 [Essential Addons for Contact Form 7](https://wordpress.org/plugins/essential-addons-for-contact-form-7/) - 48+ Essential Fields, Features & Integrations Add-ons for Contact Form 7.
 
 == Frequently Asked Questions ==
 
@@ -177,7 +177,7 @@ Dracula Dark Mode plugin relies on multiple JavaScript files and dependencies to
 == Screenshots ==
 1. Frontend Dark Mode
 2. Admin Dashboard Dark Mode
-3. AI, Preset & Custom Color Schemes
+3. Dynamic, Preset & Custom Color Schemes
 4. Color Adjustments
 5. Realtime Dark Mode Customization Preview
 6. Page-Specific Dark Mode
@@ -191,6 +191,10 @@ Dracula Dark Mode plugin relies on multiple JavaScript files and dependencies to
 14. Distraction-free Reading Mode
 
 == Changelog ==
+
+= 1.2.7 (26-01-2025) =
+* **New:** Added custom element trigger option to toggle dark mode.
+* **Fix:** Fixed conflicts with the Dark Reader browser extension.
 
 = 1.2.6 (25-11-2024) =
 * **New:** Added aria-label attribute to the toggle button.

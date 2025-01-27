@@ -90,10 +90,10 @@ $features = [
             <h2><?php esc_html_e( 'Quick Overview', 'dracula-dark-mode' ); ?></h2>
 
             <p>
-                <?php esc_html_e('Experience the future of website design with Dracula Dark Mode — the ultimate AI-powered dark mode plugin for your website. Designed for simplicity and elegance, Dracula Dark Mode effortlessly transforms your site into an eye-friendly dark mode, ensuring reduced eye strain and an enhanced browsing experience for your visitors.', 'dracula-dark-mode'); ?>
+                <?php esc_html_e('Experience the future of website design with Dracula Dark Mode — the ultimate dark mode plugin for your website. Designed for simplicity and elegance, Dracula Dark Mode effortlessly transforms your site into an eye-friendly dark mode, reducing eye strain and enhancing the browsing experience for your visitors.', 'dracula-dark-mode'); ?>
             </p>
             <p>
-                <?php esc_html_e('What sets Dracula Dark Mode apart is its smart dynamic algorithm. This AI-driven feature intuitively determines the best dark mode color scheme for your website, eliminating complex configurations. It\'s not just about looks — it\'s about smart design.', 'dracula-dark-mode'); ?>
+                <?php esc_html_e('What sets Dracula Dark Mode apart is its dynamic color generator algorithm. This intelligent feature automatically calculates the optimal dark mode color scheme for your website, adapting seamlessly to your design without the need for complex configurations. It\'s not just about aesthetics — it\'s about smart, adaptive design.', 'dracula-dark-mode'); ?>
             </p>
         </div>
 
@@ -198,7 +198,7 @@ $features = [
         <section class="section-colors section-half">
             <div class="col-description">
                 <h2><?php esc_html_e( 'Seamless Dark Mode Colors', 'dracula-dark-mode' ); ?></h2>
-                <p><?php esc_html_e( 'Dracula Dark Mode use an AI-powered algorithm to effortlessly create a dark mode color scheme for your website. Additionally, the plugin offers 24+ popular color presets, with the flexibility to customize your own palette.', 'dracula-dark-mode' ); ?></p>
+                <p><?php esc_html_e( 'Dracula Dark Mode use a smart dynamic algorithm to effortlessly create a dark mode color scheme for your website. Additionally, the plugin offers 24+ popular color presets, with the flexibility to customize your own palette.', 'dracula-dark-mode' ); ?></p>
             </div>
 
             <div class="col-image">
