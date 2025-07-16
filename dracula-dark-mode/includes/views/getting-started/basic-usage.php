@@ -1,6 +1,6 @@
 <div id="basic-usage" class="getting-started-content content-basic-usage">
-    <div class="content-heading">
-        <h2><?php esc_html_e('Using Dracula Dark Mode Plugin', 'dracula-dark-mode'); ?></h2>
+    <div class="content-heading overview-heading">
+        <h2><?php esc_html_e('Using Dracula', 'dracula-dark-mode'); ?><mark><?php _e('Dark Mode Plugin', 'dracula-dark-mode') ?></mark></h2>
         <p><?php esc_html_e('Learn how to easily enable and use dark mode with the Dracula Dark Mode plugin', 'dracula-dark-mode'); ?></p>
     </div>
 
@@ -22,7 +22,7 @@
                 <h4><?php esc_html_e('To enable dark mode on the website frontend follow the below steps:', 'dracula-dark-mode'); ?></h4>
                 <ol>
                     <li>
-                        <?php echo sprintf('%s <strong>%s</strong> %s', 'From your admin dashboard, navigate to ', 'Dracula > Settings > General Settings', 'and turn on the Enable Frontend Dark Mode setting. The setting is enabled by default.' ); ?>
+                        <?php echo sprintf('%s <strong>%s</strong> %s', 'From your admin dashboard, navigate to ', 'Dracula > Settings > General Settings', 'and turn on the Enable Frontend Dark Mode setting. The setting is enabled by default.'); ?>
                     </li>
                     <li><?php esc_html_e('Once frontend dark mode is enabled, you will notice more 2 options below:', 'dracula-dark-mode') ?></li>
                     <li>
@@ -37,9 +37,9 @@
 
                 <div class="col-image">
                     <iframe src="https://www.youtube.com/embed/4DEidfYhb08?rel=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
 
             </div>
@@ -72,7 +72,7 @@
                         <?php echo sprintf('<strong>%s</strong> %s', 'Classic Editor Dark Mode:', 'Enable this setting to enable the dark mode color scheme for the Classic Editor to make the editing experience more comfortable.'); ?>
                     </li>
                     <li>
-                        <strong></strong> 
+                        <strong></strong>
                         <?php echo sprintf('<strong>%s</strong> %s', 'Block Editor Dark Mode:', 'You can also enable the dark mode color scheme for the Gutenberg Block editor. After enabling the Block Editor Dark Mode a new dark mode toggle button
                         will be added to the editor.'); ?>
                     </li>
@@ -80,8 +80,8 @@
 
                 <div class="col-image">
                     <iframe src="https://www.youtube.com/embed/qOuFxLoinuE?rel=0" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -133,9 +133,9 @@
 
                 <div class="col-image">
                     <iframe src="https://www.youtube.com/embed/J5rRiJfw22w?rel=0"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -162,7 +162,7 @@
                     <li>
                         <?php echo sprintf('<strong>%s</strong> %s', 'Exclude Posts/Pages:', 'Select the posts, pages, or any custom post types from the drop-down menu to exclude from dark mode. You can select multiple pages or posts by searching them from the drop-down list. You can also select the Login & Register Page, 404 Page, Search Page,
                         and the Archive Page from the drop-down list.'); ?>
-                        <strong> </strong> 
+                        <strong> </strong>
                     </li>
                     <li>
                         <?php echo sprintf('<strong>%s</strong> %s', 'Include Posts/ Pages:', 'If you want to exclude all of your posts, pages, and custom post types and include specific posts, and pages in dark mode, Enable the Exclude all switch and select the specific posts, pages or custom post types from the except dropdown list to include in dark mode.'); ?>
@@ -174,9 +174,9 @@
 
                 <div class="col-image">
                     <iframe src="https://www.youtube.com/embed/O17lW1aKYXs?rel=0"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -248,9 +248,9 @@
 
                 <div class="col-image">
                     <iframe src="https://www.youtube.com/embed/MzcCTjg4CN8?rel=0"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -303,9 +303,9 @@
 
                 <div class="col-image">
                     <iframe src="https://www.youtube.com/embed/GhDguYi0w_s?rel=0"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -347,9 +347,9 @@
 
                 <div class="col-image">
                     <iframe src="https://www.youtube.com/embed/cUizkL-VX3k?rel=0"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -383,20 +383,20 @@
                     </li>
                     <li>
                         <?php echo sprintf('<strong>%s</strong> %s', 'Elementor Page Builder:', 'Customize dark mode settings for specific pages/posts using the Dark Mode Settings panel under Elementor Page Builder settings.'); ?>
-                        <strong></strong> 
+                        <strong></strong>
                     </li>
                 </ol>
 
 
                 <div class="col-image">
                     <iframe src="https://www.youtube.com/embed/sEwLfy_54Sk?rel=0"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-        
+
         <!-- Reading Mode -->
         <div class="faq-item">
             <div class="faq-header">
@@ -415,7 +415,7 @@
                 <h4><?php esc_html_e('To enable Reading Mode, follow the below steps:', 'dracula-dark-mode'); ?></h4>
                 <ol>
                     <li>
-                        <?php echo sprintf('%s <strong>%s</strong> %s', 'Form your WordPress Admin dashboard navigate to', 'Dark Mode > Settings > Reading Mode > Enable Reading Mode',' from the General tab.'); ?>
+                        <?php echo sprintf('%s <strong>%s</strong> %s', 'Form your WordPress Admin dashboard navigate to', 'Dark Mode > Settings > Reading Mode > Enable Reading Mode', ' from the General tab.'); ?>
                     </li>
                     <li>
                         <?php esc_html_e('After enabling Reading Mode, you will discover more options.', 'dracula-dark-mode'); ?>
@@ -431,7 +431,7 @@
                     </li>
                     <li>
                         <?php echo sprintf('<strong>%s</strong> %s', 'Reading Mode Layout:', 'Reading Mode layout is also customizable. Such as customizing the components (tools), appearance, and progress bar settings.'); ?>
-                        <strong></strong> 
+                        <strong></strong>
                     </li>
                 </ol>
 
@@ -448,8 +448,8 @@
 </div>
 
 <script>
-    jQuery(document).ready(function ($) {
-        $('#basic-usage .faq-item .faq-header').on('click', function () {
+    jQuery(document).ready(function($) {
+        $('#basic-usage .faq-item .faq-header').on('click', function() {
             $(this).parent().toggleClass('active');
         });
     });

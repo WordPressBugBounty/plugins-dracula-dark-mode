@@ -3,6 +3,15 @@
 defined( 'ABSPATH' ) || exit;
 
 $logs = [
+	'v1.2.8' => [
+		'date'        => '2025-07-13',
+		'new'         => [
+			'Added an option to display the toggle switch after a delay.',
+		],
+		'fix' => [
+			'Fixed Background Image replacement',
+		],
+	],
 	'v1.2.7' => [
 		'date'        => '2025-01-26',
 		'new'         => [
@@ -182,8 +191,8 @@ $logs = [
 ?>
 
 <div id="what-new" class="getting-started-content content-what-new">
-    <div class="content-heading">
-        <h2><?php esc_html_e( 'What\'s new in the latest changes', 'dracula-dark-mode' ); ?></h2>
+    <div class="content-heading overview-heading">
+        <h2><?php esc_html_e( 'What\'s New in the', 'dracula-dark-mode' ); ?><mark><?php _e( 'Latest Changes', 'dracula-dark-mode' ); ?></mark></h2>
         <p><?php esc_html_e( 'Check out the latest change logs.', 'dracula-dark-mode' ); ?></p>
     </div>
 

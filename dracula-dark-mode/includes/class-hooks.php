@@ -318,7 +318,7 @@ class Dracula_Hooks {
             }
 
         </script>
-	<?php 
+    <?php 
     }
 
     /**

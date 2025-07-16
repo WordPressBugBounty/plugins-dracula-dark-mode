@@ -165,23 +165,20 @@ $features = [
 ?>
 
 <div id="get-pro" class="getting-started-content content-get-pro">
-    <div class="content-heading">
-        <h2><?php esc_html_e('Get Access to Exclusive Features with The Dracula Dark Mode Premium', 'dracula-dark-mode'); ?></h2>
+
+    <div class="content-heading heading-get-pro">
+        <h2>
+            <?php esc_html_e('Get Access to Exclusive Features with ', 'dracula-dark-mode'); ?>
+            <br>
+            <mark><?php _e('Dracula Dark Mode PRO', 'dracula-dark-mode') ?></mark>
+        </h2>
+
         <p><?php esc_html_e('The amazing premium features will take your website to the next level.', 'dracula-dark-mode'); ?></p>
-    </div>
 
-    <div class="get-pro-cta">
-        <div class="cta-content">
-            <h2><?php esc_html_e('Don\'t waste time, unlock premium features now!', 'dracula-dark-mode'); ?></h2>
-            <p>
-                <?php esc_html_e('Upgrade to Dracula Dark Mode premium now and experience a whole new level of darkness. Get exclusive
-                features and support the development of this theme. Don\'t miss out on the ultimate dark mode experience. Buy now!', 'dracula-dark-mode'); ?>
-            </p>
-        </div>
-
-        <div class="cta-btn">
-            <a href="<?php echo esc_url(ddm_fs()->get_upgrade_url()); ?>" class="dracula-btn btn-primary"><?php esc_html_e('Upgrade Now', 'dracula-dark-mode'); ?></a>
-        </div>
+        <a href="<?php echo ddm_fs()->get_upgrade_url(); ?>" class="dracula-btn btn-primary get-pro-btn">
+            <img src="<?php echo esc_url(DRACULA_ASSETS) ?>/images/getting-started/menu/get-pro.svg" />
+            <?php esc_html_e('Upgrade Now', 'dracula-dark-mode'); ?>
+        </a>
 
     </div>
 
@@ -221,7 +218,7 @@ $features = [
 
     <div class="get-pro-cta">
         <div class="cta-content">
-            <h2><?php esc_html_e('Why wait? Dive into the PRO features today!', 'dracula-dark-mode'); ?></h2>
+            <h2><?php printf(__('Why wait? Get the %sPRO version%s now!', 'dracula-dark-mode'), '<mark>', '</mark>'); ?></h2>
             <p>
 				<?php esc_html_e('Upgrade to Dracula Dark Mode premium now and experience a whole new level of darkness. Get exclusive
                 features and support the development of this awesome plugin. Don\'t miss out on the ultimate dark mode experience. Buy now!', 'dracula-dark-mode'); ?>
@@ -229,7 +226,9 @@ $features = [
         </div>
 
         <div class="cta-btn">
-            <a href="<?php echo esc_url(ddm_fs()->get_upgrade_url()); ?>" class="dracula-btn btn-primary"><?php esc_html_e('Get PRO', 'dracula-dark-mode'); ?></a>
+            <a href="<?php echo esc_url(ddm_fs()->get_upgrade_url()); ?>" class="dracula-btn btn-primary">
+                <i class="dashicons dashicons-cart"></i>
+                <?php esc_html_e('Get PRO', 'dracula-dark-mode'); ?></a>
         </div>
 
     </div>
@@ -243,7 +242,10 @@ $features = [
         </div>
 
         <div class="cta-btn">
-            <a href="https://demo.softlabbd.com/?product=dracula-dark-mode" class="dracula-btn btn-primary" target="_blank"><?php esc_html_e('Try Live Demo', 'dracula-dark-mode'); ?></a>
+            <a href="https://demo.softlabbd.com/?product=dracula-dark-mode" class="dracula-btn btn-primary" target="_blank">
+                <i class="dashicons dashicons-admin-site"></i>
+                <?php esc_html_e('Try Live Demo', 'dracula-dark-mode'); ?>
+            </a>
         </div>
 
     </div>

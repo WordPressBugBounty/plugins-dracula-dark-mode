@@ -2,13 +2,13 @@
 Contributors: softlab, princeahmed, monzuralam
 Tags: dark mode, reading mode, accessibility, wp dark mode, night mode
 Requires at least: 5.0
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 1.2.7
+Stable tag: 1.2.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight Dark Mode plugin for WordPress that adds a sleek toggle to your website, instantly delivering an elegant look while enhancing user experience and reducing eye strain for visitors.
+Lightweight Dark Mode plugin for WordPress with a sleek toggle that enhances your site’s look and reduces eye strain for visitors.
 
 == Description ==
 Dracula Dark Mode effortlessly transforms your WordPress site into a visually stunning dark theme using an advanced dark mode algorithm. Designed to reduce eye strain, its adaptive interface seamlessly integrates with your website's design, making it the ultimate dark mode solution.
@@ -99,6 +99,8 @@ Dracula Dark Mode makes it easy to add a dark mode to your website, seamlessly m
 
 **👆 Draggable Switch** - You can also enable the draggable switch option to allow users to drag the floating dark mode toggle button to the desired position on the screen.
 
+**🕐 Show Delay Switch** - Now you can control when the floating switch appears! Set a show delay so the toggle only becomes visible after a specific time, letting your visitors focus on your content before interacting with the switch.
+
 **💬 Tooltip Text** - You can display custom tooltip text for the dark mode toggle button.
 
 **👥 User Roles based Dashboard Dark Mode** - You can allow other users to use the dark mode color scheme on their admin dashboard by selectively certain user roles such as: Administrator, Editor, Author etc.
@@ -109,6 +111,9 @@ Dracula Dark Mode makes it easy to add a dark mode to your website, seamlessly m
 
 **🔄 Toggle Switch Attention Effect Animation** - Dracula Dark Mode allows you to set an attention effect animation for the toggle button to grab the attention of the users.
 
+## 😍 WHAT OUR CUSTOMERS SAY ABOUT **DRACULA DARK MODE!**
+`Best bang for the buck!`
+> "I spent a couple months exploring other options before settling on a dark mode plugin. But, with DDM, I am definitely not settling. It’s cheaper and much more robust and useful and usable than the bigger names in the dark mode game. Happy I tried it out. 10/10" - **The Open Market (@jhutson323)**
 
 == COMPATIBILITY ==
 Dracula Dark Mode seamlessly integrates with numerous popular WordPress themes like Astra, Divi, and GeneratePress, as well as page builders like Elementor and Beaver Builder. It also supports popular plugins, including Yoast SEO, GravityForms, Contact Form 7, WooCommerce, and Easy Digital Downloads.
@@ -191,6 +196,10 @@ Dracula Dark Mode plugin relies on multiple JavaScript files and dependencies to
 14. Distraction-free Reading Mode
 
 == Changelog ==
+
+= 1.2.8 (13-07-2025) =
+* **New:** Added an option to display the toggle switch after a delay.
+* **Fix:** Fixed Background Image replacement.
 
 = 1.2.7 (26-01-2025) =
 * **New:** Added custom element trigger option to toggle dark mode.

@@ -2,16 +2,16 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dracula Dark Mode 1.2.7\n"
+"Project-Id-Version: Dracula Dark Mode 1.2.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dracula\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-27T12:43:34+00:00\n"
+"POT-Creation-Date: 2025-07-13T09:10:53+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.6.0\n"
+"X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: dracula-dark-mode\n"
 
 #. Plugin Name of the plugin
@@ -95,7 +95,6 @@ msgid "Getting Started - Dracula"
 msgstr ""
 
 #: includes/class-admin.php:162
-#: includes/views/getting-started/index.php:18
 msgid "Getting Started"
 msgstr ""
 
@@ -161,7 +160,7 @@ msgstr ""
 msgid "Analytics"
 msgstr ""
 
-#: includes/class-hooks.php:160
+#: includes/class-hooks.php:169
 msgid "Edit Dark Mode"
 msgstr ""
 
@@ -206,7 +205,11 @@ msgid "Lost password page"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:3
-msgid "Using Dracula Dark Mode Plugin"
+msgid "Using Dracula"
+msgstr ""
+
+#: includes/views/getting-started/basic-usage.php:3
+msgid "Dark Mode Plugin"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:4
@@ -219,8 +222,8 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:17
 msgid ""
-"Frontend dark mode refers to the implementation of a dark color scheme on a website frontend while\n"
-"                    users interact. This feature is highly applicable for users when they spend a lot of time on your website’s front\n"
+"Frontend dark mode refers to the implementation of a dark color scheme on a website frontend while\r\n"
+"                    users interact. This feature is highly applicable for users when they spend a lot of time on your website’s front\r\n"
 "                    end."
 msgstr ""
 
@@ -238,8 +241,8 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:57
 msgid ""
-"Dracula Dark Mode allows site admins to enable and use dark mode in their admin dashboard.\n"
-"                    This provides a consistent look and feel throughout the site, and can also help to reduce eye strain\n"
+"Dracula Dark Mode allows site admins to enable and use dark mode in their admin dashboard.\r\n"
+"                    This provides a consistent look and feel throughout the site, and can also help to reduce eye strain\r\n"
 "                    when working in the admin dashboard."
 msgstr ""
 
@@ -257,10 +260,10 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:98
 msgid ""
-"You don't have to stick with the toggle buttons we designed for you. Dracula Dark Mode allows to\n"
-"                    create custom dark mode toggle switch buttons. that provides a button builder that gives the ability to\n"
-"                    create and customize the appearance and behavior of the toggle switch button. You can select button layout,\n"
-"                    choose an icon or upload yours, set the button height, width, text & icon color, background color,\n"
+"You don't have to stick with the toggle buttons we designed for you. Dracula Dark Mode allows to\r\n"
+"                    create custom dark mode toggle switch buttons. that provides a button builder that gives the ability to\r\n"
+"                    create and customize the appearance and behavior of the toggle switch button. You can select button layout,\r\n"
+"                    choose an icon or upload yours, set the button height, width, text & icon color, background color,\r\n"
 "                    border width and color, border radius, and many more options."
 msgstr ""
 
@@ -278,8 +281,8 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:152
 msgid ""
-"It might be sometimes necessary to exclude or include specific posts, pages, or any custom post\n"
-"                    types in dark mode. Dracula Dark Mode allows to easily include or exclude certain pages, posts, any custom post types\n"
+"It might be sometimes necessary to exclude or include specific posts, pages, or any custom post\r\n"
+"                    types in dark mode. Dracula Dark Mode allows to easily include or exclude certain pages, posts, any custom post types\r\n"
 "                    in dark mode."
 msgstr ""
 
@@ -293,7 +296,7 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:193
 msgid ""
-"Dracula Dark Mode also lets you exclude any unwanted sections or elements on a page to be excluded\n"
+"Dracula Dark Mode also lets you exclude any unwanted sections or elements on a page to be excluded\r\n"
 "                    from the dark mode. You can exclude any specific sections or elements in a page by using their CSS selectors."
 msgstr ""
 
@@ -307,7 +310,7 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:207
 msgid ""
-"You can use the developer tools built into your web browser to find the CSS selector of an\n"
+"You can use the developer tools built into your web browser to find the CSS selector of an\r\n"
 "                            element."
 msgstr ""
 
@@ -333,7 +336,7 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:230
 msgid ""
-"To exclude specific elements in live edit mode, Click the Live Edit Button. Click the\n"
+"To exclude specific elements in live edit mode, Click the Live Edit Button. Click the\r\n"
 "                            Excludes Elements menu and then click the Select Element button."
 msgstr ""
 
@@ -343,8 +346,8 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:239
 msgid ""
-"The elements will be highlighted while you hover over an element and click on the element\n"
-"                            that you want to exclude and the CSS selector for the element will be automatically inserted in\n"
+"The elements will be highlighted while you hover over an element and click on the element\r\n"
+"                            that you want to exclude and the CSS selector for the element will be automatically inserted in\r\n"
 "                            the Exclude Elements input field."
 msgstr ""
 
@@ -358,8 +361,8 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:267
 msgid ""
-"Sometimes all the images & videos don\\’t look better in dark mode, and you might want to replace them\n"
-"                    in dark mode. Dracula Dark Mode lets you replace the light-mode images and videos with different images\n"
+"Sometimes all the images & videos don\\’t look better in dark mode, and you might want to replace them\r\n"
+"                    in dark mode. Dracula Dark Mode lets you replace the light-mode images and videos with different images\r\n"
 "                    and videos in dark mode."
 msgstr ""
 
@@ -402,7 +405,7 @@ msgid "Colors"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:338
-#: includes/views/getting-started/introduction.php:214
+#: includes/views/getting-started/introduction.php:241
 #: assets/js/admin.js:1
 #: assets/js/frontend.js:1
 #: assets/js/live-edit.js:1
@@ -483,12 +486,12 @@ msgid "After enabling Reading Mode, you will discover more options."
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:5
-#: includes/views/getting-started/introduction.php:134
+#: includes/views/getting-started/introduction.php:161
 msgid "Frontend Dark Mode"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:8
-#: includes/views/getting-started/introduction.php:151
+#: includes/views/getting-started/introduction.php:178
 msgid "Admin Dashboard Dark Mode"
 msgstr ""
 
@@ -515,7 +518,7 @@ msgid "Multiple Toggle Button Styles"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:26
-#: includes/views/getting-started/introduction.php:233
+#: includes/views/getting-started/introduction.php:260
 msgid "Floating Dark Mode Toggle Button"
 msgstr ""
 
@@ -571,7 +574,7 @@ msgid "Reading Mode"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:66
-#: includes/views/getting-started/introduction.php:247
+#: includes/views/getting-started/introduction.php:274
 msgid "Display Toggle Button in Menu"
 msgstr ""
 
@@ -650,7 +653,7 @@ msgid "Custom Dark Mode Toggle Button Builder"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:143
-#: includes/views/getting-started/introduction.php:262
+#: includes/views/getting-started/introduction.php:289
 msgid "14+ Dark Mode Toggle Button Styles"
 msgstr ""
 
@@ -671,7 +674,11 @@ msgid "Toggle Button Attention Effect Animation (coming soon)"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:169
-msgid "Get Access to Exclusive Features with The Dracula Dark Mode Premium"
+msgid "Get Access to Exclusive Features with The"
+msgstr ""
+
+#: includes/views/getting-started/get-pro.php:169
+msgid "Dracula Dark Mode Premium"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:170
@@ -684,7 +691,7 @@ msgstr ""
 
 #: includes/views/getting-started/get-pro.php:177
 msgid ""
-"Upgrade to Dracula Dark Mode premium now and experience a whole new level of darkness. Get exclusive\n"
+"Upgrade to Dracula Dark Mode premium now and experience a whole new level of darkness. Get exclusive\r\n"
 "                features and support the development of this theme. Don't miss out on the ultimate dark mode experience. Buy now!"
 msgstr ""
 
@@ -726,12 +733,12 @@ msgstr ""
 
 #: includes/views/getting-started/get-pro.php:226
 msgid ""
-"Upgrade to Dracula Dark Mode premium now and experience a whole new level of darkness. Get exclusive\n"
+"Upgrade to Dracula Dark Mode premium now and experience a whole new level of darkness. Get exclusive\r\n"
 "                features and support the development of this awesome plugin. Don't miss out on the ultimate dark mode experience. Buy now!"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:232
-#: includes/views/getting-started/index.php:93
+#: includes/views/getting-started/index.php:91
 msgid "Get PRO"
 msgstr ""
 
@@ -741,8 +748,8 @@ msgstr ""
 
 #: includes/views/getting-started/get-pro.php:240
 msgid ""
-"You can try our instant ready-made demo. The demo allows you to experiment with all the functionality of\n"
-"                the plugins on both Front-End and Back-End. Feel free to explore the possibilities and limits of our\n"
+"You can try our instant ready-made demo. The demo allows you to experiment with all the functionality of\r\n"
+"                the plugins on both Front-End and Back-End. Feel free to explore the possibilities and limits of our\r\n"
 "                plugins to see if it fits your requirements!"
 msgstr ""
 
@@ -751,153 +758,201 @@ msgid "Try Live Demo"
 msgstr ""
 
 #: includes/views/getting-started/help.php:5
-msgid "01. Does Dracula Dark Mode works with all WordPress themes?"
+msgid "1. I have a pre-sale question. How can I get support?"
 msgstr ""
 
-#: includes/views/getting-started/help.php:6
-msgid "Yes, Dracula Dark Mode has been built to be compatible with all the popular themes like Divi, Avada, Astra, Generatepress, and almost every WordPress compatibility themes."
+#: includes/views/getting-started/help.php:8
+msgid "For any pre-sale inquiries, please contact us directly by submitting a form here: "
 msgstr ""
 
 #: includes/views/getting-started/help.php:10
-msgid "02. Can I customize the dark mode settings in a real-time preview?"
-msgstr ""
-
-#: includes/views/getting-started/help.php:11
-msgid "Yes, Realtime Dark Mode Customization preview is the most unique feature that Dracula Dark Mode plugin has included. You can customize dark mode colors, presets, switches, and texts, and see changes in a real-time preview mode."
+msgid "Contact Us."
 msgstr ""
 
 #: includes/views/getting-started/help.php:15
-msgid "03. Can I display dark mode toggle button in menu?"
+msgid "2. I have purchased a plan, but it still shows the free plan. What should I do?"
 msgstr ""
 
-#: includes/views/getting-started/help.php:16
-msgid "Yes, you can display the toggle switch button in any menu of your website. Even you can set the positions of the toggle button at the start or end of the menu."
+#: includes/views/getting-started/help.php:18
+msgid "After purchase, you should receive a confirmation email containing the PRO download link and license key. If you did not receive it due to email delivery issues, you can access your PRO download and license key from the "
 msgstr ""
 
 #: includes/views/getting-started/help.php:20
-msgid "04. Can I create & customize my own custom toggle button?"
-msgstr ""
-
-#: includes/views/getting-started/help.php:21
-msgid "Yes, you can create your fully customized own custom toggle button using the Toggle Button builder and display it anywhere on your website using the shortcode. You can also customize the switch color, text, layout, icons and many other options."
+msgid "Freemius Customer Portal."
 msgstr ""
 
 #: includes/views/getting-started/help.php:25
-msgid "05. Can I replace light mode images & videos in dark mode?"
+msgid "3. Where can I find the PRO download link and license key?"
 msgstr ""
 
 #: includes/views/getting-started/help.php:26
-msgid "Dracula Dark Mode provides an advanced image & video replacement feature where you can replace any light mode images &  any self-hosted, Youtube, Vimeo, or DailyMotion videos in dark mode."
+msgid "After purchasing the PRO plugin, download and install it on your website. Deactivate the Free plugin first (your data will remain intact). Once the PRO plugin is installed, activate your license key. For details on where to find the download link and license key, refer to the related FAQ."
 msgstr ""
 
 #: includes/views/getting-started/help.php:30
-msgid "06. Can I exclude certain sections/ elements in a  page from being affected by the dark mode?"
+msgid "4. Can I use the same license key on my production, staging, and development sites?"
 msgstr ""
 
-#: includes/views/getting-started/help.php:31
-msgid "Yes, you can exclude certain sections or elements on any page to keep them from being affected by dark mode. You have to use proper CSS selectors for the elements in the Excludes settings to exclude them from the dark mode. Even you can also exclude them by just clicking on the elements when you are in live edit dark mode."
+#: includes/views/getting-started/help.php:80
+msgid "05. Can I try a live demo version of the plugin?"
 msgstr ""
 
-#: includes/views/getting-started/help.php:35
-msgid "07. Can I use dark mode on Admin Dashboard?"
+#: includes/views/getting-started/help.php:82
+msgid "Yes! You can try the ready-made live demo of the PRO plugin to explore all features on both Front-End and Back-End. %s"
 msgstr ""
 
-#: includes/views/getting-started/help.php:36
-msgid "Yes, Dracula Dark Mode allows site admins to enable and use dark mode in their admin dashboard. You can also allow the admin dashboard dark mode based on specific user roles (Administrator, Editor, Subscriber, etc). "
+#: includes/views/getting-started/help.php:88
+msgid "06. Is a trial version of the PRO plugin available?"
 msgstr ""
 
-#: includes/views/getting-started/help.php:40
-msgid "08. Can I exclude specific posts or pages from dark mode?"
-msgstr ""
-
-#: includes/views/getting-started/help.php:41
-msgid "Yes, Dracula Dark Mode allows you to exclude certain pages, posts, or any custom post types from dark mode from the Excludes settings."
-msgstr ""
-
-#: includes/views/getting-started/help.php:45
-msgid "09. Can I schedule dark mode to turn on and off automatically based on a specific time?"
-msgstr ""
-
-#: includes/views/getting-started/help.php:46
-msgid "Yes, you can schedule dark mode to turn it on and off automatically based on your selected time. This setting will work based on the user's device time zone."
-msgstr ""
-
-#: includes/views/getting-started/help.php:50
-msgid "10. Can I set different color schemes for different pages?"
-msgstr ""
-
-#: includes/views/getting-started/help.php:51
-msgid "Yes, you can set different color schemes for different pages by using our page-wise dark mode feature. Using the page-wise dark mode you can use different color schemes for each page to improve your brand image."
-msgstr ""
-
-#: includes/views/getting-started/help.php:55
-msgid "11. Does Dracula Dark Mode support custom CSS?"
-msgstr ""
-
-#: includes/views/getting-started/help.php:56
-msgid "Yes, Dracula Dark Mode has support for both the normal mode and dark mode custom CSS. That means you can customize both the light mode and dark mode appearance."
-msgstr ""
-
-#: includes/views/getting-started/help.php:60
-msgid "12. Will Dracula Dark Mode plugin slow my website loading speed?"
-msgstr ""
-
-#: includes/views/getting-started/help.php:61
-msgid "Dracula Dark Mode may have a minimal impact on your site load speed. But we have given ‘Performance Mode’ settings which will improve your website speed loading scripts in a deferred manner to reduce the initial page load time and improve overall website performance."
-msgstr ""
-
-#: includes/views/getting-started/help.php:65
-msgid "13. Why Dark Mode not working properly with caching plugins (WP Rocket, W3 Total Cache, WP Super Cache, LiteSpeed Cache, WP-Optimize, etc)?"
-msgstr ""
-
-#: includes/views/getting-started/help.php:66
-msgid "Dracula Dark Mode plugin relies on multiple JavaScript files and dependencies to work properly. So, if you are using any caching plugins, you have to disable the JavaScript deferred/ delay/ lazy load settings from the caching plugins to make the dark mode work properly."
-msgstr ""
-
-#: includes/views/getting-started/help.php:77
-msgid "Frequently Asked Questions"
+#: includes/views/getting-started/help.php:90
+msgid "Yes, we offer a 3-day trial period for the PRO plugin, allowing you to test its full capabilities on your website before purchase. No payment method is required. Get your trial here: %s"
 msgstr ""
 
 #: includes/views/getting-started/help.php:96
-msgid "Need Help?"
+msgid "07. Does Dracula Dark Mode works with all WordPress themes?"
 msgstr ""
 
 #: includes/views/getting-started/help.php:97
-msgid "Read our knowledge base documentation or you can contact us directly."
+msgid "Yes, Dracula Dark Mode has been built to be compatible with all the popular themes like Divi, Avada, Astra, Generatepress, and almost every WordPress compatibility themes."
 msgstr ""
 
-#: includes/views/getting-started/help.php:104
-#: includes/views/getting-started/help.php:107
-#: includes/views/getting-started/help.php:112
-msgid "Documentation"
+#: includes/views/getting-started/help.php:100
+msgid "08. Can I display dark mode toggle button in menu?"
 msgstr ""
 
-#: includes/views/getting-started/help.php:109
-msgid "Check out our detailed online documentation and video tutorials to find out more about what you can do."
+#: includes/views/getting-started/help.php:101
+msgid "Yes, you can display the toggle switch button in any menu of your website. Even you can set the positions of the toggle button at the start or end of the menu."
 msgstr ""
 
-#: includes/views/getting-started/help.php:119
+#: includes/views/getting-started/help.php:105
+msgid "09. Can I create & customize my own custom toggle button?"
+msgstr ""
+
+#: includes/views/getting-started/help.php:106
+msgid "Yes, you can create your fully customized own custom toggle button using the Toggle Button builder and display it anywhere on your website using the shortcode. You can also customize the switch color, text, layout, icons and many other options."
+msgstr ""
+
+#: includes/views/getting-started/help.php:110
+msgid "10. Can I replace light mode images & videos in dark mode?"
+msgstr ""
+
+#: includes/views/getting-started/help.php:111
+msgid "Dracula Dark Mode provides an advanced image & video replacement feature where you can replace any light mode images &  any self-hosted, Youtube, Vimeo, or DailyMotion videos in dark mode."
+msgstr ""
+
+#: includes/views/getting-started/help.php:115
+msgid "11. Can I exclude certain sections/ elements in a  page from being affected by the dark mode?"
+msgstr ""
+
+#: includes/views/getting-started/help.php:116
+msgid "Yes, you can exclude certain sections or elements on any page to keep them from being affected by dark mode. You have to use proper CSS selectors for the elements in the Excludes settings to exclude them from the dark mode. Even you can also exclude them by just clicking on the elements when you are in live edit dark mode."
+msgstr ""
+
+#: includes/views/getting-started/help.php:120
+msgid "12. Can I use dark mode on Admin Dashboard?"
+msgstr ""
+
+#: includes/views/getting-started/help.php:121
+msgid "Yes, Dracula Dark Mode allows site admins to enable and use dark mode in their admin dashboard. You can also allow the admin dashboard dark mode based on specific user roles (Administrator, Editor, Subscriber, etc). "
+msgstr ""
+
 #: includes/views/getting-started/help.php:125
-msgid "Get Support"
+msgid "13. Can I exclude specific posts or pages from dark mode?"
 msgstr ""
 
-#: includes/views/getting-started/help.php:122
-msgid "Support"
+#: includes/views/getting-started/help.php:126
+msgid "Yes, Dracula Dark Mode allows you to exclude certain pages, posts, or any custom post types from dark mode from the Excludes settings."
 msgstr ""
 
-#: includes/views/getting-started/help.php:123
-msgid "We have dedicated support team to provide you fast, friendly & top-notch customer support."
+#: includes/views/getting-started/help.php:130
+msgid "14. Can I schedule dark mode to turn on and off automatically based on a specific time?"
+msgstr ""
+
+#: includes/views/getting-started/help.php:131
+msgid "Yes, you can schedule dark mode to turn it on and off automatically based on your selected time. This setting will work based on the user's device time zone."
 msgstr ""
 
 #: includes/views/getting-started/help.php:135
+msgid "15. Can I set different color schemes for different pages?"
+msgstr ""
+
+#: includes/views/getting-started/help.php:136
+msgid "Yes, you can set different color schemes for different pages by using our page-wise dark mode feature. Using the page-wise dark mode you can use different color schemes for each page to improve your brand image."
+msgstr ""
+
+#: includes/views/getting-started/help.php:140
+msgid "16. Will Dracula Dark Mode plugin slow my website loading speed?"
+msgstr ""
+
+#: includes/views/getting-started/help.php:141
+msgid "Dracula Dark Mode may have a minimal impact on your site load speed. But we have given ‘Performance Mode’ settings which will improve your website speed loading scripts in a deferred manner to reduce the initial page load time and improve overall website performance."
+msgstr ""
+
+#: includes/views/getting-started/help.php:145
+msgid "17. Why Dark Mode not working properly with caching plugins (WP Rocket, W3 Total Cache, WP Super Cache, LiteSpeed Cache, WP-Optimize, etc)?"
+msgstr ""
+
+#: includes/views/getting-started/help.php:146
+msgid "Dracula Dark Mode plugin relies on multiple JavaScript files and dependencies to work properly. So, if you are using any caching plugins, you have to disable the JavaScript deferred/ delay/ lazy load settings from the caching plugins to make the dark mode work properly."
+msgstr ""
+
+#: includes/views/getting-started/help.php:157
+msgid "Frequently Asked"
+msgstr ""
+
+#: includes/views/getting-started/help.php:157
+msgid "Questions"
+msgstr ""
+
+#: includes/views/getting-started/help.php:158
+msgid "Find quick answers to common queries in our FAQ section."
+msgstr ""
+
+#: includes/views/getting-started/help.php:194
+msgid "Need"
+msgstr ""
+
+#: includes/views/getting-started/help.php:194
+msgid "Help?"
+msgstr ""
+
+#: includes/views/getting-started/help.php:195
+msgid "Read our knowledge base documentation or you can contact us directly."
+msgstr ""
+
+#: includes/views/getting-started/help.php:202
+#: includes/views/getting-started/help.php:205
+#: includes/views/getting-started/help.php:210
+msgid "Documentation"
+msgstr ""
+
+#: includes/views/getting-started/help.php:207
+msgid "Check out our detailed online documentation and video tutorials to find out more about what you can do."
+msgstr ""
+
+#: includes/views/getting-started/help.php:217
+#: includes/views/getting-started/help.php:223
+msgid "Get Support"
+msgstr ""
+
+#: includes/views/getting-started/help.php:220
+msgid "Support"
+msgstr ""
+
+#: includes/views/getting-started/help.php:221
+msgid "We have dedicated support team to provide you fast, friendly & top-notch customer support."
+msgstr ""
+
+#: includes/views/getting-started/help.php:233
 msgid "Join our Facebook community?"
 msgstr ""
 
-#: includes/views/getting-started/help.php:137
+#: includes/views/getting-started/help.php:235
 msgid "Discuss, and share your problems & solutions for the Dracula Dark Mode WordPress plugin. Let's make a better community, share ideas, solve problems and finally build good relations."
 msgstr ""
 
-#: includes/views/getting-started/help.php:144
+#: includes/views/getting-started/help.php:241
 msgid "Join Now"
 msgstr ""
 
@@ -905,19 +960,19 @@ msgstr ""
 msgid "Smooth Dark Mode & Enhanced Accessibility for WordPress"
 msgstr ""
 
-#: includes/views/getting-started/index.php:31
+#: includes/views/getting-started/index.php:29
 msgid "Introduction"
 msgstr ""
 
-#: includes/views/getting-started/index.php:47
+#: includes/views/getting-started/index.php:45
 msgid "Basic Usage"
 msgstr ""
 
-#: includes/views/getting-started/index.php:68
+#: includes/views/getting-started/index.php:66
 msgid "Help"
 msgstr ""
 
-#: includes/views/getting-started/index.php:75
+#: includes/views/getting-started/index.php:73
 msgid "Changelog"
 msgstr ""
 
@@ -1046,153 +1101,204 @@ msgstr ""
 msgid "Add a dark mode toggle to your Elementor designs effortlessly."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:90
-msgid "Quick Overview"
+#: includes/views/getting-started/introduction.php:87
+msgid "Complete Google Drive integration for WordPress."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:93
+#: includes/views/getting-started/introduction.php:94
+msgid "Live Shoutcast, Icecast and Any Audio Stream Player for WordPress"
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:101
+msgid "50+ Essential Fields, Features & Integrations Add-ons for Contact Form 7."
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:113
+msgid "Quick"
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:113
+msgid "Overview"
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:114
+msgid "Discover the features and benefits of Dracula Dark Mode"
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:120
 msgid "Experience the future of website design with Dracula Dark Mode — the ultimate dark mode plugin for your website. Designed for simplicity and elegance, Dracula Dark Mode effortlessly transforms your site into an eye-friendly dark mode, reducing eye strain and enhancing the browsing experience for your visitors."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:96
+#: includes/views/getting-started/introduction.php:123
 msgid "What sets Dracula Dark Mode apart is its dynamic color generator algorithm. This intelligent feature automatically calculates the optimal dark mode color scheme for your website, adapting seamlessly to your design without the need for complex configurations. It's not just about aesthetics — it's about smart, adaptive design."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:111
+#: includes/views/getting-started/introduction.php:138
 msgid "Explore the standout features of Dracula Dark Mode"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:119
+#: includes/views/getting-started/introduction.php:146
 msgid "Reading Mode enhances user experience by providing a distraction-free environment, removing clutter from articles and posts for improved focus. It prioritizes readability, accessibility, and ease of navigation, making it an invaluable tool for engaging and effortless content interaction."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:125
-#: includes/views/getting-started/introduction.php:177
+#: includes/views/getting-started/introduction.php:152
+#: includes/views/getting-started/introduction.php:204
 msgid "Media Player"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:138
+#: includes/views/getting-started/introduction.php:165
 msgid "Frontend dark mode refers to the implementation of a dark color scheme on a website frontend while users interact. This feature is highly beneficial for the users, offering them a comfortable viewing experience."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:154
+#: includes/views/getting-started/introduction.php:181
 msgid "Dracula Dark Mode also allows site administrators to seamlessly enable dark mode for their admin dashboard. This provides a consistent look and feel and also help to reduce eye strain when working in the admin dashboard."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:160
+#: includes/views/getting-started/introduction.php:187
 msgid "File Uploader"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:169
+#: includes/views/getting-started/introduction.php:196
 msgid "Dark Mode Instant Preview"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:171
+#: includes/views/getting-started/introduction.php:198
 msgid "Dark Mode plugin features a live edit widget to instantly adjust and see settings like colors, buttons, and typography. Skip back-end edits and easily exclude elements or replace images. It's a real-time view that saves you time."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:186
+#: includes/views/getting-started/introduction.php:213
 #: assets/js/admin.js:1
 msgid "Auto Match OS Theme"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:188
+#: includes/views/getting-started/introduction.php:215
 msgid "Dracula Dark Mode automatically detect user’s device theme and enable website them to match the user device. Users who prefer dark mode will appreciate the effortless transition and consistent experience."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:200
+#: includes/views/getting-started/introduction.php:227
 msgid "Seamless Dark Mode Colors"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:201
+#: includes/views/getting-started/introduction.php:228
 msgid "Dracula Dark Mode use a smart dynamic algorithm to effortlessly create a dark mode color scheme for your website. Additionally, the plugin offers 24+ popular color presets, with the flexibility to customize your own palette."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:217
+#: includes/views/getting-started/introduction.php:244
 msgid "Dracula Dark Mode offers color adjustment options for its dark mode theme, including brightness, contrast, sepia and grayscale. To insure perfect match of the dark theme is with your website design."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:235
+#: includes/views/getting-started/introduction.php:262
 msgid "Dracula Dark Mode offers a floating dark mode toggle button with 14+ attractive styles that allows users to easily switch between the light and dark modes. The floating button is designed to provide a convenient and user-friendly way to access the dark mode feature, regardless of where the user is on the website."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:248
+#: includes/views/getting-started/introduction.php:275
 msgid "Dracula Dark Mode also offers to display dark mode the toggle button in the website navigation menu so that users can easily enable dark mode from the menu."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:265
+#: includes/views/getting-started/introduction.php:292
 msgid "Dracula Dark Mode offers a variety of styles for the dark mode toggle button. You can choose from 14+ different toggle button styles, which can be easily customized to match the website's design and branding."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:280
+#: includes/views/getting-started/introduction.php:307
 msgid "Custom Toggle Button Designer"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:282
+#: includes/views/getting-started/introduction.php:309
 msgid "Dracula Dark Mode provides a custom toggle button builder that gives you the ability to create your own customized dark mode toggle button. The Custom Toggle Button builder allows you to create a unique toggle switch button that fits seamlessly with your website's design and branding."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:297
+#: includes/views/getting-started/introduction.php:324
 msgid "Page Specific Dark Mode"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:300
+#: includes/views/getting-started/introduction.php:327
 msgid "Dracula Dark Mode allows you to set and customize every page of your website separately with different dark mode color schemes, switch variations, typography styles, and many others settings. This gives you the flexibility and fully customize controls to present every page of your website more perfectly in dark mode."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:316
+#: includes/views/getting-started/introduction.php:343
 msgid "Image and Video Replacement"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:318
+#: includes/views/getting-started/introduction.php:345
 msgid "Sometimes all the images & videos don’t look better in dark mode and you might want to replace them in dark mode. Dracula Dark Mode lets you replace the light-mode images and videos with different images and videos in dark mode. "
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:330
+#: includes/views/getting-started/introduction.php:357
 msgid "Classic and Block Editor Compatibility"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:331
+#: includes/views/getting-started/introduction.php:358
 msgid "Dracula Dark Mode is designed to be compatible with both the classic editor and the block editor. This can be a great way to make the editing experience more comfortable for users, especially for those who spend a lot of time editing and creating content in WordPress."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:344
+#: includes/views/getting-started/introduction.php:371
 msgid "Usage Analytics Dashboard"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:347
+#: includes/views/getting-started/introduction.php:374
 msgid "Dracula Dark Mode provides a detailed usage analytics report that allows you to track the number of users who use the dark mode, how many times the dark mode is enabled/ disabled, and many other useful information."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:359
+#: includes/views/getting-started/introduction.php:386
 msgid "Never miss a valuable features"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:186
-msgid "What's new in the latest changes"
+#: includes/views/getting-started/introduction.php:387
+msgid "Packed with extra features and enhancements to fine-tune your media experience."
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:187
+#: includes/views/getting-started/introduction.php:412
+msgid "Explore Our Popular Plugins"
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:412
+msgid "You Might Love."
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:413
+msgid "Dracula Dark Mode is developed by the same team behind some of the most popular WordPress plugins."
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:439
+#: includes/views/recommended-plugins.php:184
+msgid "Install Now"
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:446
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Learn More"
+msgstr ""
+
+#: includes/views/getting-started/what-new.php:195
+msgid "What's new in the"
+msgstr ""
+
+#: includes/views/getting-started/what-new.php:195
+msgid "latest changes"
+msgstr ""
+
+#: includes/views/getting-started/what-new.php:196
 msgid "Check out the latest change logs."
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:209
+#: includes/views/getting-started/what-new.php:218
 msgid "New Features"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:220
+#: includes/views/getting-started/what-new.php:229
 msgid "Fixes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:231
+#: includes/views/getting-started/what-new.php:240
 msgid "Enhancements"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:241
+#: includes/views/getting-started/what-new.php:250
 msgid "Removes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:253
+#: includes/views/getting-started/what-new.php:262
 msgid "Video Overview"
 msgstr ""
 
@@ -1213,10 +1319,6 @@ msgstr ""
 #: includes/views/recommended-plugins.php:182
 msgctxt "plugin"
 msgid "Install %s now"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:184
-msgid "Install Now"
 msgstr ""
 
 #: includes/views/recommended-plugins.php:189
@@ -2156,6 +2258,31 @@ msgstr ""
 
 #: assets/js/admin.js:1
 #: assets/js/live-edit.js:1
+msgid "Delay Switch"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO enable Delay Toggle Switch."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "After page load show the toggle switch for a few seconds."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Delay Toggle Time"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
+msgid "Set time to show the toggle switch after page load. Default is 5 seconds."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/live-edit.js:1
 msgid "Floating Toggle Position"
 msgstr ""
 
@@ -2325,11 +2452,6 @@ msgstr ""
 #: assets/js/admin.js:1
 #: assets/js/live-edit.js:1
 msgid "You can toggle the dark mode using any custom elements or buttons of your choice."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Learn More"
 msgstr ""
 
 #: assets/js/admin.js:1

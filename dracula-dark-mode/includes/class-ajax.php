@@ -15,11 +15,9 @@ class Dracula_Ajax {
         add_action( 'wp_ajax_dracula_save_settings', array($this, 'save_settings') );
         // Duplicate Toggle
         add_action( 'wp_ajax_dracula_duplicate_toggle', [$this, 'duplicate_toggle'] );
-        // Handle admin  notice
+        // Handle admin notice
         add_action( 'wp_ajax_dracula_hide_review_notice', [$this, 'hide_review_notice'] );
         add_action( 'wp_ajax_dracula_review_feedback', [$this, 'handle_review_feedback'] );
-        // Hide Recommended Plugins
-        add_action( 'wp_ajax_dracula_hide_recommended_plugins', [$this, 'hide_recommended_plugins'] );
     }
 
     public function hide_recommended_plugins() {
