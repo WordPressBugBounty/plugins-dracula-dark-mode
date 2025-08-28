@@ -4,7 +4,7 @@ Tags: dark mode, reading mode, accessibility, wp dark mode, night mode
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 1.2.8
+Stable tag: 1.2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,7 +26,7 @@ Dracula Dark Mode makes it easy to add a dark mode to your website, seamlessly m
 
 == 🔥FREE FEATURES: ==
 
-**✨ Dynamic Color Generator** - Dracula Dark Mode use a smart algorithm to generate the dark mode color scheme automatically for your website without any complicated configuration.
+**✨ Multiple Color Generator Algorithms** - Dracula Dark Mode comes with 2 different color generator algorithms Dynamic and Static to generate dark mode color schemes automatically.
 
 **🖥️ Site Frontend Dark Mode** - Frontend dark mode refers to the implementation of a dark color scheme on a website frontend while users interact.
 
@@ -131,11 +131,11 @@ Should any compatibility concerns occur, our dedicated support team is on standb
 == 🔥 WHAT’S NEXT 🔥==
 Consider checking out our other plugins:
 
-📁 [Integrate Google Drive](https://wordpress.org/plugins/integrate-google-drive/) - Browse, Upload, Download, Embed, Play, and Share Your Google Drive Files Into Your WordPress Site.
+📁 [Integrate Google Drive](https://wordpress.org/plugins/dracula-dark-mode/) - Browse, Upload, Download, Embed, Play, and Share Your Google Drive Files Into Your WordPress Site.
 
 📻 [Radio Player](https://wordpress.org/plugins/radio-player/) - Live Shoutcast, Icecast and Audio Stream Player for WordPress.
 
-📝 [Essential Addons for Contact Form 7](https://wordpress.org/plugins/essential-addons-for-contact-form-7/) - 48+ Essential Fields, Features & Integrations Add-ons for Contact Form 7.
+📝 [Essential Addons for Contact Form 7](https://wordpress.org/plugins/essential-addons-for-contact-form-7/) - 50+ Essential Fields, Features & Integrations Add-ons for Contact Form 7.
 
 == Frequently Asked Questions ==
 
@@ -196,6 +196,13 @@ Dracula Dark Mode plugin relies on multiple JavaScript files and dependencies to
 14. Distraction-free Reading Mode
 
 == Changelog ==
+
+= 1.2.9 (28-08-2025) =
+* **New:** Added new static color generator algorithm for dark mode.
+* **New:** Added initial quick setup wizard after plugin activation.
+* **New:** Added border color option for custom presets.
+* **Update:** Enhanced overall plugin performance by reducing CSS/JS file sizes and optimizing the codebase.
+
 
 = 1.2.8 (13-07-2025) =
 * **New:** Added an option to display the toggle switch after a delay.

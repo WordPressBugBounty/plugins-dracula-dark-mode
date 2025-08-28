@@ -2,37 +2,43 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dracula Dark Mode 1.2.8\n"
+"Project-Id-Version: Dracula Dark Mode 1.2.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dracula\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-07-13T09:10:53+00:00\n"
+"POT-Creation-Date: 2025-08-28T18:37:05+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: dracula-dark-mode\n"
 
 #. Plugin Name of the plugin
-#: includes/views/getting-started/index.php:13
+#: plugin.php
+#: includes/views/getting-started/index.php:16
+#: includes/views/setup.php:11
 #: assets/js/admin.js:1
 msgid "Dracula Dark Mode"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: plugin.php
 msgid "https://softlabbd.com/dracula-dark-mode"
 msgstr ""
 
 #. Description of the plugin
-msgid "AI-powered dark mode solution for WordPress, to create a stunning dark mode theme for your website."
+#: plugin.php
+msgid "Smooth Dark Mode & Better Accessibility for WordPress."
 msgstr ""
 
 #. Author of the plugin
+#: plugin.php
 msgid "SoftLab"
 msgstr ""
 
 #. Author URI of the plugin
+#: plugin.php
 msgid "https://softlabbd.com"
 msgstr ""
 
@@ -43,7 +49,7 @@ msgstr ""
 
 #: elementor/class-elementor-settings.php:24
 #: includes/base.php:104
-#: includes/class-admin.php:153
+#: includes/class-admin.php:277
 msgid "Settings"
 msgstr ""
 
@@ -61,60 +67,54 @@ msgstr ""
 msgid "Cheating huh?"
 msgstr ""
 
-#: includes/class-admin.php:61
+#: includes/class-admin.php:135
 msgid "Show Dark Mode Toggle"
 msgstr ""
 
-#: includes/class-admin.php:66
+#: includes/class-admin.php:140
 msgid "Show dark mode toggle in the top admin bar."
 msgstr ""
 
-#: includes/class-admin.php:121
+#: includes/class-admin.php:201
+#: includes/functions.php:1650
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
 #: assets/js/tinymce.js:1
 msgid "Dark Mode"
 msgstr ""
 
-#: includes/class-admin.php:153
+#: includes/class-admin.php:277
 msgid "Settings - Dracula"
 msgstr ""
 
-#: includes/class-admin.php:156
+#: includes/class-admin.php:280
 msgid "Toggle Builder - Dracula"
 msgstr ""
 
-#: includes/class-admin.php:156
+#: includes/class-admin.php:280
 #: assets/js/admin.js:1
 msgid "Toggle Builder"
 msgstr ""
 
-#: includes/class-admin.php:162
+#: includes/class-admin.php:286
 msgid "Getting Started - Dracula"
 msgstr ""
 
-#: includes/class-admin.php:162
+#: includes/class-admin.php:286
 msgid "Getting Started"
 msgstr ""
 
-#: includes/class-admin.php:173
-#: includes/class-admin.php:174
-msgid "Recommended Plugins"
-msgstr ""
-
 #. translators: %s: User feedback
-#: includes/class-ajax.php:78
+#: includes/class-ajax.php:56
 msgid "Feedback: %s"
 msgstr ""
 
 #. translators: %s: Website URL
-#: includes/class-ajax.php:81
+#: includes/class-ajax.php:59
 msgid "Website URL: %s"
 msgstr ""
 
 #. translators: %s: Plugin name
-#: includes/class-ajax.php:83
+#: includes/class-ajax.php:61
 msgid "Feedback for %s"
 msgstr ""
 
@@ -160,48 +160,69 @@ msgstr ""
 msgid "Analytics"
 msgstr ""
 
-#: includes/class-hooks.php:169
+#: includes/class-hooks.php:175
 msgid "Edit Dark Mode"
 msgstr ""
 
-#: includes/functions.php:541
+#: includes/functions.php:533
 msgid "Homepage"
 msgstr ""
 
-#: includes/functions.php:543
+#: includes/functions.php:535
 msgid "Search page"
 msgstr ""
 
-#: includes/functions.php:544
+#: includes/functions.php:536
 msgid "Tag page"
 msgstr ""
 
-#: includes/functions.php:545
+#: includes/functions.php:537
 msgid "Category page"
 msgstr ""
 
-#: includes/functions.php:546
+#: includes/functions.php:538
 msgid "Archive page"
 msgstr ""
 
-#: includes/functions.php:547
+#: includes/functions.php:539
 msgid "Author page"
 msgstr ""
 
-#: includes/functions.php:548
+#: includes/functions.php:540
 msgid "404 error page"
 msgstr ""
 
-#: includes/functions.php:549
+#: includes/functions.php:541
 msgid "Login page"
 msgstr ""
 
-#: includes/functions.php:550
+#: includes/functions.php:542
 msgid "Register page"
 msgstr ""
 
-#: includes/functions.php:551
+#: includes/functions.php:543
 msgid "Lost password page"
+msgstr ""
+
+#: includes/functions.php:1647
+#: assets/js/admin.js:1
+#: assets/js/reading-mode.js:1
+msgid "Light"
+msgstr ""
+
+#: includes/functions.php:1648
+#: assets/js/admin.js:1
+#: assets/js/reading-mode.js:1
+msgid "Dark"
+msgstr ""
+
+#: includes/functions.php:1649
+#: assets/js/admin.js:1
+msgid "Light Mode"
+msgstr ""
+
+#: includes/functions.php:1651
+msgid "System Mode"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:3
@@ -222,8 +243,8 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:17
 msgid ""
-"Frontend dark mode refers to the implementation of a dark color scheme on a website frontend while\r\n"
-"                    users interact. This feature is highly applicable for users when they spend a lot of time on your website’s front\r\n"
+"Frontend dark mode refers to the implementation of a dark color scheme on a website frontend while\n"
+"                    users interact. This feature is highly applicable for users when they spend a lot of time on your website’s front\n"
 "                    end."
 msgstr ""
 
@@ -241,8 +262,8 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:57
 msgid ""
-"Dracula Dark Mode allows site admins to enable and use dark mode in their admin dashboard.\r\n"
-"                    This provides a consistent look and feel throughout the site, and can also help to reduce eye strain\r\n"
+"Dracula Dark Mode allows site admins to enable and use dark mode in their admin dashboard.\n"
+"                    This provides a consistent look and feel throughout the site, and can also help to reduce eye strain\n"
 "                    when working in the admin dashboard."
 msgstr ""
 
@@ -260,10 +281,10 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:98
 msgid ""
-"You don't have to stick with the toggle buttons we designed for you. Dracula Dark Mode allows to\r\n"
-"                    create custom dark mode toggle switch buttons. that provides a button builder that gives the ability to\r\n"
-"                    create and customize the appearance and behavior of the toggle switch button. You can select button layout,\r\n"
-"                    choose an icon or upload yours, set the button height, width, text & icon color, background color,\r\n"
+"You don't have to stick with the toggle buttons we designed for you. Dracula Dark Mode allows to\n"
+"                    create custom dark mode toggle switch buttons. that provides a button builder that gives the ability to\n"
+"                    create and customize the appearance and behavior of the toggle switch button. You can select button layout,\n"
+"                    choose an icon or upload yours, set the button height, width, text & icon color, background color,\n"
 "                    border width and color, border radius, and many more options."
 msgstr ""
 
@@ -281,8 +302,8 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:152
 msgid ""
-"It might be sometimes necessary to exclude or include specific posts, pages, or any custom post\r\n"
-"                    types in dark mode. Dracula Dark Mode allows to easily include or exclude certain pages, posts, any custom post types\r\n"
+"It might be sometimes necessary to exclude or include specific posts, pages, or any custom post\n"
+"                    types in dark mode. Dracula Dark Mode allows to easily include or exclude certain pages, posts, any custom post types\n"
 "                    in dark mode."
 msgstr ""
 
@@ -296,7 +317,7 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:193
 msgid ""
-"Dracula Dark Mode also lets you exclude any unwanted sections or elements on a page to be excluded\r\n"
+"Dracula Dark Mode also lets you exclude any unwanted sections or elements on a page to be excluded\n"
 "                    from the dark mode. You can exclude any specific sections or elements in a page by using their CSS selectors."
 msgstr ""
 
@@ -310,7 +331,7 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:207
 msgid ""
-"You can use the developer tools built into your web browser to find the CSS selector of an\r\n"
+"You can use the developer tools built into your web browser to find the CSS selector of an\n"
 "                            element."
 msgstr ""
 
@@ -336,7 +357,7 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:230
 msgid ""
-"To exclude specific elements in live edit mode, Click the Live Edit Button. Click the\r\n"
+"To exclude specific elements in live edit mode, Click the Live Edit Button. Click the\n"
 "                            Excludes Elements menu and then click the Select Element button."
 msgstr ""
 
@@ -346,8 +367,8 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:239
 msgid ""
-"The elements will be highlighted while you hover over an element and click on the element\r\n"
-"                            that you want to exclude and the CSS selector for the element will be automatically inserted in\r\n"
+"The elements will be highlighted while you hover over an element and click on the element\n"
+"                            that you want to exclude and the CSS selector for the element will be automatically inserted in\n"
 "                            the Exclude Elements input field."
 msgstr ""
 
@@ -361,8 +382,8 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:267
 msgid ""
-"Sometimes all the images & videos don\\’t look better in dark mode, and you might want to replace them\r\n"
-"                    in dark mode. Dracula Dark Mode lets you replace the light-mode images and videos with different images\r\n"
+"Sometimes all the images & videos don\\’t look better in dark mode, and you might want to replace them\n"
+"                    in dark mode. Dracula Dark Mode lets you replace the light-mode images and videos with different images\n"
 "                    and videos in dark mode."
 msgstr ""
 
@@ -400,32 +421,36 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:337
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Colors"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:338
-#: includes/views/getting-started/introduction.php:241
+#: includes/views/getting-started/introduction.php:250
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Color Adjustments"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:339
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Toggle Switch"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:340
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Typography"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:341
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Exclude Elements"
 msgstr ""
@@ -433,18 +458,21 @@ msgstr ""
 #: includes/views/getting-started/basic-usage.php:342
 #: includes/views/getting-started/introduction.php:42
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Custom CSS"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:343
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Image Settings"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:344
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Video Settings"
 msgstr ""
@@ -486,12 +514,12 @@ msgid "After enabling Reading Mode, you will discover more options."
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:5
-#: includes/views/getting-started/introduction.php:161
+#: includes/views/getting-started/introduction.php:185
 msgid "Frontend Dark Mode"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:8
-#: includes/views/getting-started/introduction.php:178
+#: includes/views/getting-started/introduction.php:202
 msgid "Admin Dashboard Dark Mode"
 msgstr ""
 
@@ -518,12 +546,13 @@ msgid "Multiple Toggle Button Styles"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:26
-#: includes/views/getting-started/introduction.php:260
+#: includes/views/getting-started/introduction.php:287
 msgid "Floating Dark Mode Toggle Button"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:29
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Darken Background Images"
 msgstr ""
@@ -574,7 +603,7 @@ msgid "Reading Mode"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:66
-#: includes/views/getting-started/introduction.php:274
+#: includes/views/getting-started/introduction.php:301
 msgid "Display Toggle Button in Menu"
 msgstr ""
 
@@ -653,7 +682,7 @@ msgid "Custom Dark Mode Toggle Button Builder"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:143
-#: includes/views/getting-started/introduction.php:289
+#: includes/views/getting-started/introduction.php:316
 msgid "14+ Dark Mode Toggle Button Styles"
 msgstr ""
 
@@ -673,87 +702,77 @@ msgstr ""
 msgid "Toggle Button Attention Effect Animation (coming soon)"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:169
-msgid "Get Access to Exclusive Features with The"
+#: includes/views/getting-started/get-pro.php:171
+msgid "Get Access to Exclusive Features with "
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:169
-msgid "Dracula Dark Mode Premium"
+#: includes/views/getting-started/get-pro.php:173
+msgid "Dracula Dark Mode PRO"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:170
+#: includes/views/getting-started/get-pro.php:176
 msgid "The amazing premium features will take your website to the next level."
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:175
-msgid "Don't waste time, unlock premium features now!"
-msgstr ""
-
-#: includes/views/getting-started/get-pro.php:177
-msgid ""
-"Upgrade to Dracula Dark Mode premium now and experience a whole new level of darkness. Get exclusive\r\n"
-"                features and support the development of this theme. Don't miss out on the ultimate dark mode experience. Buy now!"
-msgstr ""
-
-#: includes/views/getting-started/get-pro.php:183
+#: includes/views/getting-started/get-pro.php:180
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Upgrade Now"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:189
+#: includes/views/getting-started/get-pro.php:186
 msgid "Compare Plans"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:191
-#: includes/views/getting-started/get-pro.php:199
+#: includes/views/getting-started/get-pro.php:188
+#: includes/views/getting-started/get-pro.php:196
 msgid "Free"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:192
+#: includes/views/getting-started/get-pro.php:189
 msgid "vs"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:193
-#: includes/views/getting-started/get-pro.php:200
+#: includes/views/getting-started/get-pro.php:190
+#: includes/views/getting-started/get-pro.php:197
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Pro"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:198
+#: includes/views/getting-started/get-pro.php:195
 msgid "Features"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:224
-msgid "Why wait? Dive into the PRO features today!"
+#: includes/views/getting-started/get-pro.php:221
+msgid "Why wait? Get the %sPRO version%s now!"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:226
+#: includes/views/getting-started/get-pro.php:223
 msgid ""
-"Upgrade to Dracula Dark Mode premium now and experience a whole new level of darkness. Get exclusive\r\n"
+"Upgrade to Dracula Dark Mode premium now and experience a whole new level of darkness. Get exclusive\n"
 "                features and support the development of this awesome plugin. Don't miss out on the ultimate dark mode experience. Buy now!"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:232
-#: includes/views/getting-started/index.php:91
+#: includes/views/getting-started/get-pro.php:231
+#: includes/views/getting-started/index.php:53
 msgid "Get PRO"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:239
+#: includes/views/getting-started/get-pro.php:238
 msgid "Try all the PRO features, before purchase"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:240
+#: includes/views/getting-started/get-pro.php:239
 msgid ""
-"You can try our instant ready-made demo. The demo allows you to experiment with all the functionality of\r\n"
-"                the plugins on both Front-End and Back-End. Feel free to explore the possibilities and limits of our\r\n"
+"You can try our instant ready-made demo. The demo allows you to experiment with all the functionality of\n"
+"                the plugins on both Front-End and Back-End. Feel free to explore the possibilities and limits of our\n"
 "                plugins to see if it fits your requirements!"
 msgstr ""
 
-#: includes/views/getting-started/get-pro.php:246
+#: includes/views/getting-started/get-pro.php:247
 msgid "Try Live Demo"
 msgstr ""
 
@@ -909,6 +928,18 @@ msgstr ""
 msgid "Find quick answers to common queries in our FAQ section."
 msgstr ""
 
+#: includes/views/getting-started/help.php:177
+msgid "Video "
+msgstr ""
+
+#: includes/views/getting-started/help.php:178
+msgid "Tutorials"
+msgstr ""
+
+#: includes/views/getting-started/help.php:180
+msgid "Watch our detailed video tutorials to easily master the plugin—from setup to advanced features."
+msgstr ""
+
 #: includes/views/getting-started/help.php:194
 msgid "Need"
 msgstr ""
@@ -923,7 +954,7 @@ msgstr ""
 
 #: includes/views/getting-started/help.php:202
 #: includes/views/getting-started/help.php:205
-#: includes/views/getting-started/help.php:210
+#: includes/views/getting-started/help.php:211
 msgid "Documentation"
 msgstr ""
 
@@ -931,48 +962,48 @@ msgstr ""
 msgid "Check out our detailed online documentation and video tutorials to find out more about what you can do."
 msgstr ""
 
-#: includes/views/getting-started/help.php:217
-#: includes/views/getting-started/help.php:223
+#: includes/views/getting-started/help.php:219
+#: includes/views/getting-started/help.php:227
 msgid "Get Support"
 msgstr ""
 
-#: includes/views/getting-started/help.php:220
+#: includes/views/getting-started/help.php:222
 msgid "Support"
 msgstr ""
 
-#: includes/views/getting-started/help.php:221
+#: includes/views/getting-started/help.php:223
 msgid "We have dedicated support team to provide you fast, friendly & top-notch customer support."
 msgstr ""
 
-#: includes/views/getting-started/help.php:233
+#: includes/views/getting-started/help.php:237
 msgid "Join our Facebook community?"
 msgstr ""
 
-#: includes/views/getting-started/help.php:235
+#: includes/views/getting-started/help.php:239
 msgid "Discuss, and share your problems & solutions for the Dracula Dark Mode WordPress plugin. Let's make a better community, share ideas, solve problems and finally build good relations."
 msgstr ""
 
-#: includes/views/getting-started/help.php:241
+#: includes/views/getting-started/help.php:245
 msgid "Join Now"
 msgstr ""
 
-#: includes/views/getting-started/index.php:16
-msgid "Smooth Dark Mode & Enhanced Accessibility for WordPress"
+#: includes/views/getting-started/index.php:19
+msgid "Smooth Dark Mode & Better Accessibility for WordPress"
 msgstr ""
 
-#: includes/views/getting-started/index.php:29
+#: includes/views/getting-started/index.php:28
 msgid "Introduction"
 msgstr ""
 
-#: includes/views/getting-started/index.php:45
+#: includes/views/getting-started/index.php:33
 msgid "Basic Usage"
 msgstr ""
 
-#: includes/views/getting-started/index.php:66
+#: includes/views/getting-started/index.php:39
 msgid "Help"
 msgstr ""
 
-#: includes/views/getting-started/index.php:73
+#: includes/views/getting-started/index.php:46
 msgid "Changelog"
 msgstr ""
 
@@ -1031,6 +1062,7 @@ msgstr ""
 
 #: includes/views/getting-started/introduction.php:37
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Excludes Elements"
 msgstr ""
@@ -1069,6 +1101,7 @@ msgstr ""
 
 #: includes/views/getting-started/introduction.php:66
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Page Transition Animation"
 msgstr ""
@@ -1110,351 +1143,225 @@ msgid "Live Shoutcast, Icecast and Any Audio Stream Player for WordPress"
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:101
-msgid "50+ Essential Fields, Features & Integrations Add-ons for Contact Form 7."
+msgid "50+ Fields, Features & Integrations Add-ons for Contact Form 7."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:113
+#: includes/views/getting-started/introduction.php:108
+msgid "Play Audio, Video & Podcasts Easily in WordPress."
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:119
 msgid "Quick"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:113
+#: includes/views/getting-started/introduction.php:120
 msgid "Overview"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:114
+#: includes/views/getting-started/introduction.php:122
 msgid "Discover the features and benefits of Dracula Dark Mode"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:120
+#: includes/views/getting-started/introduction.php:128
 msgid "Experience the future of website design with Dracula Dark Mode — the ultimate dark mode plugin for your website. Designed for simplicity and elegance, Dracula Dark Mode effortlessly transforms your site into an eye-friendly dark mode, reducing eye strain and enhancing the browsing experience for your visitors."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:123
+#: includes/views/getting-started/introduction.php:131
 msgid "What sets Dracula Dark Mode apart is its dynamic color generator algorithm. This intelligent feature automatically calculates the optimal dark mode color scheme for your website, adapting seamlessly to your design without the need for complex configurations. It's not just about aesthetics — it's about smart, adaptive design."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:138
-msgid "Explore the standout features of Dracula Dark Mode"
-msgstr ""
-
 #: includes/views/getting-started/introduction.php:146
-msgid "Reading Mode enhances user experience by providing a distraction-free environment, removing clutter from articles and posts for improved focus. It prioritizes readability, accessibility, and ease of navigation, making it an invaluable tool for engaging and effortless content interaction."
+msgid "Explore The %s Standout Features %s"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:152
-#: includes/views/getting-started/introduction.php:204
+#: includes/views/getting-started/introduction.php:147
+msgid "Let's explore the awesome features of the plugin"
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:155
+msgid "Dracula offers two dark mode color generation algorithms: Dynamic and Static.Dynamic automatically adapts to your website’s main color for a personalized dark mode, and Static uses a fixed formula with customizable options for a consistent and balanced dark mode look."
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:161
+#: includes/views/getting-started/introduction.php:176
+#: includes/views/getting-started/introduction.php:276
 msgid "Media Player"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:165
+#: includes/views/getting-started/introduction.php:170
+msgid "Reading Mode enhances user experience by providing a distraction-free environment, removing clutter from articles and posts for improved focus. It prioritizes readability, accessibility, and ease of navigation, making it an invaluable tool for engaging and effortless content interaction."
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:189
 msgid "Frontend dark mode refers to the implementation of a dark color scheme on a website frontend while users interact. This feature is highly beneficial for the users, offering them a comfortable viewing experience."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:181
+#: includes/views/getting-started/introduction.php:205
 msgid "Dracula Dark Mode also allows site administrators to seamlessly enable dark mode for their admin dashboard. This provides a consistent look and feel and also help to reduce eye strain when working in the admin dashboard."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:187
+#: includes/views/getting-started/introduction.php:211
 msgid "File Uploader"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:196
-msgid "Dark Mode Instant Preview"
-msgstr ""
-
-#: includes/views/getting-started/introduction.php:198
-msgid "Dark Mode plugin features a live edit widget to instantly adjust and see settings like colors, buttons, and typography. Skip back-end edits and easily exclude elements or replace images. It's a real-time view that saves you time."
-msgstr ""
-
-#: includes/views/getting-started/introduction.php:213
+#: includes/views/getting-started/introduction.php:221
 #: assets/js/admin.js:1
 msgid "Auto Match OS Theme"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:215
+#: includes/views/getting-started/introduction.php:223
 msgid "Dracula Dark Mode automatically detect user’s device theme and enable website them to match the user device. Users who prefer dark mode will appreciate the effortless transition and consistent experience."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:227
+#: includes/views/getting-started/introduction.php:235
 msgid "Seamless Dark Mode Colors"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:228
+#: includes/views/getting-started/introduction.php:236
 msgid "Dracula Dark Mode use a smart dynamic algorithm to effortlessly create a dark mode color scheme for your website. Additionally, the plugin offers 24+ popular color presets, with the flexibility to customize your own palette."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:244
+#: includes/views/getting-started/introduction.php:253
 msgid "Dracula Dark Mode offers color adjustment options for its dark mode theme, including brightness, contrast, sepia and grayscale. To insure perfect match of the dark theme is with your website design."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:262
+#: includes/views/getting-started/introduction.php:268
+msgid "Dark Mode Instant Preview"
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:270
+msgid "Dark Mode plugin features a live edit widget to instantly adjust and see settings like colors, buttons, and typography. Skip back-end edits and easily exclude elements or replace images. It's a real-time view that saves you time."
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:289
 msgid "Dracula Dark Mode offers a floating dark mode toggle button with 14+ attractive styles that allows users to easily switch between the light and dark modes. The floating button is designed to provide a convenient and user-friendly way to access the dark mode feature, regardless of where the user is on the website."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:275
+#: includes/views/getting-started/introduction.php:302
 msgid "Dracula Dark Mode also offers to display dark mode the toggle button in the website navigation menu so that users can easily enable dark mode from the menu."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:292
+#: includes/views/getting-started/introduction.php:319
 msgid "Dracula Dark Mode offers a variety of styles for the dark mode toggle button. You can choose from 14+ different toggle button styles, which can be easily customized to match the website's design and branding."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:307
+#: includes/views/getting-started/introduction.php:334
 msgid "Custom Toggle Button Designer"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:309
+#: includes/views/getting-started/introduction.php:336
 msgid "Dracula Dark Mode provides a custom toggle button builder that gives you the ability to create your own customized dark mode toggle button. The Custom Toggle Button builder allows you to create a unique toggle switch button that fits seamlessly with your website's design and branding."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:324
-msgid "Page Specific Dark Mode"
-msgstr ""
-
-#: includes/views/getting-started/introduction.php:327
-msgid "Dracula Dark Mode allows you to set and customize every page of your website separately with different dark mode color schemes, switch variations, typography styles, and many others settings. This gives you the flexibility and fully customize controls to present every page of your website more perfectly in dark mode."
-msgstr ""
-
-#: includes/views/getting-started/introduction.php:343
+#: includes/views/getting-started/introduction.php:352
 msgid "Image and Video Replacement"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:345
+#: includes/views/getting-started/introduction.php:354
 msgid "Sometimes all the images & videos don’t look better in dark mode and you might want to replace them in dark mode. Dracula Dark Mode lets you replace the light-mode images and videos with different images and videos in dark mode. "
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:357
+#: includes/views/getting-started/introduction.php:366
 msgid "Classic and Block Editor Compatibility"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:358
+#: includes/views/getting-started/introduction.php:367
 msgid "Dracula Dark Mode is designed to be compatible with both the classic editor and the block editor. This can be a great way to make the editing experience more comfortable for users, especially for those who spend a lot of time editing and creating content in WordPress."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:371
+#: includes/views/getting-started/introduction.php:381
+msgid "Page Specific Dark Mode"
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:384
+msgid "Dracula Dark Mode allows you to set and customize every page of your website separately with different dark mode color schemes, switch variations, typography styles, and many others settings. This gives you the flexibility and fully customize controls to present every page of your website more perfectly in dark mode."
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:399
 msgid "Usage Analytics Dashboard"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:374
+#: includes/views/getting-started/introduction.php:402
 msgid "Dracula Dark Mode provides a detailed usage analytics report that allows you to track the number of users who use the dark mode, how many times the dark mode is enabled/ disabled, and many other useful information."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:386
-msgid "Never miss a valuable features"
+#: includes/views/getting-started/introduction.php:415
+msgid "Never Miss a %s Valuable Features %s"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:387
+#: includes/views/getting-started/introduction.php:416
 msgid "Packed with extra features and enhancements to fine-tune your media experience."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:412
+#: includes/views/getting-started/introduction.php:437
+msgid "Show More Features"
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:443
 msgid "Explore Our Popular Plugins"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:412
+#: includes/views/getting-started/introduction.php:444
 msgid "You Might Love."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:413
+#: includes/views/getting-started/introduction.php:446
 msgid "Dracula Dark Mode is developed by the same team behind some of the most popular WordPress plugins."
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:439
-#: includes/views/recommended-plugins.php:184
+#: includes/views/getting-started/introduction.php:464
+msgid "New Plugin"
+msgstr ""
+
+#: includes/views/getting-started/introduction.php:472
 msgid "Install Now"
 msgstr ""
 
-#: includes/views/getting-started/introduction.php:446
+#: includes/views/getting-started/introduction.php:479
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Learn More"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:195
-msgid "What's new in the"
+#: includes/views/getting-started/what-new.php:206
+msgid "What's New in the"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:195
-msgid "latest changes"
+#: includes/views/getting-started/what-new.php:207
+msgid "Latest Changes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:196
+#: includes/views/getting-started/what-new.php:209
 msgid "Check out the latest change logs."
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:218
+#: includes/views/getting-started/what-new.php:231
 msgid "New Features"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:229
+#: includes/views/getting-started/what-new.php:242
 msgid "Fixes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:240
+#: includes/views/getting-started/what-new.php:253
 msgid "Enhancements"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:250
+#: includes/views/getting-started/what-new.php:263
 msgid "Removes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:262
+#: includes/views/getting-started/what-new.php:275
 msgid "Video Overview"
 msgstr ""
 
-#: includes/views/recommended-plugins.php:112
-msgid "Try out our recommended plugins"
+#: includes/views/setup.php:7
+msgid "Welcome to "
 msgstr ""
 
-#: includes/views/recommended-plugins.php:113
-msgid "Hide From Menu"
-msgstr ""
-
-#. translators: %s: Plugin author.
-#: includes/views/recommended-plugins.php:158
-msgid "By %s"
-msgstr ""
-
-#. translators: %s: Plugin name and version.
-#: includes/views/recommended-plugins.php:182
-msgctxt "plugin"
-msgid "Install %s now"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:189
-msgctxt "plugin"
-msgid "Cannot Install"
-msgstr ""
-
-#. translators: %s: Plugin name and version.
-#: includes/views/recommended-plugins.php:204
-msgctxt "plugin"
-msgid "Update %s now"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:206
-msgid "Update Now"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:211
-msgctxt "plugin"
-msgid "Cannot Update"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:222
-msgctxt "plugin"
-msgid "Active"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:225
-msgid "Activate"
-msgstr ""
-
-#. translators: %s: Plugin name.
-#: includes/views/recommended-plugins.php:227
-msgctxt "plugin"
-msgid "Activate %s"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:238
-msgid "Network Activate"
-msgstr ""
-
-#. translators: %s: Plugin name.
-#: includes/views/recommended-plugins.php:240
-msgctxt "plugin"
-msgid "Network Activate %s"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:253
-msgctxt "plugin"
-msgid "Installed"
-msgstr ""
-
-#. translators: %s: Plugin name and version.
-#: includes/views/recommended-plugins.php:269
-msgid "More information about %s"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:271
-msgid "More Details"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:302
-msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
-msgstr ""
-
-#. translators: 1: URL to WordPress Updates screen, 2: URL to Update PHP page.
-#: includes/views/recommended-plugins.php:306
-msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
-msgstr ""
-
-#. translators: %s: URL to WordPress Updates screen.
-#: includes/views/recommended-plugins.php:314
-#: includes/views/recommended-plugins.php:330
-msgid "<a href=\"%s\">Please update WordPress</a>."
-msgstr ""
-
-#. translators: %s: URL to Update PHP page.
-#: includes/views/recommended-plugins.php:320
-#: includes/views/recommended-plugins.php:339
-msgid "<a href=\"%s\">Learn more about updating PHP</a>."
-msgstr ""
-
-#: includes/views/recommended-plugins.php:326
-msgid "This plugin doesn&#8217;t work with your version of WordPress."
-msgstr ""
-
-#: includes/views/recommended-plugins.php:335
-msgid "This plugin doesn&#8217;t work with your version of PHP."
-msgstr ""
-
-#: includes/views/recommended-plugins.php:385
-msgid "Last Updated:"
-msgstr ""
-
-#. translators: %s: Human-readable time difference.
-#: includes/views/recommended-plugins.php:388
-msgid "%s ago"
-msgstr ""
-
-#. translators: %s: Number of millions.
-#: includes/views/recommended-plugins.php:397
-msgctxt "Active plugin installations"
-msgid "%s+ Million"
-msgid_plural "%s+ Million"
-msgstr[0] ""
-msgstr[1] ""
-
-#: includes/views/recommended-plugins.php:401
-msgctxt "Active plugin installations"
-msgid "Less Than 10"
-msgstr ""
-
-#. translators: %s: Number of installations.
-#: includes/views/recommended-plugins.php:406
-msgid "%s Active Installations"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:412
-msgid "Untested with your version of WordPress"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:414
-msgid "<strong>Incompatible</strong> with your version of WordPress"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:416
-msgid "<strong>Compatible</strong> with your version of WordPress"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:427
-#: assets/js/admin.js:1
-msgid "Are you sure?"
-msgstr ""
-
-#: includes/views/recommended-plugins.php:428
-msgid "If you hide the recommended plugins page from your menu, it won't appear there again. Are you sure you'd like to do it?"
+#: includes/views/setup.php:15
+msgid "Let's get you started with a quick setup wizard."
 msgstr ""
 
 #: assets/js/admin.js:1
@@ -1466,12 +1373,13 @@ msgid "Advanced"
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Colors Settings"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Animation"
 msgstr ""
@@ -1485,60 +1393,129 @@ msgid "Tools"
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Upgrade to Pro to unlock this feature."
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Unlock PRO Features"
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Special"
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "30% OFF"
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "DAYS"
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "HOURS"
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "MINUTES"
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "SECONDS"
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Watch Video"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to unlock the feature."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to customize the dark mode appearance in a real-time preview."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Dark Mode Appearance Live Edit"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Live Edit"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Live Edit Dark Mode Appearance"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Saving..."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Save Changes"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Save Settings"
+msgstr ""
+
+#: assets/js/admin.js:1
+msgid "General Settings"
+msgstr ""
+
+#: assets/js/admin.js:1
+msgid "Enable Frontend Dark Mode"
+msgstr ""
+
+#: assets/js/admin.js:1
+msgid "Enable/ disable the dark mode on site frontend."
+msgstr ""
+
+#: assets/js/admin.js:1
+msgid "Set the dark mode as the default mode. Visitors will see the dark mode first visit."
+msgstr ""
+
+#: assets/js/admin.js:1
+msgid "Enable/ disable the OS aware mode. If enabled, the dark mode will be automatically enabled when the user's device is in dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Settings saved successfully."
 msgstr ""
@@ -1549,12 +1526,6 @@ msgstr ""
 
 #: assets/js/admin.js:1
 msgid "Shortcode copied to clipboard"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to unlock the feature."
 msgstr ""
 
 #: assets/js/admin.js:1
@@ -1614,1033 +1585,1104 @@ msgid "We'll use your feedback to improve our plugin."
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to customize the dark mode appearance in a real-time preview."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Dark Mode Appearance Live Edit"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Live Edit"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Save Changes"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "General Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable Frontend Dark Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable/ disable the dark mode on site frontend."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the dark mode as the default mode. Visitors will see the dark mode first visit."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable/ disable the OS aware mode. If enabled, the dark mode will be automatically enabled when the user's device is in dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Dark to Light"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Dark to Light is a pro feature."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Enable this option if your website has a dark theme and you'd like to offer a light mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Light Mode Color Scheme"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Dark Mode Color Scheme"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Custom color scheme is a pro feature. Upgrade to PRO to customize the dark mode colors."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Dynamic"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Presets"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Custom"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Choose how the color scheme of your website changes when dark mode is enabled."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Custom Color Presets"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Select"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Preset Name"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Set the custom preset name."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Background Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "PRO Feature"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to set custom background color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Select background color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Text Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to set custom text color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Select text color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Link Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Select link color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Button Background Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Select button background color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Button Text Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Select button text color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Input Background Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Select input background color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Input Text Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Select input text color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Choose a color preset for the dark mode color scheme."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Scrollbar Dark Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Disabled"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Default"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Auto"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Set the scrollbar color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Scrollbar Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to set custom scrollbar color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Set custom scrollbar color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Brightness"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Adjust brightness of dark mode color scheme."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Contrast"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Set the contrast of the dark mode color scheme."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Sepia"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Adjust the sepia of the dark mode color scheme."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Grayscale"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Adjust the grayscale of the dark mode color scheme."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-#: assets/js/reading-mode.js:1
-msgid "Light"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-#: assets/js/reading-mode.js:1
-msgid "Dark"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Light Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "System Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Toggle Dark Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Toggle Light Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Toggle Font Size"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/frontend.js:1
-#: assets/js/live-edit.js:1
-msgid "Move"
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/frontend.js:1
 #: assets/js/live-edit.js:1
 msgid "Dark Mode Toggle"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Error!"
+msgid "PRO Feature"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Something went wrong while getting the toggles."
+msgid "Upgrade to PRO to set custom color"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Color Generator"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Dynamic"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Static"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Choose how dark mode colors are created."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Dynamic adapts automatically from your website base color, while Static applies a fixed formula for consistent output."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Dark to Light"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Dark to Light is a pro feature."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enable this option if your website has a dark theme and you'd like to offer a light mode"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Light Mode Color Scheme"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Dark Mode Color Scheme"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Custom color scheme is a pro feature. Upgrade to PRO to customize the dark mode colors."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Auto"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Presets"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Custom"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Choose how the color scheme of your website changes when dark mode is enabled."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Choose a color preset for the dark mode color scheme."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Custom Color Presets"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Preset Name"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the custom preset name."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Background Color"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select background color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Text Color"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select text color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Link Color"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select link color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Button Background Color"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select button background color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Button Text Color"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select button text color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Input Background Color"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select input background color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Input Text Color"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select input text color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Border Color"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select border color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Scrollbar Dark Mode"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Disabled"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the scrollbar color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Scrollbar Color"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to set custom scrollbar color"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set custom scrollbar color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Brightness"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Adjust brightness of dark mode color scheme."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Contrast"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the contrast of the dark mode color scheme."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Sepia"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Adjust the sepia of the dark mode color scheme."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Grayscale"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Adjust the grayscale of the dark mode color scheme."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "This style is only available in the Pro version."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Custom Toggles"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select Background Image"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select Image"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select Video"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Select Action"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Toggle Dark Mode"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Switch to Dark Mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Switch to Light Mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Toggle Light Mode"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Toggle Settings"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Floating Toggle"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Floating Toggle Settings"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Menu Toggle"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Custom Trigger"
+msgid "Menu Toggle Settings"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Custom Triggers"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Custom Dark Mode Triggers Settings"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Show Floating Toggle"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Show/ hide the toggle switch button in the frontend for the users to toggle between the light and dark mode."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Display On"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Mobile"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Tablet"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Desktop"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Select the devices on which the toggle switch will be displayed."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Floating Toggle Style"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Choose the style of the floating toggle switch."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Attention Effect"
+msgid "Switch Visibility Delay"
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "None"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Pulse"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Shake"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Bounce"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Glow"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Shadow"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Ripple"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Rotate"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Flip"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Swing"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Tilt"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Wobble"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Jiggle"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Fade"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Slide"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Color Transition"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Tooltip is a PRO feature. Upgrade to PRO to enable tooltip for the toggle switch."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Choose the attention effect for the toggle switch."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Show Tooltip"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Show/ hide the toggle button tooltip text."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Light Tooltip Text"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Enter the toggle switch button tooltip text for light mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Dark Tooltip Text"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Enter the toggle switch button tooltip text for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Draggable Floating Toggle"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to enable users to drag and adjust the floating toggle position."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Allow users to drag the floating toggle button to any position on the screen."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Absolute Toggle Position"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO enable Absolute Toggle position."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Enable to make the floating toggle scroll from it's position with page scrolling."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Delay Switch"
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Upgrade to PRO enable Delay Toggle Switch."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "After page load show the toggle switch for a few seconds."
+msgid "Display the toggle switch after a specified delay following page load."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Delay Toggle Time"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set time to show the toggle switch after page load. Default is 5 seconds."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Attention Effect"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "None"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Pulse"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Shake"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Bounce"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Glow"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Shadow"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Ripple"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Rotate"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Flip"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Swing"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Tilt"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Wobble"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Jiggle"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Fade"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Slide"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Color Transition"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Tooltip is a PRO feature. Upgrade to PRO to enable tooltip for the toggle switch."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Choose the attention effect for the toggle switch."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Show Tooltip"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Show/ hide the toggle button tooltip text."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Light Tooltip Text"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enter the toggle switch button tooltip text for light mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Dark Tooltip Text"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enter the toggle switch button tooltip text for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Draggable Floating Toggle"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to enable users to drag and adjust the floating toggle position."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Allow users to drag the floating toggle button to any position on the screen."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Floating Toggle Position"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Upgrade to PRO to set custom floating toggle position."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Left"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Right"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Choose the position of the floating toggle switch."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Choose the side of the page where the toggle switch will be shown."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Side Offset"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Bottom Offset"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the bottom offset of the toggle switch from the bottom of the screen."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Absolute Toggle Position"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO enable Absolute Toggle position."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enable to make the floating toggle scroll from it's position with page scrolling."
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Display Toggle In Menu"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Turn on to display the dark mode toggle button in a menu."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Select Menus"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Select the menus where you want to display the dark mode toggle."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Menu Toggle Style"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Choose the style of the dark mode toggle button in the menu."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Menu Toggle Position"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Start"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "End"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Choose the position of the dark mode toggle button in the menu."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Floating Toggle Size"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Menu Toggle Size"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Upgrade to PRO to set custom toggle size."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 #: assets/js/reading-mode.js:1
 msgid "Small"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 #: assets/js/reading-mode.js:1
 msgid "Medium"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 #: assets/js/reading-mode.js:1
 msgid "Large"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Choose the size of the floating toggle switch."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Custom Toggle Size"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the custom size (px) of the dark mode toggle button."
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "CSS Selector"
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Element Selector"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Upgrade to PRO to use the Custom Trigger."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Action"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Add New Trigger"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "You can toggle the dark mode using any custom elements or buttons of your choice."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "System Fonts"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Google Fonts"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Typography Settings"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Change Font"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Use a different font-family for the dark mode scheme."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 #: assets/js/reading-mode.js:1
 msgid "Font Family"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Select a font family for the dark mode scheme."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Font Size"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the font-size in the dark mode."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Custom Font Size"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Text Stroke"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the text stroke in the dark mode."
 msgstr ""
 
 #: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Select Background Image"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Select Image"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/live-edit.js:1
-msgid "Select Video"
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Excludes Settings"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Exclude Posts/ Pages"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Exclude Pages is a PRO feature. Please upgrade to PRO version to use this feature."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Search & select posts/ pages"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Select posts, pages, and custom post types to exclude from dark mode."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Exclude All : "
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Except : "
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Search and select posts/pages"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Exclude Taxonomies"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Exclude Taxonomies is a PRO feature. Please upgrade to PRO version to use this feature."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Search & select categories/ tags"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Select categories, tags, and taxonomies to omit posts from dark mode."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Search and select category/ tags"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Add Element"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Exclude specific sections/ elements in a page from dark mode. You can use CSS selectors or HTML tags to exclude elements."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Hide Elements"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Hide specific sections/ elements in a page/post. You can use CSS selectors to hide elements."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Normal Mode CSS"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Add normal mode CSS here. This CSS will be applied both in light and dark mode."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Upgrade to PRO to unlock custom CSS feature."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Dark Mode CSS"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Add Dark Mode CSS here. This CSS will be applied only when the dark mode is activated."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "You don't need to add any dark mode prefix selectors here. It will be added automatically."
 msgstr ""
@@ -2666,136 +2708,175 @@ msgid "Reset"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Sorry, No image found!"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Please try to insert the image link manually."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Ok"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Images Settings"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Image Replacement"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Image Behavior"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Replace specific images when dark mode is enabled."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Light Mode Images"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enter the image links or select the images that are shown in the light mode."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Dark Mode Images"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enter the image links or select the images that will be displayed in the dark mode replacing the light images."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Browse"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Update"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Remove"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Add New Group"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Darken background images on dark mode to make them more readable."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Darken Level"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the darken level of the background images on dark mode"
+msgstr ""
+
+#: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Low Brightness Images"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enable low image brightness on dark mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the brightness level of the images on dark mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Grayscale Images"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enable grayscale image on dark mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Grayscale Level"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the grayscale level of the images on dark mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Invert Images"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enable invert colors of images on dark mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Invert Level"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the invert level of the images on dark mode"
 msgstr ""
@@ -3009,6 +3090,7 @@ msgid "Set the reading mode button text color."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Preview"
 msgstr ""
@@ -3268,131 +3350,157 @@ msgid "Enable keyboard shortcut to toggle dark mode."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Sorry, No video found!"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Please try to insert the video link manually."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Video Replacement"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Video Behavior"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Replace specific videos when dark mode is enabled. You can replace any self-hosted, youtube, vimeo and dailymotion videos."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Light Mode Videos"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enter the video links or select the videos that are shown in the light mode."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Dark Mode Videos"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enter the video links or select the videos that will be displayed in the dark mode replacing the light videos."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Low Brightness Videos"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enable low video brightness on dark mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the brightness level of the videos on dark mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Grayscale Videos"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enable grayscale video on dark mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the grayscale level of the videos on dark mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Animation Settings"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Scale & Fade"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Zoom"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Skew"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Curtain"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Blur"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Twist"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Squeeze"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Wave"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Upgrade to PRO to enable page transition while activating/ deactivating dark mode."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Select the animation for dark mode page transition."
 msgstr ""
@@ -3430,6 +3538,10 @@ msgid "Create new button"
 msgstr ""
 
 #: assets/js/admin.js:1
+msgid "Move"
+msgstr ""
+
+#: assets/js/admin.js:1
 msgid "All Toggles"
 msgstr ""
 
@@ -3444,30 +3556,6 @@ msgid "Columns"
 msgstr ""
 
 #: assets/js/admin.js:1
-msgid "Sort By"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Name"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Date Created"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Sort Order"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Ascending"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Descending"
-msgstr ""
-
-#: assets/js/admin.js:1
 msgid "Item(s) selected"
 msgstr ""
 
@@ -3477,6 +3565,10 @@ msgstr ""
 
 #: assets/js/admin.js:1
 msgid "Duplicate"
+msgstr ""
+
+#: assets/js/admin.js:1
+msgid "Are you sure?"
 msgstr ""
 
 #: assets/js/admin.js:1
@@ -3636,10 +3728,6 @@ msgid "Set the border button width."
 msgstr ""
 
 #: assets/js/admin.js:1
-msgid "Border Color"
-msgstr ""
-
-#: assets/js/admin.js:1
 msgid "Set the border color."
 msgstr ""
 
@@ -3680,6 +3768,10 @@ msgid "Toggle has been updated."
 msgstr ""
 
 #: assets/js/admin.js:1
+msgid "Error!"
+msgstr ""
+
+#: assets/js/admin.js:1
 msgid "Something went wrong while updating the toggle."
 msgstr ""
 
@@ -3708,6 +3800,7 @@ msgid "Back"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Save"
 msgstr ""
@@ -3861,63 +3954,91 @@ msgid "Upgrade to PRO to access dark mode usage analytics."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Current Page"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Apply the settings to the current page only."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Template"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Apply the settings to all pages of current post type."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Global"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Apply the settings to the entire website."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Saving.."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Adjustments"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Page-Specific Dark Mode"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enable and customize page-specific dark mode for this page"
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Upgrade to PRO to set page specific dark mode appearance."
 msgstr ""
 
 #: assets/js/admin.js:1
+#: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Page Specific Dark Mode Appearance"
+msgstr ""
+
+#: assets/js/admin.js:1
+msgid "Skip"
+msgstr ""
+
+#: assets/js/admin.js:1
+msgid "Skip Setup"
+msgstr ""
+
+#: assets/js/admin.js:1
+msgid "Done"
+msgstr ""
+
+#: assets/js/admin.js:1
+msgid "Continue"
 msgstr ""
 
 #: assets/js/reading-mode.js:1

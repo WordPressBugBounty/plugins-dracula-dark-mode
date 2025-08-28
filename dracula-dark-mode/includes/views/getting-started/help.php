@@ -174,10 +174,10 @@ $faqs = [
     </section>
 
     <div class="content-heading heading-overview">
-        <h2><?php esc_html_e('Video ', 'integrate-google-drive'); ?>
-            <mark><?php esc_html_e('Tutorials', 'integrate-google-drive'); ?></mark>
+        <h2><?php esc_html_e('Video ', 'dracula-dark-mode'); ?>
+            <mark><?php esc_html_e('Tutorials', 'dracula-dark-mode'); ?></mark>
         </h2>
-        <p><?php esc_html_e('Watch our detailed video tutorials to easily master the plugin—from setup to advanced features.', 'integrate-google-drive'); ?></p>
+        <p><?php esc_html_e('Watch our detailed video tutorials to easily master the plugin—from setup to advanced features.', 'dracula-dark-mode'); ?></p>
     </div>
 
     <section class="section-video-tutorials section-half">

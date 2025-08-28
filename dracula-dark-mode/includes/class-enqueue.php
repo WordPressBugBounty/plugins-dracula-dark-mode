@@ -12,6 +12,12 @@ class Dracula_Enqueue {
 
     public function frontend_scripts() {
         wp_register_style(
+            'dracula-dark-mode',
+            DRACULA_ASSETS . '/css/dark-mode.css',
+            array(),
+            DRACULA_VERSION
+        );
+        wp_register_style(
             'dracula-frontend',
             DRACULA_ASSETS . '/css/frontend.css',
             array(),
@@ -21,15 +27,10 @@ class Dracula_Enqueue {
         $custom_css = $this->get_custom_css();
         wp_add_inline_style( 'dracula-frontend', $custom_css );
         // JS Scripts
-        $deps = [
-            'react',
-            'react-dom',
-            'wp-i18n',
-            'wp-util'
-        ];
+        $deps = ['wp-i18n', 'wp-util'];
         wp_register_script(
             'dracula-dark-mode',
-            DRACULA_ASSETS . '/js/dark-mode.js',
+            DRACULA_ASSETS . '/js/' . (( dracula_get_settings( 'colorType', 'dynamic' ) === 'dynamic' ? 'dark-mode' : 'dark-mode-static' )) . '.js',
             [],
             DRACULA_VERSION
         );
@@ -43,15 +44,22 @@ class Dracula_Enqueue {
             true
         );
         wp_localize_script( 'dracula-frontend', 'dracula', $this->get_localize_data() );
+        wp_localize_script( 'dracula-dark-mode', 'dracula', $this->get_localize_data() );
         $is_active = dracula_get_settings( 'frontendDarkMode', true ) && !dracula_page_excluded();
-        // Live Edit Scripts
-        if ( ddm_fs()->can_use_premium_code__premium_only() || dracula_is_elementor_editor_page() ) {
-            $is_live_edit = current_user_can( 'manage_options' ) && ($is_active || !empty( $_GET['dracula-live-edit'] ));
-            if ( $is_live_edit || dracula_is_elementor_editor_page() ) {
+        // Live Edit && Setup Scripts
+        if ( ddm_fs()->can_use_premium_code__premium_only() || dracula_is_elementor_editor_page() || dracula_is_embed_request() ) {
+            $is_live_edit_request = !empty( $_GET['dracula-live-edit'] );
+            $is_admin_user = current_user_can( 'manage_options' );
+            $is_live_edit = $is_admin_user && ($is_active || $is_live_edit_request);
+            if ( $is_live_edit || dracula_is_elementor_editor_page() || dracula_is_embed_request() ) {
                 $this->enqueue_live_edit_scripts();
             }
         }
         $is_reading_mode = dracula_get_settings( 'readingMode' );
+        // Custom Dark Mode Style
+        if ( dracula_get_settings( 'colorType' ) === 'static' || 'custom' === dracula_get_settings( 'colorMode' ) ) {
+            wp_enqueue_style( 'dracula-dark-mode' );
+        }
         // Frontend Scripts
         if ( $is_active || $is_reading_mode ) {
             wp_enqueue_style( 'dracula-frontend' );
@@ -100,13 +108,15 @@ class Dracula_Enqueue {
             'wp-i18n',
             'wp-util'
         ];
-        wp_register_script(
-            'dracula-dark-mode',
-            DRACULA_ASSETS . '/js/dark-mode.js',
-            [],
-            DRACULA_VERSION
-        );
-        $deps[] = 'dracula-dark-mode';
+        if ( !Dracula_Admin::instance()->should_exclude_darkmode() ) {
+            wp_register_script(
+                'dracula-dark-mode',
+                DRACULA_ASSETS . '/js/dark-mode.js',
+                [],
+                DRACULA_VERSION
+            );
+            $deps[] = 'dracula-dark-mode';
+        }
         // If block editor page and !active return
         $block_editor_dark_mode = dracula_get_settings( 'blockEditorDarkMode', true );
         if ( !$block_editor_dark_mode && dracula_is_block_editor_page() ) {
@@ -131,17 +141,6 @@ class Dracula_Enqueue {
             true
         );
         $deps[] = 'dracula-sweetalert2';
-        // Settings Page
-        if ( $admin_pages['dracula'] === $hook ) {
-            wp_register_script(
-                'dracula-gsap',
-                DRACULA_ASSETS . '/vendor/gsap.js',
-                [],
-                '3.12.2',
-                true
-            );
-            $deps[] = 'dracula-gsap';
-        }
         // Enqueue media scripts for settings and toggle builder page
         if ( in_array( $hook, [$admin_pages['settings'], $admin_pages['toggle_builder']] ) ) {
             wp_enqueue_media();
@@ -163,6 +162,7 @@ class Dracula_Enqueue {
             true
         );
         wp_localize_script( 'dracula-admin', 'dracula', $this->get_localize_data( $hook ) );
+        wp_localize_script( 'dracula-dark-mode', 'dracula', $this->get_localize_data( $hook ) );
         // Link the script with its translations.
         wp_set_script_translations( 'dracula-admin', 'dracula-dark-mode', plugin_dir_path( DRACULA_FILE ) . 'languages' );
     }
@@ -182,7 +182,6 @@ class Dracula_Enqueue {
         );
         wp_enqueue_media();
         wp_enqueue_script( 'dracula-sweetalert2' );
-        wp_enqueue_script( 'dracula-gsap' );
         wp_enqueue_script( 'jquery-ui-draggable' );
         wp_enqueue_script( 'wp-theme-plugin-editor' );
         $cm_settings = [
@@ -203,15 +202,19 @@ class Dracula_Enqueue {
 
     public function get_localize_data( $hook = false ) {
         $data = array(
-            'homeUrl'    => home_url(),
-            'ajaxUrl'    => admin_url( 'admin-ajax.php' ),
-            'pluginUrl'  => DRACULA_URL,
-            'settings'   => dracula_get_settings(),
-            'isPro'      => ddm_fs()->can_use_premium_code__premium_only(),
-            'upgradeUrl' => ddm_fs()->get_upgrade_url(),
-            'nonce'      => wp_create_nonce( 'dracula' ),
+            'homeUrl'        => home_url(),
+            'ajaxUrl'        => admin_url( 'admin-ajax.php' ),
+            'pluginUrl'      => DRACULA_URL,
+            'settings'       => dracula_get_settings(),
+            'isPro'          => ddm_fs()->can_use_premium_code__premium_only(),
+            'upgradeUrl'     => ddm_fs()->get_upgrade_url(),
+            'nonce'          => wp_create_nonce( 'dracula' ),
+            'switches'       => dracula_get_switches_markups(),
+            'customSwitches' => dracula_custom_toggle_switches(),
+            'presets'        => dracula_get_preset(),
         );
         if ( is_admin() ) {
+            $data['isAdmin'] = true;
             $admin_pages = Dracula_Admin::instance()->get_admin_pages();
             if ( $admin_pages['dracula'] === $hook ) {
                 $data['menus'] = dracula_get_menus();
@@ -220,22 +223,14 @@ class Dracula_Enqueue {
                 $data['excludeReadingList'] = dracula_get_exclude_reading_list();
                 $data['excludeTaxList'] = dracula_get_exclude_taxonomy_list();
                 $data['showReviewPopup'] = current_user_can( 'manage_options' ) && 'off' != get_option( 'dracula_rating_notice' ) && 'off' != get_transient( 'dracula_rating_notice_interval' );
+                $data['postTypes'] = dracula_get_post_type_list();
             }
-            // check current user role
-            global $wp_version;
-            global $current_user;
-            $data['wpVersion'] = $wp_version;
-            $data['currentUserRole'] = ( !empty( $current_user ) && !empty( $current_user->roles ) ? $current_user->roles[0] : '' );
         }
         $is_active = dracula_get_settings( 'frontendDarkMode', true ) && !dracula_page_excluded();
         $is_live_edit = current_user_can( 'manage_options' ) && ($is_active || !empty( $_GET['dracula-live-edit'] ));
         $is_editor = dracula_is_block_editor_page() || dracula_is_classic_editor_page() || dracula_is_elementor_editor_page();
         if ( $is_live_edit || $is_editor ) {
             $data['menus'] = dracula_get_menus();
-        }
-        $page = ( !empty( $_GET['page'] ) ? sanitize_key( $_GET['page'] ) : '' );
-        if ( $page == 'dracula' ) {
-            $data['postTypes'] = dracula_get_post_type_list();
         }
         return $data;
     }
@@ -272,66 +267,15 @@ class Dracula_Enqueue {
         $progressbar_style = dracula_get_settings( 'progressbarStyle', 'solid' );
         if ( 'solid' == $progressbar_style ) {
             $progressbar_color = dracula_get_settings( 'progressbarColor', '#7C7EE5' );
+        } else {
+            $progressbar_color = dracula_get_settings( 'progressbarColorGradient', 'linear-gradient(90deg, #004AFF 80%, rgba(96, 239, 255, 0) 113.89%)' );
         }
-        $progressbar_color = dracula_get_settings( 'progressbarColorGradient', 'linear-gradient(90deg, #004AFF 80%, rgba(96, 239, 255, 0) 113.89%)' );
         $progressbar_variable = '';
         $progressbar_variable .= sprintf( '--reading-mode-progress-height: %spx;', $progressbar_height );
         $progressbar_variable .= sprintf( '--reading-mode-progress-color: %s;', $progressbar_color );
         $custom_css .= sprintf( '.reading-mode-progress { %s }', $progressbar_variable );
-        // Image Settings
-        $invert_images = dracula_get_settings( 'invertImages', false );
-        $low_brightness = dracula_get_settings( 'lowBrightnessImages', false );
-        $gray_scale = dracula_get_settings( 'grayscaleImages', false );
-        if ( $invert_images || $low_brightness || $gray_scale ) {
-            $custom_css .= 'html[data-dracula-scheme="dark"] img:not(.dracula-toggle *, .dracula-ignore, .dracula-ignore * , .elementor-background-overlay, .elementor-element-overlay, .elementor-button-link, .elementor-button-link *, .elementor-widget-spacer, .elementor-widget-spacer *, .wp-block-button__link, .wp-block-button__link *){';
-            $filter_css = '';
-            if ( $invert_images ) {
-                $invert_images_level = dracula_get_settings( 'invertImagesLevel', 80 ) / 100;
-                $filter_css .= sprintf( 'invert(%s) ', $invert_images_level );
-            }
-            if ( $low_brightness ) {
-                $low_brightness_level = dracula_get_settings( 'lowBrightnessLevel', 80 ) / 100;
-                $filter_css .= sprintf( 'brightness(%s) ', $low_brightness_level );
-            }
-            if ( $gray_scale ) {
-                $gray_scale_level = dracula_get_settings( 'grayscaleImagesLevel', 80 ) / 100;
-                $filter_css .= sprintf( 'grayscale(%s) ', $gray_scale_level );
-            }
-            $custom_css .= sprintf( 'filter: %s; }', $filter_css );
-            $custom_css .= '}';
-        }
-        // Video Settings
-        $video_low_brightness = dracula_get_settings( 'lowBrightnessVideos', false );
-        $video_gray_scale = dracula_get_settings( 'grayscaleVideos', false );
-        if ( $video_low_brightness || $video_gray_scale ) {
-            $custom_css .= 'html[data-dracula-scheme="dark"] video:not(.dracula-toggle *, .dracula-ignore, .dracula-ignore * ),';
-            $custom_css .= 'html[data-dracula-scheme="dark"] iframe[src*="youtube.com"],';
-            $custom_css .= 'html[data-dracula-scheme="dark"] iframe[src*="vimeo.com"],';
-            $custom_css .= 'html[data-dracula-scheme="dark"] iframe[src*="dailymotion.com"]{';
-            $filter_css = '';
-            if ( $video_low_brightness ) {
-                $video_low_brightness_level = dracula_get_settings( 'videoBrightnessLevel', 80 ) / 100;
-                $filter_css .= sprintf( 'brightness(%s) ', $video_low_brightness_level );
-            }
-            if ( $video_gray_scale ) {
-                $video_gray_scale_level = dracula_get_settings( 'grayscaleVideosLevel', 80 ) / 100;
-                $filter_css .= sprintf( 'grayscale(%s) ', $video_gray_scale_level );
-            }
-            $custom_css .= sprintf( 'filter: %s; }', $filter_css );
-            $custom_css .= '}';
-        }
-        //Menu toggle size css
-        $menu_toggle_size = dracula_get_settings( 'menuToggleSize', 'normal' );
-        $menu_toggle_selector = '.dracula-toggle-wrap.menu-item .dracula-toggle';
-        if ( in_array( $menu_toggle_size, ['small', 'large'] ) ) {
-            $custom_css .= sprintf( '%s{ --toggle-scale: %s; }', $menu_toggle_selector, ( 'small' == $menu_toggle_size ? '.8' : '1.5' ) );
-        }
-        // Toggle size css
-        $toggle_size = dracula_get_settings( 'toggleSize', 'normal' );
-        $toggle_selector = '.dracula-toggle-wrap .dracula-toggle';
-        if ( in_array( $toggle_size, ['small', 'large'] ) ) {
-            $custom_css .= sprintf( '%s{ --toggle-scale: %s; }', $toggle_selector, ( 'small' == $toggle_size ? '.8' : '1.5' ) );
-        }
+        // Dark Mode Custom css
+        $custom_css .= dracula_get_settings( 'compiledCss' );
         return $custom_css;
     }
 

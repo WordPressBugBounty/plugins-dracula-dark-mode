@@ -5,8 +5,6 @@ class Dracula_Ajax {
     private static $instance = null;
 
     public function __construct() {
-        // Get toggles
-        add_action( 'wp_ajax_dracula_get_toggles', array($this, 'get_toggles') );
         // Update toggle
         add_action( 'wp_ajax_dracula_update_toggle', array($this, 'update_toggle') );
         // Delete Toggle
@@ -18,20 +16,6 @@ class Dracula_Ajax {
         // Handle admin notice
         add_action( 'wp_ajax_dracula_hide_review_notice', [$this, 'hide_review_notice'] );
         add_action( 'wp_ajax_dracula_review_feedback', [$this, 'handle_review_feedback'] );
-    }
-
-    public function hide_recommended_plugins() {
-        $nonce = ( !empty( $_REQUEST['nonce'] ) ? sanitize_text_field( $_REQUEST['nonce'] ) : '' );
-        // Verify nonce
-        if ( !wp_verify_nonce( $nonce, 'dracula' ) ) {
-            wp_send_json_error( 'Invalid nonce' );
-        }
-        // check user permission
-        if ( !current_user_can( 'manage_options' ) ) {
-            wp_send_json_error( 'Invalid user' );
-        }
-        update_option( "dracula_hide_recommended_plugins", true );
-        wp_send_json_success();
     }
 
     public function hide_review_notice() {
@@ -73,31 +57,6 @@ class Dracula_Ajax {
         } else {
             wp_send_json_error();
         }
-    }
-
-    public function get_toggles() {
-        $nonce = ( !empty( $_POST['nonce'] ) ? sanitize_text_field( $_POST['nonce'] ) : '' );
-        // Verify nonce
-        if ( !wp_verify_nonce( $nonce, 'dracula' ) ) {
-            wp_send_json_error( 'Invalid nonce' );
-        }
-        if ( !current_user_can( 'edit_posts' ) ) {
-            wp_send_json_error( 'Invalid user' );
-        }
-        $order_by = ( !empty( $_POST['sort_by'] ) ? sanitize_key( $_POST['sort_by'] ) : 'created_at' );
-        $order = ( !empty( $_POST['sort_order'] ) ? sanitize_key( $_POST['sort_order'] ) : 'desc' );
-        $args = [];
-        $args['order_by'] = $order_by;
-        $args['order'] = $order;
-        $toggles = Dracula_Toggle_Builder::instance()->get_toggles( $args );
-        $formatted = [];
-        if ( !empty( $toggles ) ) {
-            foreach ( $toggles as $toggle ) {
-                $toggle->config = unserialize( $toggle->config );
-                $formatted[] = $toggle;
-            }
-        }
-        wp_send_json_success( $formatted );
     }
 
     public function update_toggle() {

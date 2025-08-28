@@ -8,8 +8,8 @@ class Dracula_Hooks {
         // Frontend Hooks
         if ( !is_admin() ) {
             if ( dracula_get_settings( 'frontendDarkMode', true ) ) {
-                add_action( 'wp_head', array($this, 'header_scripts') );
-                add_action( 'login_head', array($this, 'header_scripts') );
+                add_action( 'wp_head', array($this, 'render_header_scripts') );
+                add_action( 'login_head', array($this, 'render_header_scripts') );
                 add_action( 'init', function () {
                     if ( dracula_get_settings( 'performanceMode', false ) ) {
                         add_filter(
@@ -20,7 +20,7 @@ class Dracula_Hooks {
                         );
                     }
                 } );
-                add_action( 'wp_head', array($this, 'render_hide_elements') );
+                // Render Floating Toggle
                 add_action( 'wp_footer', array($this, 'render_floating_toggle') );
                 add_action( 'login_footer', array($this, 'render_floating_toggle') );
                 add_action(
@@ -33,6 +33,12 @@ class Dracula_Hooks {
                 add_filter( 'body_class', [$this, 'add_page_transition_class'] );
             }
         }
+        add_filter( 'autoptimize_filter_js_exclude', array($this, 'exclude_js_from_cache_plugins') );
+    }
+
+    public function exclude_js_from_cache_plugins( $excludes ) {
+        $excludes .= ',dracula-dark-mode,dracula-frontend';
+        return $excludes;
     }
 
     public function add_svg_support( $mimes ) {
@@ -78,7 +84,7 @@ class Dracula_Hooks {
                 if ( !empty( $toggle->config ) ) {
                     $data = unserialize( $toggle->config );
                     $item = sprintf(
-                        '<li class="%s" data-id="%s"><script type="application/json">%s</script> </li>',
+                        '<li class="%s" data-id="%s" data-data="%s"></li>',
                         $class,
                         $id,
                         json_encode( $data )
@@ -107,243 +113,8 @@ class Dracula_Hooks {
         return $tag;
     }
 
-    public function header_scripts() {
-        $is_active = dracula_get_settings( 'frontendDarkMode', true ) && !dracula_page_excluded();
-        $is_active_tax = dracula_get_settings( 'frontendDarkMode', true ) && !dracula_taxonomy_excluded();
-        if ( !$is_active || !$is_active_tax ) {
-            return;
-        }
-        $timeBasedMode = dracula_get_settings( 'timeBasedMode', false );
-        $timeBasedModeStart = dracula_get_settings( 'timeBasedModeStart', '19:00' );
-        $timeBasedModeEnd = dracula_get_settings( 'timeBasedModeEnd', '07:00' );
-        $config = dracula_get_config();
-        $is_default_mode = dracula_get_settings( 'defaultDarkMode', false );
-        $is_auto = dracula_get_settings( 'matchOsTheme', true );
-        $url_parameter = dracula_get_settings( 'urlParameter', false );
-        // Scrollbar Settings
-        $scrollbar_dark_mode = dracula_get_settings( 'scrollbarDarkMode', 'auto' );
-        if ( 'disabled' == $scrollbar_dark_mode ) {
-            printf(
-                '%1$s  %2$s %3$s',
-                '<style id="dracula-scrollbar-css">',
-                dracula_add_dark_mode_selector_prefix( 'body::-webkit-scrollbar {width: 12px;}body::-webkit-scrollbar-track {background: #f0f0f0;}body::-webkit-scrollbar-thumb {background-color: #c1c1c1;border-radius: 6px;border: 3px solid #f0f0f0;}' ),
-                '</style>'
-            );
-        }
-        ?>
-
-        <script>
-
-            window.draculaCrossTabSession = {
-                /**
-                 * Initialize listeners for cross-tab session management.
-                 */
-                init: function () {
-                    window.addEventListener("storage", this.sessionStorageTransfer.bind(this));
-                    if (!sessionStorage.length) {
-                        localStorage.setItem('getSessionStorage', 'init');
-                        localStorage.removeItem('getSessionStorage');
-                    }
-                },
-
-                /**
-                 * Handle the transfer of sessionStorage between tabs.
-                 */
-                sessionStorageTransfer: function (event) {
-                    if (!event.newValue) return;
-
-                    switch (event.key) {
-                        case 'getSessionStorage':
-                            this.sendSessionStorageToTabs();
-                            break;
-                        case 'sessionStorage':
-                            if (!sessionStorage.length) {
-                                this.receiveSessionStorageFromTabs(event.newValue);
-                            }
-                            break;
-                    }
-                },
-
-                /**
-                 * Send current sessionStorage to other tabs.
-                 */
-                sendSessionStorageToTabs: function () {
-                    localStorage.setItem('sessionStorage', JSON.stringify(sessionStorage));
-                    localStorage.removeItem('sessionStorage');
-                },
-
-                /**
-                 * Populate current tab's sessionStorage with data from another tab.
-                 */
-                receiveSessionStorageFromTabs: function (dataValue) {
-                    const data = JSON.parse(dataValue);
-                    for (let key in data) {
-                        sessionStorage.setItem(key, data[key]);
-                    }
-                },
-
-                /**
-                 * Set data to sessionStorage and share it across tabs.
-                 */
-                set: function (key, value) {
-                    sessionStorage.setItem(key, value);
-                    this.sendSessionStorageToTabs();
-                },
-
-                /**
-                 * Get data from sessionStorage.
-                 */
-                get: function (key) {
-                    return sessionStorage.getItem(key);
-                }
-            };
-
-            window.draculaCrossTabSession.init();
-        </script>
-
-        <script>
-
-            function initDraculaDarkMode() {
-                var ignoreEvent = false;
-
-                if (!!<?php 
-        echo json_encode( $is_default_mode );
-        ?>) {
-                    window.draculaMode = 'dark';
-                }
-
-                const savedMode = localStorage.getItem('dracula_mode');
-
-                if (savedMode) {
-                    window.draculaMode = savedMode;
-                }
-
-                if ('dark' === window.draculaMode) {
-                    window.draculaDarkMode.enable(<?php 
-        echo json_encode( $config );
-        ?>);
-                } else if ('auto' === savedMode || (!!<?php 
-        echo json_encode( $is_auto );
-        ?> && !savedMode)) {
-                    ignoreEvent = true;
-                    window.draculaDarkMode.auto(<?php 
-        echo json_encode( $config );
-        ?>);
-                }
-
-                // Time based mode
-                if (!!<?php 
-        echo json_encode( $timeBasedMode );
-        ?> && !savedMode) {
-                    const start = '<?php 
-        echo sanitize_text_field( $timeBasedModeStart );
-        ?>';
-                    const end = '<?php 
-        echo sanitize_text_field( $timeBasedModeEnd );
-        ?>';
-
-                    const currentTime = new Date();
-                    const startTime = new Date();
-                    const endTime = new Date();
-
-                    // Splitting the start and end times into hours and minutes
-                    const startParts = start.split(':');
-                    const endParts = end.split(':');
-
-                    // Setting hours and minutes for start time
-                    startTime.setHours(parseInt(startParts[0], 10), parseInt(startParts[1] || '0', 10), 0);
-
-                    // Setting hours and minutes for end time
-                    endTime.setHours(parseInt(endParts[0], 10), parseInt(endParts[1] || '0', 10), 0);
-
-                    // Adjust end time to the next day if end time is earlier than start time
-                    if (endTime <= startTime) {
-                        endTime.setDate(endTime.getDate() + 1);
-                    }
-
-                    // Check if current time is within the range
-                    if (currentTime >= startTime && currentTime < endTime) {
-                        ignoreEvent = true;
-                        window.draculaDarkMode.enable(<?php 
-        echo json_encode( $config );
-        ?>);
-                    }
-                }
-
-                // URL Parameter
-                if (!!<?php 
-        echo json_encode( $url_parameter );
-        ?>) {
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const mode = urlParams.get('darkmode');
-
-                    if (mode) {
-                        ignoreEvent = true;
-
-                        if ('1' === mode) {
-                            window.draculaDarkMode.enable(<?php 
-        echo json_encode( $config );
-        ?>);
-                        } else if ('0' === mode) {
-                            window.draculaMode = '';
-                            window.draculaDarkMode.disable(ignoreEvent);
-                        }
-                    }
-                }
-
-                if (window.draculaDarkMode.isEnabled()) {
-                    jQuery(document).ready(function () {
-
-                        // Send dark mode page view analytics event
-                        if (dracula.isPro && dracula.settings.enableAnalytics) {
-                            wp.ajax.post('dracula_track_analytics', {type: 'dark_view'});
-                        }
-
-                        // Fire enable event
-                        if (!ignoreEvent) {
-                            const event = new CustomEvent('dracula:enable', {detail: {init: true}});
-                            document.dispatchEvent(event);
-                        }
-
-                    });
-                }
-            }
-
-            if (<?php 
-        echo json_encode( dracula_get_settings( 'performanceMode', false ) );
-        ?>) {
-                jQuery(document).ready(initDraculaDarkMode);
-            } else {
-                initDraculaDarkMode();
-            }
-
-        </script>
-    <?php 
-    }
-
-    /**
-     * Hide Elements
-     * @since 1.2.4
-     * @author monzuralam
-     */
-    public function render_hide_elements() {
-        $hide_elements = dracula_get_settings( 'hides' );
-        if ( empty( $hide_elements ) || !is_array( $hide_elements ) ) {
-            return;
-        }
-        $css = '<style id="dracula-hides-css">';
-        foreach ( $hide_elements as $hide_element ) {
-            $css .= $hide_element . '{
-					display: none !important;
-				}';
-        }
-        $css .= '</style>';
-        $allow_html = array(
-            'style' => array(
-                'id' => array(),
-            ),
-        );
-        echo wp_kses( $css, $allow_html );
+    public function render_header_scripts() {
+        include_once DRACULA_INCLUDES . '/header-scripts.php';
     }
 
     public function render_floating_toggle() {
@@ -352,25 +123,23 @@ class Dracula_Hooks {
             return;
         }
         $display_on = dracula_get_settings( 'floatingDevices', ['mobile', 'tablet', 'desktop'] );
-        $is_mobile = wp_is_mobile();
-        $is_tablet = dracula_is_tablet();
-        $is_desktop = !$is_mobile && !$is_tablet;
-        if ( $is_mobile && !in_array( 'mobile', $display_on ) || $is_tablet && !in_array( 'tablet', $display_on ) || $is_desktop && !in_array( 'desktop', $display_on ) ) {
+        $device = ( wp_is_mobile() ? ( dracula_is_tablet() ? 'tablet' : 'mobile' ) : 'desktop' );
+        if ( !in_array( $device, $display_on, true ) ) {
             return;
         }
         $style = dracula_get_settings( 'toggleStyle', '1' );
         $id = '';
-        if ( strpos( $style, 'custom-' ) !== false ) {
+        if ( str_contains( $style, 'custom-' ) ) {
             $id = str_replace( 'custom-', '', $style );
         }
-        // check is return on render toggle
+        // Check if the toggle is excluded on the current page or taxonomy
         if ( dracula_page_excluded() ) {
             return;
         }
         if ( dracula_taxonomy_excluded() ) {
             return;
         }
-        echo do_shortcode( "[dracula_toggle style='{$style}' id='{$id}' floating=1 ]" );
+        echo do_shortcode( sprintf( '[dracula_toggle style="%1$s" id="%2$s" floating="1" ]', $style, $id ) );
     }
 
     /**

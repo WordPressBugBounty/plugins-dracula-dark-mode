@@ -1,1 +1,101 @@
-.wp-block-dracula-switch .dracula-toggle{display:inline-flex;pointer-events:none}.toggles{display:flex;flex-wrap:wrap;gap:20px;width:auto}.toggles .dracula-toggle{border:0;bottom:0;left:0;margin-top:15px;pointer-events:none;position:relative;right:0;top:0;z-index:1}.toggles .dracula-toggle.style-1,.toggles .dracula-toggle.style-11,.toggles .dracula-toggle.style-13,.toggles .dracula-toggle.style-14,.toggles .dracula-toggle.style-4{background:transparent}.toggles .toggle-wrap{align-items:center;background:#f2f2f2;border:1px solid #ddd;border-radius:5px;cursor:pointer;display:flex;justify-content:center;min-height:80px;min-width:100px;padding:15px;position:relative;transition:all .2s ease-in-out}.toggles .toggle-wrap.active{border-color:#8d86e0}.toggles .toggle-wrap.active .index-label{background:#7c5dee}.toggles .toggle-wrap:hover{background:#181a1b}.toggles .toggle-wrap .index-label{background:#5c637e;border-bottom-right-radius:5px;border-top-left-radius:0;color:#fff;left:0;padding:2px 5px;position:absolute;top:0}.toggles .toggle-wrap .active-label{height:22px;padding:3px;right:-8px;text-align:center;top:-8px;width:22px}.toggles .toggle-wrap .active-badge,.toggles .toggle-wrap .active-label{align-items:center;background:#7c5dee;border-radius:50%;color:#fff;display:flex;justify-content:center;position:absolute}.toggles .toggle-wrap .active-badge{border:1px solid #7c5dee;height:24px;padding:7px;right:-7px;top:-7px;width:24px}.toggles h3{font-size:1rem;font-weight:500;margin-bottom:0;margin-top:15px;text-transform:capitalize;width:100%}
+/*!**********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/switch/index.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************/
+.wp-block-dracula-switch .dracula-toggle {
+  pointer-events: none;
+  display: inline-flex;
+}
+
+.toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: auto;
+}
+.toggles .dracula-toggle {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  border: 0;
+  z-index: 1;
+  margin-top: 15px;
+  pointer-events: none;
+}
+.toggles .dracula-toggle.style-1, .toggles .dracula-toggle.style-4, .toggles .dracula-toggle.style-11, .toggles .dracula-toggle.style-13, .toggles .dracula-toggle.style-14 {
+  background: transparent;
+}
+.toggles .toggle-wrap {
+  min-height: 80px;
+  min-width: 100px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  background: #F2F2F2;
+  transition: all 0.2s ease-in-out;
+}
+.toggles .toggle-wrap.active {
+  border-color: rgb(141.1871921182, 134.4482758621, 223.5517241379);
+}
+.toggles .toggle-wrap.active .index-label {
+  background: #7c5dee;
+}
+.toggles .toggle-wrap:hover {
+  background: #181a1b;
+}
+.toggles .toggle-wrap .index-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2px 5px;
+  background: #5c637e;
+  color: #fff;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 5px;
+}
+.toggles .toggle-wrap .active-label {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #7c5dee;
+  color: #fff;
+  text-align: center;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggles .toggle-wrap .active-badge {
+  top: -7px;
+  right: -7px;
+  position: absolute;
+  background: #7c5dee;
+  padding: 7px;
+  color: #FFF;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #7c5dee;
+}
+.toggles h3 {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=index.css.map*/

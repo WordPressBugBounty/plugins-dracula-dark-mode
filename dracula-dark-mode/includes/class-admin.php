@@ -6,6 +6,7 @@ class Dracula_Admin
 {
 
     private static $instance = null;
+
     public $admin_pages = array(
         'toggle_builder' => '',
     );
@@ -24,13 +25,22 @@ class Dracula_Admin
         }
 
         if ($admin_dark_mode) {
-            add_action('admin_bar_menu', array($this, 'add_admin_bar_menu'), 9999);
+
+            if ('adminbar' === dracula_get_settings('adminDarkModePosition', 'adminbar')) {
+                add_action('admin_bar_menu', array($this, 'add_admin_bar_menu'), 9999);
+            }
+
             add_action('admin_init', array($this, 'add_admin_color_scheme'));
             add_action('admin_color_scheme_picker', array($this, 'add_user_profile_fields'), 11);
             add_action('personal_options_update', array($this, 'save_user_profile_fields'));
+
+            if ('floating' === dracula_get_settings('adminDarkModePosition')) {
+                add_action('admin_footer', array($this, 'render_admin_toggle'));
+            }
         }
 
         add_action('admin_init', array($this, 'includes'));
+        add_action('in_admin_header', array($this, 'remove_admin_notices'));
 
         // Redirect URL after activation
         ddm_fs()->add_filter('connect_url', [$this, 'redirect_after_activation']);
@@ -161,8 +171,9 @@ class Dracula_Admin
 
     public function header_scripts()
     { ?>
+
         <script>
-            const savedMode = localStorage.getItem('dracula_mode_admin');
+            const savedMode = sessionStorage.getItem('dracula_mode_admin');
 
             if (savedMode) {
                 window.draculaMode = savedMode;
@@ -173,6 +184,7 @@ class Dracula_Admin
             } else if ('auto' === window.draculaMode) {
                 window.draculaDarkMode.auto();
             }
+
         </script>
         <?php
     }
@@ -195,6 +207,10 @@ class Dracula_Admin
     public function add_admin_bar_menu($wp_admin_bar)
     {
 
+        if ($this->should_exclude_darkmode()) {
+            return;
+        }
+
         $user_id = get_current_user_id();
 
         if (!$user_id) {
@@ -206,11 +222,49 @@ class Dracula_Admin
             return;
         }
 
-        $args = ['parent' => 'top-secondary', 'id' => 'dracula'];
+        $args = [
+            'parent' => 'top-secondary',
+            'id' => 'dracula',
+            'title' => <<<HTML
+    <button
+        class="dracula-toggle admin-menu-item dracula-ignore style-14"
+        onclick="draculaDarkMode.toggle()"
+    >
+        <i class="dracula-toggle-icon"></i>
+    </button>
+HTML
+            ,
+        ];
 
         $wp_admin_bar->add_node($args);
     }
 
+    public function render_admin_toggle()
+    {
+
+        if ($this->should_exclude_darkmode()) {
+            return;
+        }
+
+        echo <<<HTML
+<div class="dracula-toggle-wrap floating position-right">
+        <button
+            class="dracula-toggle dracula-ignore style-2"
+            onclick="draculaDarkMode.toggle()"
+         >
+            <div class="dracula-toggle-icon-wrap">
+                <div class="dracula-toggle-icon"></div>
+            </div>
+
+            <div class="dracula-toggle-label">
+                <span class="--light">Light</span>
+                <span class="--dark">Dark</span>
+            </div>
+        </button>
+</div>
+HTML;
+
+    }
 
     public function add_admin_menu()
     {
@@ -240,12 +294,24 @@ class Dracula_Admin
 
     public function render_getting_started_page()
     {
-        include_once DRACULA_INCLUDES . '/views/getting-started/index.php';
+
+
+        if (isset($_GET['setup_complete'])) {
+            update_option('dracula_setup_complete', true);
+        }
+
+        if (get_option('dracula_setup_complete', false)) {
+            include_once DRACULA_INCLUDES . '/views/getting-started/index.php';
+        } else {
+            include_once DRACULA_INCLUDES . '/views/setup.php';
+        }
+
     }
 
 
     public function admin_page()
-    { ?>
+    {
+        ?>
         <div id="dracula-settings-app"></div>
     <?php }
 
@@ -254,10 +320,29 @@ class Dracula_Admin
         return $this->admin_pages;
     }
 
-    public function render_recommended_plugins_page()
+    /**
+     * Whether Dark Mode should be excluded (e.g., during onboarding).
+     */
+    public function should_exclude_darkmode(): bool
     {
-        include DRACULA_INCLUDES . '/views/recommended-plugins.php';
+        // Only relevant in wp-admin with screens available.
+        if (!is_admin() || !function_exists('get_current_screen')) {
+            return false;
+        }
+
+        $screen = get_current_screen();
+        if (!$screen || empty($screen->id)) {
+            return false;
+        }
+
+        if ($screen->id === 'dark-mode_page_dracula-getting-started') {
+            // Exclude until setup is complete.
+            return !(bool)get_option('dracula_setup_complete', false);
+        }
+
+        return false;
     }
+
 
     public static function instance()
     {
