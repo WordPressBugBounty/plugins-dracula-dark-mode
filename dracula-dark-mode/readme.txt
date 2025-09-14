@@ -4,7 +4,7 @@ Tags: dark mode, reading mode, accessibility, wp dark mode, night mode
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 1.2.9
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -137,6 +137,8 @@ Consider checking out our other plugins:
 
 📝 [Essential Addons for Contact Form 7](https://wordpress.org/plugins/essential-addons-for-contact-form-7/) - 50+ Essential Fields, Features & Integrations Add-ons for Contact Form 7.
 
+🎬 [Multimedia Player](https://wordpress.org/plugins/soft-multimedia-player/) - Audio & Video Player for WordPress with Playlist, Live Stream, and More.
+
 == Frequently Asked Questions ==
 
 =01. Does Dracula Dark Mode works with all WordPress themes?=
@@ -196,6 +198,9 @@ Dracula Dark Mode plugin relies on multiple JavaScript files and dependencies to
 14. Distraction-free Reading Mode
 
 == Changelog ==
+
+= 1.3.0 (14-09-2025) =
+* **Update:** Fixed minor bugs and improved overall plugin performance.
 
 = 1.2.9 (28-08-2025) =
 * **New:** Added new static color generator algorithm for dark mode.

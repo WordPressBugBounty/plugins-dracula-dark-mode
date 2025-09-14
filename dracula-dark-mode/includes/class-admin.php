@@ -173,7 +173,7 @@ class Dracula_Admin
     { ?>
 
         <script>
-            const savedMode = sessionStorage.getItem('dracula_mode_admin');
+            const savedMode = localStorage.getItem('dracula_mode_admin');
 
             if (savedMode) {
                 window.draculaMode = savedMode;

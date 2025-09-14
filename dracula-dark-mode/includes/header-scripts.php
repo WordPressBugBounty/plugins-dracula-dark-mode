@@ -114,7 +114,7 @@ if ( isset( $menu_toggle_scale ) ) {
     echo sprintf( '.dracula-toggle-wrap.menu-item .dracula-toggle{ --toggle-scale: %s; }', $menu_toggle_scale );
 }
 // Toggle absolute position css
-if ( $absolute_toggle_position ) {
+if ( !empty( $absolute_toggle_position ) ) {
     printf( '.dracula-toggle-wrap.floating{ --toggle-position: absolute; }' );
 }
 // Toggle custom position css
@@ -257,7 +257,7 @@ echo json_encode( $timeBasedModeEnd );
 echo json_encode( $url_parameter );
 ?>;
 
-    const config = <?php 
+    const draculaConfig = <?php 
 echo json_encode( $config );
 ?>;
 
@@ -268,16 +268,16 @@ echo json_encode( $config );
             window.draculaMode = 'dark';
         }
 
-        const savedMode = sessionStorage.getItem('dracula_mode');
+        const savedMode = localStorage.getItem('dracula_mode');
 
         if (savedMode) {
             window.draculaMode = savedMode;
         }
 
         if ('dark' === window.draculaMode) {
-            draculaDarkMode?.enable(config);
+            draculaDarkMode?.enable(draculaConfig);
         } else if ('auto' === savedMode || (isAuto && !savedMode)) {
-            draculaDarkMode?.auto(config);
+            draculaDarkMode?.auto(draculaConfig);
         }
 
         // Time based mode
@@ -304,7 +304,7 @@ echo json_encode( $config );
 
             // Check if current time is within the range
             if (currentTime >= startTime && currentTime < endTime) {
-                draculaDarkMode?.enable(config);
+                draculaDarkMode?.enable(draculaConfig);
             }
         }
 
@@ -315,7 +315,7 @@ echo json_encode( $config );
 
             if (mode) {
                 if (parseInt(mode)) {
-                    draculaDarkMode?.enable(config);
+                    draculaDarkMode?.enable(draculaConfig);
                 } else {
                     window.draculaMode = null;
                     draculaDarkMode?.disable();
@@ -351,4 +351,5 @@ echo json_encode( $config );
     } else {
         initDraculaDarkMode();
     }
+
 </script>

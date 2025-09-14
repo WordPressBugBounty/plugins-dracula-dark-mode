@@ -4,7 +4,7 @@
  * Plugin Name: Dracula Dark Mode
  * Plugin URI: https://softlabbd.com/dracula-dark-mode
  * Description: Smooth Dark Mode & Better Accessibility for WordPress.
- * Version: 1.2.9
+ * Version: 1.3.0
  * Author: SoftLab
  * Author URI: https://softlabbd.com
  * License: GPLv2 or later
@@ -50,7 +50,7 @@ if ( function_exists( 'ddm_fs' ) ) {
         do_action( 'ddm_fs_loaded' );
     }
     /** define constants */
-    define( 'DRACULA_VERSION', '1.2.9' );
+    define( 'DRACULA_VERSION', '1.3.0' );
     define( 'DRACULA_FILE', __FILE__ );
     define( 'DRACULA_PATH', dirname( DRACULA_FILE ) );
     define( 'DRACULA_INCLUDES', DRACULA_PATH . '/includes' );
