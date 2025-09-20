@@ -4,7 +4,7 @@ Tags: dark mode, reading mode, accessibility, wp dark mode, night mode
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -198,6 +198,12 @@ Dracula Dark Mode plugin relies on multiple JavaScript files and dependencies to
 14. Distraction-free Reading Mode
 
 == Changelog ==
+
+= 1.3.1 (20-09-2025) =
+* Fix: Fixed text highlight color issue.
+* Fix: Fixed toggle switch dragging issue.
+* Update: Improved toggle display option in nav menus.
+* Update: Improved overall performance and speed.
 
 = 1.3.0 (14-09-2025) =
 * **Update:** Fixed minor bugs and improved overall plugin performance.

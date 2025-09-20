@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dracula Dark Mode 1.3.0\n"
+"Project-Id-Version: Dracula Dark Mode 1.3.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dracula\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-09-14T06:18:47+00:00\n"
+"POT-Creation-Date: 2025-09-20T16:56:35+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: dracula-dark-mode\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: plugin.php
 #: includes/views/getting-started/index.php:16
 #: includes/views/setup.php:11
-#: assets/js/admin.js:1
+#: assets/js/admin.js:30599
 msgid "Dracula Dark Mode"
 msgstr ""
 
@@ -49,7 +49,7 @@ msgstr ""
 
 #: elementor/class-elementor-settings.php:24
 #: includes/base.php:104
-#: includes/class-admin.php:277
+#: includes/class-admin.php:285
 msgid "Settings"
 msgstr ""
 
@@ -59,6 +59,7 @@ msgstr ""
 
 #: elementor/class-elementor-widget.php:40
 #: elementor/class-elementor-widget.php:45
+#: includes/class-admin.php:419
 msgid "Switch Style"
 msgstr ""
 
@@ -67,40 +68,55 @@ msgstr ""
 msgid "Cheating huh?"
 msgstr ""
 
-#: includes/class-admin.php:135
+#: includes/class-admin.php:146
 msgid "Show Dark Mode Toggle"
 msgstr ""
 
-#: includes/class-admin.php:140
+#: includes/class-admin.php:151
 msgid "Show dark mode toggle in the top admin bar."
 msgstr ""
 
-#: includes/class-admin.php:201
+#: includes/class-admin.php:211
 #: includes/functions.php:1650
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35566
+#: assets/js/admin.js:35622
+#: assets/js/admin.js:35677
+#: assets/js/admin.js:38221
+#: assets/js/elementor-editor.js:1
+#: assets/js/frontend.js:1
+#: assets/js/live-edit.js:1
 #: assets/js/tinymce.js:1
 msgid "Dark Mode"
 msgstr ""
 
-#: includes/class-admin.php:277
+#: includes/class-admin.php:285
 msgid "Settings - Dracula"
 msgstr ""
 
-#: includes/class-admin.php:280
+#: includes/class-admin.php:288
 msgid "Toggle Builder - Dracula"
 msgstr ""
 
-#: includes/class-admin.php:280
-#: assets/js/admin.js:1
+#: includes/class-admin.php:288
+#: assets/js/admin.js:35063
 msgid "Toggle Builder"
 msgstr ""
 
-#: includes/class-admin.php:286
+#: includes/class-admin.php:294
 msgid "Getting Started - Dracula"
 msgstr ""
 
-#: includes/class-admin.php:286
+#: includes/class-admin.php:294
 msgid "Getting Started"
+msgstr ""
+
+#: includes/class-admin.php:354
+#: includes/class-admin.php:373
+msgid "Dark Mode Switcher"
+msgstr ""
+
+#: includes/class-admin.php:393
+msgid "Add to Menu"
 msgstr ""
 
 #. translators: %s: User feedback
@@ -123,7 +139,7 @@ msgid "Invalid nonce"
 msgstr ""
 
 #: includes/class-analytics.php:101
-#: assets/js/admin.js:1
+#: assets/js/admin.js:24675
 msgid "Date"
 msgstr ""
 
@@ -156,11 +172,11 @@ msgid "Analytics - Dracula Dark Mode"
 msgstr ""
 
 #: includes/class-analytics.php:185
-#: assets/js/admin.js:1
+#: assets/js/admin.js:30582
 msgid "Analytics"
 msgstr ""
 
-#: includes/class-hooks.php:175
+#: includes/class-hooks.php:108
 msgid "Edit Dark Mode"
 msgstr ""
 
@@ -205,19 +221,31 @@ msgid "Lost password page"
 msgstr ""
 
 #: includes/functions.php:1647
-#: assets/js/admin.js:1
+#: assets/js/admin.js:24263
+#: assets/js/admin.js:32082
+#: assets/js/admin.js:35641
+#: assets/js/admin.js:35659
 #: assets/js/reading-mode.js:1
 msgid "Light"
 msgstr ""
 
 #: includes/functions.php:1648
-#: assets/js/admin.js:1
+#: assets/js/admin.js:24265
+#: assets/js/admin.js:32086
+#: assets/js/admin.js:35642
+#: assets/js/admin.js:35660
 #: assets/js/reading-mode.js:1
 msgid "Dark"
 msgstr ""
 
 #: includes/functions.php:1649
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35562
+#: assets/js/admin.js:35621
+#: assets/js/admin.js:35676
+#: assets/js/admin.js:38223
+#: assets/js/elementor-editor.js:1
+#: assets/js/frontend.js:1
+#: assets/js/live-edit.js:1
 msgid "Light Mode"
 msgstr ""
 
@@ -420,7 +448,8 @@ msgid "You can customize the below dark mode settings in the Live Edit Widget:"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:337
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26441
+#: assets/js/admin.js:34329
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Colors"
@@ -428,28 +457,31 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:338
 #: includes/views/getting-started/introduction.php:250
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28703
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Color Adjustments"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:339
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26447
+#: assets/js/admin.js:30555
+#: assets/js/admin.js:34276
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Toggle Switch"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:340
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26453
+#: assets/js/admin.js:30567
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Typography"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:341
-#: assets/js/admin.js:1
+#: assets/js/admin.js:29543
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Exclude Elements"
@@ -457,21 +489,26 @@ msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:342
 #: includes/views/getting-started/introduction.php:42
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26465
+#: assets/js/admin.js:29073
+#: assets/js/admin.js:30579
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Custom CSS"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:343
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26459
+#: assets/js/admin.js:30573
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Image Settings"
 msgstr ""
 
 #: includes/views/getting-started/basic-usage.php:344
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26462
+#: assets/js/admin.js:30576
+#: assets/js/admin.js:33991
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Video Settings"
@@ -533,7 +570,7 @@ msgstr ""
 
 #: includes/views/getting-started/get-pro.php:17
 #: includes/views/getting-started/introduction.php:9
-#: assets/js/admin.js:1
+#: assets/js/admin.js:29762
 msgid "Default Dark Mode"
 msgstr ""
 
@@ -551,7 +588,7 @@ msgid "Floating Dark Mode Toggle Button"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:29
-#: assets/js/admin.js:1
+#: assets/js/admin.js:30319
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Darken Background Images"
@@ -585,7 +622,7 @@ msgstr ""
 
 #: includes/views/getting-started/get-pro.php:50
 #: includes/views/getting-started/introduction.php:62
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27690
 msgid "Keyboard Shortcut"
 msgstr ""
 
@@ -598,7 +635,7 @@ msgid "Elementor Toggle Button Block (Coming Soon)"
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:62
-#: assets/js/admin.js:1
+#: assets/js/admin.js:30558
 msgid "Reading Mode"
 msgstr ""
 
@@ -665,7 +702,7 @@ msgstr ""
 
 #: includes/views/getting-started/get-pro.php:126
 #: includes/views/getting-started/introduction.php:13
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27634
 msgid "Performance Mode"
 msgstr ""
 
@@ -715,7 +752,7 @@ msgid "The amazing premium features will take your website to the next level."
 msgstr ""
 
 #: includes/views/getting-started/get-pro.php:180
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27125
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Upgrade Now"
@@ -736,7 +773,8 @@ msgstr ""
 
 #: includes/views/getting-started/get-pro.php:190
 #: includes/views/getting-started/get-pro.php:197
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28287
+#: assets/js/admin.js:33361
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Pro"
@@ -1020,7 +1058,7 @@ msgid "The Performance Mode feature enhances website's loading speed by deferrin
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:17
-#: assets/js/admin.js:1
+#: assets/js/admin.js:30561
 msgid "Admin Dark Mode"
 msgstr ""
 
@@ -1061,7 +1099,7 @@ msgid "Dracula Dark Mode allows to exclude certain pages, posts or any custom po
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:37
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26456
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Excludes Elements"
@@ -1100,7 +1138,7 @@ msgid "Dracula Dark Mode allows users to switch between light and dark mode usin
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:66
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27859
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Page Transition Animation"
@@ -1205,7 +1243,7 @@ msgid "File Uploader"
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:221
-#: assets/js/admin.js:1
+#: assets/js/admin.js:29777
 msgid "Auto Match OS Theme"
 msgstr ""
 
@@ -1318,41 +1356,43 @@ msgid "Install Now"
 msgstr ""
 
 #: includes/views/getting-started/introduction.php:479
-#: assets/js/admin.js:1
+#: assets/js/admin.js:33055
+#: assets/js/admin.js:33092
+#: assets/js/admin.js:33275
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Learn More"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:206
+#: includes/views/getting-started/what-new.php:121
 msgid "What's New in the"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:207
+#: includes/views/getting-started/what-new.php:122
 msgid "Latest Changes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:209
+#: includes/views/getting-started/what-new.php:124
 msgid "Check out the latest change logs."
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:231
+#: includes/views/getting-started/what-new.php:146
 msgid "New Features"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:242
+#: includes/views/getting-started/what-new.php:157
 msgid "Fixes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:253
+#: includes/views/getting-started/what-new.php:168
 msgid "Enhancements"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:263
+#: includes/views/getting-started/what-new.php:178
 msgid "Removes"
 msgstr ""
 
-#: includes/views/getting-started/what-new.php:275
+#: includes/views/getting-started/what-new.php:190
 msgid "Video Overview"
 msgstr ""
 
@@ -1364,2681 +1404,2878 @@ msgstr ""
 msgid "Let's get you started with a quick setup wizard."
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "General"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Advanced"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Colors Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Animation"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Excludes"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Tools"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to Pro to unlock this feature."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Unlock PRO Features"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Special"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "30% OFF"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "DAYS"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "HOURS"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "MINUTES"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "SECONDS"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Watch Video"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to unlock the feature."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to customize the dark mode appearance in a real-time preview."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Dark Mode Appearance Live Edit"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Live Edit"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Live Edit Dark Mode Appearance"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Saving..."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Save Changes"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Save Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "General Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable Frontend Dark Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable/ disable the dark mode on site frontend."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the dark mode as the default mode. Visitors will see the dark mode first visit."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable/ disable the OS aware mode. If enabled, the dark mode will be automatically enabled when the user's device is in dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Settings saved successfully."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Copied"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Shortcode copied to clipboard"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Are You Enjoying This Plugin?"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Your feedback helps us create a better experience for you."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Yes, I'm enjoying it!"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Not really"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "We're glad to hear that!"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Would you mind taking a few minutes to rate us and write a review?"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Sure, I'd be happy to"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Maybe later"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Sorry to hear that!"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Could you please provide us with some feedback to help us improve?"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enter your feedback here..."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Submit"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Thank you for your feedback!"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "We'll use your feedback to improve our plugin."
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/admin.js:24246
+#: assets/js/admin.js:24254
+#: assets/js/admin.js:32464
+#: assets/js/admin.js:32490
+#: assets/js/admin.js:32495
+#: assets/js/admin.js:34509
+#: assets/js/admin.js:38172
 #: assets/js/elementor-editor.js:1
 #: assets/js/frontend.js:1
 #: assets/js/live-edit.js:1
-msgid "Dark Mode Toggle"
+msgid "Toggle Dark Mode"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:24422
+msgid "Upgrade to PRO to access dark mode usage analytics."
+msgstr ""
+
+#: assets/js/admin.js:24511
+msgid "Daily Dark Mode Activation Chart"
+msgstr ""
+
+#: assets/js/admin.js:24541
+msgid "Dark Mode Activation & Deactivation Summary"
+msgstr ""
+
+#: assets/js/admin.js:24552
+msgid "Total Activation"
+msgstr ""
+
+#: assets/js/admin.js:24556
+msgid "Total number of dark mode activation."
+msgstr ""
+
+#: assets/js/admin.js:24565
+msgid "Total Deactivation"
+msgstr ""
+
+#: assets/js/admin.js:24569
+msgid "Total number of dark mode deactivation."
+msgstr ""
+
+#: assets/js/admin.js:24670
+msgid "User Feedbacks"
+msgstr ""
+
+#: assets/js/admin.js:24675
+msgid "Message"
+msgstr ""
+
+#: assets/js/admin.js:24695
+msgid "No data found!"
+msgstr ""
+
+#: assets/js/admin.js:24745
+msgid "Dark Mode Analytics"
+msgstr ""
+
+#: assets/js/admin.js:24754
+msgid "From"
+msgstr ""
+
+#: assets/js/admin.js:24774
+msgid "To"
+msgstr ""
+
+#: assets/js/admin.js:24802
+msgid "Filter"
+msgstr ""
+
+#: assets/js/admin.js:24831
+#: assets/js/admin.js:34921
+#: assets/js/admin.js:34967
+#: assets/js/admin.js:35003
+msgid "Error!"
+msgstr ""
+
+#: assets/js/admin.js:24832
+#: assets/js/admin.js:35004
+msgid "Something went wrong."
+msgstr ""
+
+#: assets/js/admin.js:24847
+msgid "Export Analytics"
+msgstr ""
+
+#: assets/js/admin.js:24856
+#: assets/js/admin.js:34953
+msgid "Deleted!"
+msgstr ""
+
+#: assets/js/admin.js:24857
+msgid "All analytics data has been deleted."
+msgstr ""
+
+#: assets/js/admin.js:24883
+msgid "Clear Analytics"
+msgstr ""
+
+#: assets/js/admin.js:24908
+msgid "Page View Summary"
+msgstr ""
+
+#: assets/js/admin.js:24919
+msgid "Total Page Views"
+msgstr ""
+
+#: assets/js/admin.js:24923
+msgid "Total number of page views."
+msgstr ""
+
+#: assets/js/admin.js:24932
+msgid "Dark Mode Page Views"
+msgstr ""
+
+#: assets/js/admin.js:24936
+msgid "Total number of page views in dark mode."
+msgstr ""
+
+#: assets/js/admin.js:24945
+msgid "Percentage of Dark Mode Page Views"
+msgstr ""
+
+#: assets/js/admin.js:24949
+msgid "Percentage of page views in dark mode."
+msgstr ""
+
+#: assets/js/admin.js:24974
+msgid "Usage Summary"
+msgstr ""
+
+#: assets/js/admin.js:24985
+msgid "Total Users"
+msgstr ""
+
+#: assets/js/admin.js:24989
+msgid "Total number of users who visited the site."
+msgstr ""
+
+#: assets/js/admin.js:24998
+msgid "Dark Mode Users"
+msgstr ""
+
+#: assets/js/admin.js:25002
+msgid "Total number of users who used dark mode."
+msgstr ""
+
+#: assets/js/admin.js:25011
+msgid "Percentage of Dark Mode Users"
+msgstr ""
+
+#: assets/js/admin.js:25015
+msgid "Percentage of users who used dark mode."
+msgstr ""
+
+#: assets/js/admin.js:25317
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "PRO Feature"
+msgid "Page-Specific Dark Mode"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:25328
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to set custom color"
+msgid "Enable and customize page-specific dark mode for this page"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:25344
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Color Generator"
+msgid "Upgrade to PRO to set page specific dark mode appearance."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:25347
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Dynamic"
+msgid "Page Specific Dark Mode Appearance"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Static"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Choose how dark mode colors are created."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Dynamic adapts automatically from your website base color, while Static applies a fixed formula for consistent output."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Dark to Light"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Dark to Light is a pro feature."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Enable this option if your website has a dark theme and you'd like to offer a light mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Light Mode Color Scheme"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Dark Mode Color Scheme"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Custom color scheme is a pro feature. Upgrade to PRO to customize the dark mode colors."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Auto"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Presets"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Custom"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Choose how the color scheme of your website changes when dark mode is enabled."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Choose a color preset for the dark mode color scheme."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Custom Color Presets"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Preset Name"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Set the custom preset name."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Background Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select background color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Text Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select text color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Link Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select link color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Button Background Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select button background color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Button Text Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select button text color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Input Background Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select input background color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Input Text Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select input text color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Border Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select border color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Scrollbar Dark Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Disabled"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Set the scrollbar color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Scrollbar Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to set custom scrollbar color"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Set custom scrollbar color for dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Brightness"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Adjust brightness of dark mode color scheme."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Contrast"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Set the contrast of the dark mode color scheme."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Sepia"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Adjust the sepia of the dark mode color scheme."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Grayscale"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Adjust the grayscale of the dark mode color scheme."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "This style is only available in the Pro version."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Custom Toggles"
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/admin.js:25495
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Select Background Image"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:25495
+#: assets/js/admin.js:30121
+#: assets/js/admin.js:30123
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Select Image"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:25498
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Select Video"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26283
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Select Action"
+msgid "Current Page"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26284
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Toggle Dark Mode"
+msgid "Apply the settings to the current page only."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26297
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Switch to Dark Mode"
+msgid "Template"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26298
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Switch to Light Mode"
+msgid "Apply the settings to all pages of current post type."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26314
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Toggle Light Mode"
+msgid "Global"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26315
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Toggle Settings"
+msgid "Apply the settings to the entire website."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26421
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Floating Toggle"
+msgid "Saving.."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26421
+#: assets/js/admin.js:34436
+#: assets/js/admin.js:35105
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Floating Toggle Settings"
+msgid "Save"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26444
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Menu Toggle"
+msgid "Adjustments"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26450
+#: assets/js/admin.js:30564
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Menu Toggle Settings"
+msgid "Animation"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26819
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Custom Triggers"
+msgid "Sorry, No image found!"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26820
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Custom Dark Mode Triggers Settings"
+msgid "Please try to insert the image link manually."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26822
+#: assets/js/admin.js:26916
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Show Floating Toggle"
+msgid "Ok"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26913
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Show/ hide the toggle switch button in the frontend for the users to toggle between the light and dark mode."
+msgid "Sorry, No video found!"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:26914
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Display On"
+msgid "Please try to insert the video link manually."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27003
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Mobile"
+msgid "Upgrade to Pro to unlock this feature."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27083
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Tablet"
+msgid "Unlock PRO Features"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27085
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Desktop"
+msgid "Special"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27085
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Select the devices on which the toggle switch will be displayed."
+msgid "30% OFF"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27091
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Floating Toggle Style"
+msgid "DAYS"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27095
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Choose the style of the floating toggle switch."
+msgid "HOURS"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27099
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Switch Visibility Delay"
+msgid "MINUTES"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27103
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Upgrade to PRO enable Delay Toggle Switch."
+msgid "SECONDS"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27122
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Display the toggle switch after a specified delay following page load."
+msgid "Watch Video"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27128
+#: assets/js/admin.js:38740
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Delay Toggle Time"
+msgid "Upgrade to PRO to unlock the feature."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27417
+msgid "Admin Dark Mode Settings"
+msgstr ""
+
+#: assets/js/admin.js:27422
+msgid "Enable Admin Dark Mode"
+msgstr ""
+
+#: assets/js/admin.js:27433
+msgid "Enable/ disable the dark mode in the backend dashboard for the site admins."
+msgstr ""
+
+#: assets/js/admin.js:27435
+msgid "A new Dark Mode color scheme will be added to the admin color scheme settings in the user profile edit page."
+msgstr ""
+
+#: assets/js/admin.js:27439
+msgid "Admin Dark Mode Position"
+msgstr ""
+
+#: assets/js/admin.js:27451
+msgid "Floating "
+msgstr ""
+
+#: assets/js/admin.js:27453
+msgid "Admin Bar"
+msgstr ""
+
+#: assets/js/admin.js:27455
+msgid "Set admin dark monde position for display Admin Dark Mode Toggle Button in Dashboard."
+msgstr ""
+
+#: assets/js/admin.js:27459
+msgid "Classic Editor Dark Mode"
+msgstr ""
+
+#: assets/js/admin.js:27470
+msgid "Enable/ disable the dark mode in the classic editor."
+msgstr ""
+
+#: assets/js/admin.js:27474
+msgid "Block Editor Dark Mode"
+msgstr ""
+
+#: assets/js/admin.js:27485
+msgid "Enable/ disable the dark mode in the block editor."
+msgstr ""
+
+#: assets/js/admin.js:27489
+msgid "Dark Mode User Roles"
+msgstr ""
+
+#: assets/js/admin.js:27493
+#: assets/js/admin.js:27638
+#: assets/js/admin.js:27666
+#: assets/js/admin.js:27752
+#: assets/js/admin.js:27779
+#: assets/js/admin.js:28675
+#: assets/js/admin.js:28930
+#: assets/js/admin.js:29086
+#: assets/js/admin.js:29117
+#: assets/js/admin.js:29283
+#: assets/js/admin.js:29360
+#: assets/js/admin.js:29415
+#: assets/js/admin.js:29492
+#: assets/js/admin.js:29596
+#: assets/js/admin.js:29677
+#: assets/js/admin.js:29862
+#: assets/js/admin.js:29895
+#: assets/js/admin.js:30271
+#: assets/js/admin.js:30292
+#: assets/js/admin.js:30970
+#: assets/js/admin.js:31047
+#: assets/js/admin.js:31309
+#: assets/js/admin.js:31481
+#: assets/js/admin.js:31537
+#: assets/js/admin.js:31571
+#: assets/js/admin.js:31627
+#: assets/js/admin.js:31799
+#: assets/js/admin.js:31831
+#: assets/js/admin.js:31834
+#: assets/js/admin.js:31878
+#: assets/js/admin.js:31907
+#: assets/js/admin.js:31936
+#: assets/js/admin.js:31965
+#: assets/js/admin.js:31994
+#: assets/js/admin.js:32025
+#: assets/js/admin.js:32061
+#: assets/js/admin.js:32102
+#: assets/js/admin.js:32178
+#: assets/js/admin.js:32215
+#: assets/js/admin.js:32244
+#: assets/js/admin.js:32280
+#: assets/js/admin.js:32366
+#: assets/js/admin.js:33183
+#: assets/js/admin.js:33248
+#: assets/js/admin.js:33677
+#: assets/js/admin.js:33700
+#: assets/js/admin.js:33771
+#: assets/js/admin.js:33839
+#: assets/js/admin.js:34039
+#: assets/js/admin.js:34120
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Set time to show the toggle switch after page load. Default is 5 seconds."
+msgid "PRO Feature"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27543
+msgid "Select the user roles that can use the dark mode in the backend dashboard."
+msgstr ""
+
+#: assets/js/admin.js:27596
+msgid "Advanced Settings"
+msgstr ""
+
+#: assets/js/admin.js:27612
+msgid "Start Time"
+msgstr ""
+
+#: assets/js/admin.js:27620
+msgid "End Time"
+msgstr ""
+
+#: assets/js/admin.js:27630
+msgid "Enable the time-based dark mode to switch your website to dark mode during specific hours, based on the user's local time."
+msgstr ""
+
+#: assets/js/admin.js:27644
+msgid "Upgrade to PRO to enable performance mode."
+msgstr ""
+
+#: assets/js/admin.js:27662
+msgid "URL Parameter"
+msgstr ""
+
+#: assets/js/admin.js:27672
+msgid "Upgrade to PRO to enable/disable dark mode by URL parameter."
+msgstr ""
+
+#: assets/js/admin.js:27686
+msgid "Enable/disable dark mode by adding the following parameter to the URL."
+msgstr ""
+
+#: assets/js/admin.js:27686
+msgid "Enable dark mode"
+msgstr ""
+
+#: assets/js/admin.js:27686
+msgid "Disable dark mode"
+msgstr ""
+
+#: assets/js/admin.js:27701
+msgid "Enable keyboard shortcut to toggle dark mode."
+msgstr ""
+
+#: assets/js/admin.js:27744
+msgid "Analytics Settings"
+msgstr ""
+
+#: assets/js/admin.js:27756
+#: assets/js/admin.js:27783
+msgid "Upgrade to PRO to Enable Analytics"
+msgstr ""
+
+#: assets/js/admin.js:27772
+msgid "Enable dark mode usage analytics"
+msgstr ""
+
+#: assets/js/admin.js:27799
+msgid "Enable user feedback collection for dark mode usage."
+msgstr ""
+
+#: assets/js/admin.js:27799
+msgid "After toggling dark mode 4-5 times, users will be prompted with a feedback form."
+msgstr ""
+
+#: assets/js/admin.js:27854
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Attention Effect"
+msgid "Animation Settings"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27867
+#: assets/js/admin.js:31125
+#: assets/js/admin.js:32754
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "None"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Pulse"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Shake"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Bounce"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Glow"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Shadow"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Ripple"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Rotate"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Flip"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Swing"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Tilt"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Wobble"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Jiggle"
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27870
+#: assets/js/admin.js:32793
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Fade"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27873
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Scale & Fade"
+msgstr ""
+
+#: assets/js/admin.js:27876
+#: assets/js/admin.js:32796
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Slide"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27879
+#: assets/js/admin.js:32775
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Color Transition"
+msgid "Rotate"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27882
+#: assets/js/admin.js:32778
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Tooltip is a PRO feature. Upgrade to PRO to enable tooltip for the toggle switch."
+msgid "Flip"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27885
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Choose the attention effect for the toggle switch."
+msgid "Zoom"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27888
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Show Tooltip"
+msgid "Skew"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27891
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Show/ hide the toggle button tooltip text."
+msgid "Curtain"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27894
+#: assets/js/admin.js:32763
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Light Tooltip Text"
+msgid "Bounce"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27897
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Enter the toggle switch button tooltip text for light mode."
+msgid "Blur"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27900
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Dark Tooltip Text"
+msgid "Twist"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27903
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Enter the toggle switch button tooltip text for dark mode."
+msgid "Squeeze"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27906
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Draggable Floating Toggle"
+msgid "Wave"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27911
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to enable users to drag and adjust the floating toggle position."
+msgid "Upgrade to PRO to enable page transition while activating/ deactivating dark mode."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27924
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Allow users to drag the floating toggle button to any position on the screen."
+msgid "Select the animation for dark mode page transition."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:27930
+#: assets/js/admin.js:31349
+#: assets/js/admin.js:35899
+#: assets/js/admin.js:36055
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Floating Toggle Position"
+msgid "Preview"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28062
+#: assets/js/admin.js:30552
+#: assets/js/admin.js:34273
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to set custom floating toggle position."
+msgid "Colors Settings"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28067
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Left"
+msgid "Color Generator"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28081
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Right"
+msgid "Dynamic"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28085
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Choose the position of the floating toggle switch."
+msgid "Static"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28087
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Choose the side of the page where the toggle switch will be shown."
+msgid "Choose how dark mode colors are created."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28087
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Side Offset"
+msgid "Dynamic adapts automatically from your website base color, while Static applies a fixed formula for consistent output."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28091
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Bottom Offset"
+msgid "Dark to Light"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28099
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Set the bottom offset of the toggle switch from the bottom of the screen."
+msgid "Dark to Light is a pro feature."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28113
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Absolute Toggle Position"
+msgid "Enable this option if your website has a dark theme and you'd like to offer a light mode"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28117
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Upgrade to PRO enable Absolute Toggle position."
+msgid "Light Mode Color Scheme"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28117
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Enable to make the floating toggle scroll from it's position with page scrolling."
+msgid "Dark Mode Color Scheme"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28122
+#: assets/js/admin.js:28641
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Display Toggle In Menu"
+msgid "Custom color scheme is a pro feature. Upgrade to PRO to customize the dark mode colors."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28135
+#: assets/js/admin.js:28654
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Turn on to display the dark mode toggle button in a menu."
+msgid "Auto"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28139
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Select Menus"
+msgid "Presets"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28145
+#: assets/js/admin.js:28658
+#: assets/js/admin.js:32934
+#: assets/js/admin.js:33134
+#: assets/js/admin.js:33799
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Select the menus where you want to display the dark mode toggle."
+msgid "Custom"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28152
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Menu Toggle Style"
+msgid "Choose how the color scheme of your website changes when dark mode is enabled."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28162
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Choose the style of the dark mode toggle button in the menu."
+msgid "Choose a color preset for the dark mode color scheme."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28266
+#: assets/js/admin.js:28386
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Menu Toggle Position"
+msgid "Select"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28294
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Start"
+msgid "Custom Color Presets"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28425
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "End"
+msgid "Preset Name"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28448
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Choose the position of the dark mode toggle button in the menu."
+msgid "Set the custom preset name."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28469
+#: assets/js/admin.js:31278
+#: assets/js/admin.js:36240
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Floating Toggle Size"
+msgid "Background Color"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28470
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Menu Toggle Size"
+msgid "Select background color for dark mode."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28492
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to set custom toggle size."
+msgid "Text Color"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:28493
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select text color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:28515
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Link Color"
+msgstr ""
+
+#: assets/js/admin.js:28516
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select link color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:28538
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Button Background Color"
+msgstr ""
+
+#: assets/js/admin.js:28539
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select button background color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:28542
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Button Text Color"
+msgstr ""
+
+#: assets/js/admin.js:28543
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select button text color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:28565
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Input Background Color"
+msgstr ""
+
+#: assets/js/admin.js:28566
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select input background color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:28588
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Input Text Color"
+msgstr ""
+
+#: assets/js/admin.js:28589
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select input text color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:28611
+#: assets/js/admin.js:36355
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Border Color"
+msgstr ""
+
+#: assets/js/admin.js:28612
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select border color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:28636
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Scrollbar Dark Mode"
+msgstr ""
+
+#: assets/js/admin.js:28652
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Disabled"
+msgstr ""
+
+#: assets/js/admin.js:28665
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the scrollbar color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:28671
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Scrollbar Color"
+msgstr ""
+
+#: assets/js/admin.js:28677
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to set custom scrollbar color"
+msgstr ""
+
+#: assets/js/admin.js:28696
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set custom scrollbar color for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:28744
+#: assets/js/admin.js:30375
+#: assets/js/admin.js:34162
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Brightness"
+msgstr ""
+
+#: assets/js/admin.js:28763
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Adjust brightness of dark mode color scheme."
+msgstr ""
+
+#: assets/js/admin.js:28784
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Contrast"
+msgstr ""
+
+#: assets/js/admin.js:28803
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the contrast of the dark mode color scheme."
+msgstr ""
+
+#: assets/js/admin.js:28826
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Sepia"
+msgstr ""
+
+#: assets/js/admin.js:28845
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Adjust the sepia of the dark mode color scheme."
+msgstr ""
+
+#: assets/js/admin.js:28875
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Grayscale"
+msgstr ""
+
+#: assets/js/admin.js:28894
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Adjust the grayscale of the dark mode color scheme."
+msgstr ""
+
+#: assets/js/admin.js:28932
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to set custom color"
+msgstr ""
+
+#: assets/js/admin.js:29078
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Normal Mode CSS"
+msgstr ""
+
+#: assets/js/admin.js:29084
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Add normal mode CSS here. This CSS will be applied both in light and dark mode."
+msgstr ""
+
+#: assets/js/admin.js:29088
+#: assets/js/admin.js:29119
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to unlock custom CSS feature."
+msgstr ""
+
+#: assets/js/admin.js:29109
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Dark Mode CSS"
+msgstr ""
+
+#: assets/js/admin.js:29115
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Add Dark Mode CSS here. This CSS will be applied only when the dark mode is activated."
+msgstr ""
+
+#: assets/js/admin.js:29115
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "You don't need to add any dark mode prefix selectors here. It will be added automatically."
+msgstr ""
+
+#: assets/js/admin.js:29274
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Excludes Settings"
+msgstr ""
+
+#: assets/js/admin.js:29279
+#: assets/js/admin.js:31477
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Exclude Posts/ Pages"
+msgstr ""
+
+#: assets/js/admin.js:29285
+#: assets/js/admin.js:29349
+#: assets/js/admin.js:29362
+#: assets/js/admin.js:29494
+#: assets/js/admin.js:31483
+#: assets/js/admin.js:31526
+#: assets/js/admin.js:31539
+#: assets/js/admin.js:31616
+#: assets/js/admin.js:31629
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Exclude Pages is a PRO feature. Please upgrade to PRO version to use this feature."
+msgstr ""
+
+#: assets/js/admin.js:29333
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Search & select posts/ pages"
+msgstr ""
+
+#: assets/js/admin.js:29341
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select posts, pages, and custom post types to exclude from dark mode."
+msgstr ""
+
+#: assets/js/admin.js:29345
+#: assets/js/admin.js:29477
+#: assets/js/admin.js:31522
+#: assets/js/admin.js:31612
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Exclude All : "
+msgstr ""
+
+#: assets/js/admin.js:29358
+#: assets/js/admin.js:29490
+#: assets/js/admin.js:31535
+#: assets/js/admin.js:31625
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Except : "
+msgstr ""
+
+#: assets/js/admin.js:29405
+#: assets/js/admin.js:31561
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Search and select posts/pages"
+msgstr ""
+
+#: assets/js/admin.js:29411
+#: assets/js/admin.js:31567
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Exclude Taxonomies"
+msgstr ""
+
+#: assets/js/admin.js:29417
+#: assets/js/admin.js:29481
+#: assets/js/admin.js:31573
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Exclude Taxonomies is a PRO feature. Please upgrade to PRO version to use this feature."
+msgstr ""
+
+#: assets/js/admin.js:29436
+#: assets/js/admin.js:31600
+#: assets/js/admin.js:31651
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Search & select categories/ tags"
+msgstr ""
+
+#: assets/js/admin.js:29473
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select categories, tags, and taxonomies to omit posts from dark mode."
+msgstr ""
+
+#: assets/js/admin.js:29537
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Search and select category/ tags"
+msgstr ""
+
+#: assets/js/admin.js:29610
+#: assets/js/admin.js:29691
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Add Element"
+msgstr ""
+
+#: assets/js/admin.js:29620
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Exclude specific sections/ elements in a page from dark mode. You can use CSS selectors or HTML tags to exclude elements."
+msgstr ""
+
+#: assets/js/admin.js:29624
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Hide Elements"
+msgstr ""
+
+#: assets/js/admin.js:29701
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Hide specific sections/ elements in a page/post. You can use CSS selectors to hide elements."
+msgstr ""
+
+#: assets/js/admin.js:29742
+#: assets/js/admin.js:34270
+msgid "General Settings"
+msgstr ""
+
+#: assets/js/admin.js:29747
+msgid "Enable Frontend Dark Mode"
+msgstr ""
+
+#: assets/js/admin.js:29758
+msgid "Enable/ disable the dark mode on site frontend."
+msgstr ""
+
+#: assets/js/admin.js:29773
+msgid "Set the dark mode as the default mode. Visitors will see the dark mode first visit."
+msgstr ""
+
+#: assets/js/admin.js:29788
+msgid "Enable/ disable the OS aware mode. If enabled, the dark mode will be automatically enabled when the user's device is in dark mode."
+msgstr ""
+
+#: assets/js/admin.js:29841
+msgid "Single"
+msgstr ""
+
+#: assets/js/admin.js:29844
+msgid "Blog Page"
+msgstr ""
+
+#: assets/js/admin.js:29847
+msgid "Archive Page"
+msgstr ""
+
+#: assets/js/admin.js:29850
+msgid "Search Page"
+msgstr ""
+
+#: assets/js/admin.js:29857
+msgid "Enable Reading Mode"
+msgstr ""
+
+#: assets/js/admin.js:29867
+msgid "Reading Mode is a pro feature. Upgrade to PRO to enable the dark mode reading mode."
+msgstr ""
+
+#: assets/js/admin.js:29869
+#: assets/js/admin.js:29903
+#: assets/js/admin.js:29946
+#: assets/js/admin.js:30977
+#: assets/js/admin.js:31022
+#: assets/js/admin.js:31054
+#: assets/js/admin.js:31073
+#: assets/js/admin.js:31114
+#: assets/js/admin.js:31140
+#: assets/js/admin.js:31163
+#: assets/js/admin.js:31211
+#: assets/js/admin.js:31250
+#: assets/js/admin.js:31288
+#: assets/js/admin.js:31318
+#: assets/js/admin.js:31806
+#: assets/js/admin.js:31845
+#: assets/js/admin.js:31885
+#: assets/js/admin.js:31914
+#: assets/js/admin.js:31943
+#: assets/js/admin.js:31972
+#: assets/js/admin.js:32001
+#: assets/js/admin.js:32031
+#: assets/js/admin.js:32068
+#: assets/js/admin.js:32116
+#: assets/js/admin.js:32185
+#: assets/js/admin.js:32222
+#: assets/js/admin.js:32258
+#: assets/js/admin.js:32289
+#: assets/js/admin.js:32309
+#: assets/js/admin.js:32323
+#: assets/js/admin.js:32382
+msgid "Distraction-free Reading Mode"
+msgstr ""
+
+#: assets/js/admin.js:29885
+#: assets/js/admin.js:31038
+msgid "Show/ hide the reading mode button in the frontend for the users to click reading mode."
+msgstr ""
+
+#: assets/js/admin.js:29889
+msgid "Display Post Types"
+msgstr ""
+
+#: assets/js/admin.js:29901
+msgid "Display Post Type is a pro feature. Upgrade to PRO to enable the dark mode display post type."
+msgstr ""
+
+#: assets/js/admin.js:29928
+msgid "Select the post types, where the Reading Mode button will be displayed."
+msgstr ""
+
+#: assets/js/admin.js:29932
+#: assets/js/admin.js:32638
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Display On"
+msgstr ""
+
+#: assets/js/admin.js:29938
+#: assets/js/admin.js:31005
+#: assets/js/admin.js:31203
+#: assets/js/admin.js:31242
+msgid "Pro Feature"
+msgstr ""
+
+#: assets/js/admin.js:29944
+msgid "Upgrade to PRO to display the Reading Mode button on "
+msgstr ""
+
+#: assets/js/admin.js:29970
+msgid "Select the pages where the Reading Mode button will be displayed."
+msgstr ""
+
+#: assets/js/admin.js:30018
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Saving..."
+msgstr ""
+
+#: assets/js/admin.js:30018
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Save Changes"
+msgstr ""
+
+#: assets/js/admin.js:30019
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Save Settings"
+msgstr ""
+
+#: assets/js/admin.js:30147
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Images Settings"
+msgstr ""
+
+#: assets/js/admin.js:30158
+#: assets/js/admin.js:30172
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Image Replacement"
+msgstr ""
+
+#: assets/js/admin.js:30166
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Image Behavior"
+msgstr ""
+
+#: assets/js/admin.js:30172
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Replace specific images when dark mode is enabled."
+msgstr ""
+
+#: assets/js/admin.js:30180
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Light Mode Images"
+msgstr ""
+
+#: assets/js/admin.js:30180
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enter the image links or select the images that are shown in the light mode."
+msgstr ""
+
+#: assets/js/admin.js:30186
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Dark Mode Images"
+msgstr ""
+
+#: assets/js/admin.js:30186
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enter the image links or select the images that will be displayed in the dark mode replacing the light images."
+msgstr ""
+
+#: assets/js/admin.js:30233
+#: assets/js/admin.js:30257
+#: assets/js/admin.js:34073
+#: assets/js/admin.js:34095
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Browse"
+msgstr ""
+
+#: assets/js/admin.js:30270
+#: assets/js/admin.js:34104
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Update"
+msgstr ""
+
+#: assets/js/admin.js:30282
+#: assets/js/admin.js:31183
+#: assets/js/admin.js:34110
+#: assets/js/admin.js:35350
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Remove"
+msgstr ""
+
+#: assets/js/admin.js:30307
+#: assets/js/admin.js:34134
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Add New Group"
+msgstr ""
+
+#: assets/js/admin.js:30330
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Darken background images on dark mode to make them more readable."
+msgstr ""
+
+#: assets/js/admin.js:30336
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Darken Level"
+msgstr ""
+
+#: assets/js/admin.js:30354
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the darken level of the background images on dark mode"
+msgstr ""
+
+#: assets/js/admin.js:30358
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Low Brightness Images"
+msgstr ""
+
+#: assets/js/admin.js:30369
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enable low image brightness on dark mode"
+msgstr ""
+
+#: assets/js/admin.js:30393
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the brightness level of the images on dark mode"
+msgstr ""
+
+#: assets/js/admin.js:30397
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Grayscale Images"
+msgstr ""
+
+#: assets/js/admin.js:30408
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enable grayscale image on dark mode"
+msgstr ""
+
+#: assets/js/admin.js:30414
+#: assets/js/admin.js:34201
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Grayscale Level"
+msgstr ""
+
+#: assets/js/admin.js:30432
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the grayscale level of the images on dark mode"
+msgstr ""
+
+#: assets/js/admin.js:30436
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Invert Images"
+msgstr ""
+
+#: assets/js/admin.js:30447
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enable invert colors of images on dark mode"
+msgstr ""
+
+#: assets/js/admin.js:30453
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Invert Level"
+msgstr ""
+
+#: assets/js/admin.js:30471
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the invert level of the images on dark mode"
+msgstr ""
+
+#: assets/js/admin.js:30507
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to customize the dark mode appearance in a real-time preview."
+msgstr ""
+
+#: assets/js/admin.js:30509
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Dark Mode Appearance Live Edit"
+msgstr ""
+
+#: assets/js/admin.js:30515
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Live Edit"
+msgstr ""
+
+#: assets/js/admin.js:30516
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Live Edit Dark Mode Appearance"
+msgstr ""
+
+#: assets/js/admin.js:30546
+#: assets/js/admin.js:30781
+#: assets/js/admin.js:34326
+msgid "General"
+msgstr ""
+
+#: assets/js/admin.js:30549
+msgid "Advanced"
+msgstr ""
+
+#: assets/js/admin.js:30570
+#: assets/js/admin.js:30805
+msgid "Excludes"
+msgstr ""
+
+#: assets/js/admin.js:30585
+#: assets/js/admin.js:33475
+msgid "Tools"
+msgstr ""
+
+#: assets/js/admin.js:30770
+msgid "Reading Mode Settings"
+msgstr ""
+
+#: assets/js/admin.js:30789
+msgid "Reading Mode Button"
+msgstr ""
+
+#: assets/js/admin.js:30797
+msgid "Reading Mode Layout"
+msgstr ""
+
+#: assets/js/admin.js:30957
+msgid "Button Style"
+msgstr ""
+
+#: assets/js/admin.js:30975
+msgid "Upgrade to PRO to use this button style."
+msgstr ""
+
+#: assets/js/admin.js:30998
+msgid "Choose the button style to enable the Reading Mode."
+msgstr ""
+
+#: assets/js/admin.js:31002
+msgid "Button Position"
+msgstr ""
+
+#: assets/js/admin.js:31020
+msgid "Upgrade to PRO to use this button position."
+msgstr ""
+
+#: assets/js/admin.js:31042
+msgid "Button Label Text"
+msgstr ""
+
+#: assets/js/admin.js:31052
+msgid "Reading Mode Button Label is a pro feature. Upgrade to PRO to enable the dark mode reading mode."
+msgstr ""
+
+#: assets/js/admin.js:31065
+msgid "Enable Reading Mode button label."
+msgstr ""
+
+#: assets/js/admin.js:31066
+msgid "Pro Features"
+msgstr ""
+
+#: assets/js/admin.js:31071
+msgid "Upgrade to PRO to use this Label Text."
+msgstr ""
+
+#: assets/js/admin.js:31084
+msgid "Enter the Reading Mode button label text."
+msgstr ""
+
+#: assets/js/admin.js:31100
+msgid "Button Icon"
+msgstr ""
+
+#: assets/js/admin.js:31112
+#: assets/js/admin.js:31138
+msgid "Upgrade to PRO to use button icon."
+msgstr ""
+
+#: assets/js/admin.js:31152
+msgid "Choose the reading mode button icon."
+msgstr ""
+
+#: assets/js/admin.js:31161
+#: assets/js/admin.js:31804
+msgid "Upgrade to PRO to use custom button icon."
+msgstr ""
+
+#: assets/js/admin.js:31171
+msgid "Upload Icon"
+msgstr ""
+
+#: assets/js/admin.js:31196
+msgid "You can also upload and select any custom image as the button icon."
+msgstr ""
+
+#: assets/js/admin.js:31200
+msgid "Button Size"
+msgstr ""
+
+#: assets/js/admin.js:31209
+msgid "Upgrade to PRO to customize the button size."
+msgstr ""
+
+#: assets/js/admin.js:31235
+msgid "Choose the button size for the Reader Mode, Text-to-Speech, Translation & Reading Time button."
+msgstr ""
+
+#: assets/js/admin.js:31248
+msgid "Upgrade to PRO to customize the button alignment."
+msgstr ""
+
+#: assets/js/admin.js:31274
+msgid "Choose the button size."
+msgstr ""
+
+#: assets/js/admin.js:31298
+msgid "Set the reading mode button background color."
+msgstr ""
+
+#: assets/js/admin.js:31328
+msgid "Set the reading mode button text color."
+msgstr ""
+
+#: assets/js/admin.js:31518
+#: assets/js/admin.js:31608
+msgid "Search and select the posts/ pages that you want to exclude from the reading mode."
+msgstr ""
+
+#: assets/js/admin.js:31779
+#: assets/js/admin.js:33640
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "System Fonts"
+msgstr ""
+
+#: assets/js/admin.js:31785
+#: assets/js/admin.js:33643
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Google Fonts"
+msgstr ""
+
+#: assets/js/admin.js:31792
+msgid "Components"
+msgstr ""
+
+#: assets/js/admin.js:31796
+msgid "Show Toolbar"
+msgstr ""
+
+#: assets/js/admin.js:31821
+msgid "Show/ hide the toolbar tools for the users in the reading mode."
+msgstr ""
+
+#: assets/js/admin.js:31825
+msgid "Toolbar Tools"
+msgstr ""
+
+#: assets/js/admin.js:31843
+msgid "Upgrade to PRO to enable "
+msgstr ""
+
+#: assets/js/admin.js:31871
+msgid "Select the tools that will be displayed in the reading mode."
+msgstr ""
+
+#: assets/js/admin.js:31875
+msgid "Source URL"
+msgstr ""
+
+#: assets/js/admin.js:31883
+msgid "Upgrade to PRO to use Source URL."
+msgstr ""
+
+#: assets/js/admin.js:31900
+msgid "Show/ hide post/page/article source URL in the reading mode."
+msgstr ""
+
+#: assets/js/admin.js:31904
+msgid "Reading Time"
+msgstr ""
+
+#: assets/js/admin.js:31912
+msgid "Upgrade to PRO to use reading time."
+msgstr ""
+
+#: assets/js/admin.js:31929
+msgid "Show/ hide the estimated reading time in the reading mode."
+msgstr ""
+
+#: assets/js/admin.js:31933
+msgid "Post Date"
+msgstr ""
+
+#: assets/js/admin.js:31941
+msgid "Upgrade to PRO to use show date."
+msgstr ""
+
+#: assets/js/admin.js:31958
+msgid "Show/ hide the post publish date in the reading mode."
+msgstr ""
+
+#: assets/js/admin.js:31962
+msgid "Author Name"
+msgstr ""
+
+#: assets/js/admin.js:31970
+msgid "Upgrade to PRO to use Author Name."
+msgstr ""
+
+#: assets/js/admin.js:31987
+msgid "Show/ hide the author name in the reading mode."
+msgstr ""
+
+#: assets/js/admin.js:31991
+msgid "Open Link in New Tab"
+msgstr ""
+
+#: assets/js/admin.js:31999
+#: assets/js/admin.js:32029
+#: assets/js/admin.js:32114
+msgid "Upgrade to PRO to use Open Link in New Tab."
+msgstr ""
+
+#: assets/js/admin.js:32017
+msgid "If enabled, on Reading Mode all the links in the content will be opened in a new tab."
+msgstr ""
+
+#: assets/js/admin.js:32017
+#: assets/js/reading-mode.js:1
+msgid "Appearance"
+msgstr ""
+
+#: assets/js/admin.js:32021
+msgid "Content Width"
+msgstr ""
+
+#: assets/js/admin.js:32043
+#: assets/js/admin.js:32197
+#: assets/js/admin.js:33120
+#: assets/js/admin.js:33787
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 #: assets/js/reading-mode.js:1
 msgid "Small"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:32045
+#: assets/js/admin.js:32199
+#: assets/js/admin.js:33124
+#: assets/js/admin.js:33791
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 #: assets/js/reading-mode.js:1
 msgid "Medium"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:32047
+#: assets/js/admin.js:32201
+#: assets/js/admin.js:33128
+#: assets/js/admin.js:33795
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 #: assets/js/reading-mode.js:1
 msgid "Large"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Choose the size of the floating toggle switch."
+#: assets/js/admin.js:32054
+msgid "Set the reader mode content body width."
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Custom Toggle Size"
+#: assets/js/admin.js:32063
+msgid "Color Theme"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Set the custom size (px) of the dark mode toggle button."
+#: assets/js/admin.js:32066
+msgid "Upgrade to PRO to use Theme."
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Element Selector"
+#: assets/js/admin.js:32090
+#: assets/js/reading-mode.js:1
+msgid "System"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to use the Custom Trigger."
+#: assets/js/admin.js:32097
+msgid "Choose the color theme for the reader mode."
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Action"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Add New Trigger"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "You can toggle the dark mode using any custom elements or buttons of your choice."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "System Fonts"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Google Fonts"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Typography Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Change Font"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Use a different font-family for the dark mode scheme."
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/admin.js:32101
+#: assets/js/admin.js:33694
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 #: assets/js/reading-mode.js:1
 msgid "Font Family"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select a font family for the dark mode scheme."
+#: assets/js/admin.js:32166
+msgid "Choose the font family for the reader mode."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:32175
+#: assets/js/admin.js:33768
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Font Size"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:32183
+msgid "Upgrade to PRO to use Font size."
+msgstr ""
+
+#: assets/js/admin.js:32208
+msgid "Set the font-size for the reading mode."
+msgstr ""
+
+#: assets/js/admin.js:32208
+msgid "Progress Bar Settings"
+msgstr ""
+
+#: assets/js/admin.js:32212
+msgid "Enable Reading Progress"
+msgstr ""
+
+#: assets/js/admin.js:32220
+msgid "Upgrade to PRO to use Reading Progress Bar."
+msgstr ""
+
+#: assets/js/admin.js:32237
+msgid "Show/ hide the reading progress bar in the general mode posts."
+msgstr ""
+
+#: assets/js/admin.js:32241
+msgid "Progress Bar Position"
+msgstr ""
+
+#: assets/js/admin.js:32256
+msgid "Upgrade to PRO to use Progress Bar Position."
+msgstr ""
+
+#: assets/js/admin.js:32275
+msgid "Select display position reading progress bar."
+msgstr ""
+
+#: assets/js/admin.js:32279
+msgid "Progress Bar Color"
+msgstr ""
+
+#: assets/js/admin.js:32284
+msgid "Color Mode"
+msgstr ""
+
+#: assets/js/admin.js:32287
+#: assets/js/admin.js:32307
+msgid "Upgrade to PRO to change the progress bar color."
+msgstr ""
+
+#: assets/js/admin.js:32301
+msgid "Solid"
+msgstr ""
+
+#: assets/js/admin.js:32303
+msgid "Gradient"
+msgstr ""
+
+#: assets/js/admin.js:32321
+msgid "Upgrade to PRO to customize the progress bar color."
+msgstr ""
+
+#: assets/js/admin.js:32355
+msgid "Set the progressbar color."
+msgstr ""
+
+#: assets/js/admin.js:32365
+msgid "Progress Bar Height"
+msgstr ""
+
+#: assets/js/admin.js:32380
+msgid "Upgrade to PRO to customize the progress bar height."
+msgstr ""
+
+#: assets/js/admin.js:32395
+msgid "Set the progressbar height."
+msgstr ""
+
+#: assets/js/admin.js:32461
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select Action"
+msgstr ""
+
+#: assets/js/admin.js:32467
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Switch to Dark Mode"
+msgstr ""
+
+#: assets/js/admin.js:32470
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Switch to Light Mode"
+msgstr ""
+
+#: assets/js/admin.js:32492
+#: assets/js/admin.js:34511
+#: assets/js/admin.js:38174
+#: assets/js/elementor-editor.js:1
+#: assets/js/frontend.js:1
+#: assets/js/live-edit.js:1
+msgid "Toggle Light Mode"
+msgstr ""
+
+#: assets/js/admin.js:32584
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Toggle Settings"
+msgstr ""
+
+#: assets/js/admin.js:32595
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Floating Toggle"
+msgstr ""
+
+#: assets/js/admin.js:32596
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Floating Toggle Settings"
+msgstr ""
+
+#: assets/js/admin.js:32605
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Menu Toggle"
+msgstr ""
+
+#: assets/js/admin.js:32606
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Menu Toggle Settings"
+msgstr ""
+
+#: assets/js/admin.js:32615
+#: assets/js/admin.js:33177
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Custom Triggers"
+msgstr ""
+
+#: assets/js/admin.js:32616
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Custom Dark Mode Triggers Settings"
+msgstr ""
+
+#: assets/js/admin.js:32621
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Show Floating Toggle"
+msgstr ""
+
+#: assets/js/admin.js:32632
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Show/ hide the toggle switch button in the frontend for the users to toggle between the light and dark mode."
+msgstr ""
+
+#: assets/js/admin.js:32650
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Mobile"
+msgstr ""
+
+#: assets/js/admin.js:32663
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Tablet"
+msgstr ""
+
+#: assets/js/admin.js:32676
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Desktop"
+msgstr ""
+
+#: assets/js/admin.js:32683
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select the devices on which the toggle switch will be displayed."
+msgstr ""
+
+#: assets/js/admin.js:32687
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Floating Toggle Style"
+msgstr ""
+
+#: assets/js/admin.js:32693
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Choose the style of the floating toggle switch."
+msgstr ""
+
+#: assets/js/admin.js:32705
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Switch Visibility Delay"
+msgstr ""
+
+#: assets/js/admin.js:32712
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO enable Delay Toggle Switch."
+msgstr ""
+
+#: assets/js/admin.js:32725
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Display the toggle switch after a specified delay following page load."
+msgstr ""
+
+#: assets/js/admin.js:32731
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Delay Toggle Time"
+msgstr ""
+
+#: assets/js/admin.js:32744
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set time to show the toggle switch after page load. Default is 5 seconds."
+msgstr ""
+
+#: assets/js/admin.js:32748
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Attention Effect"
+msgstr ""
+
+#: assets/js/admin.js:32757
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Pulse"
+msgstr ""
+
+#: assets/js/admin.js:32760
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Shake"
+msgstr ""
+
+#: assets/js/admin.js:32766
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Glow"
+msgstr ""
+
+#: assets/js/admin.js:32769
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Shadow"
+msgstr ""
+
+#: assets/js/admin.js:32772
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Ripple"
+msgstr ""
+
+#: assets/js/admin.js:32781
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Swing"
+msgstr ""
+
+#: assets/js/admin.js:32784
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Tilt"
+msgstr ""
+
+#: assets/js/admin.js:32787
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Wobble"
+msgstr ""
+
+#: assets/js/admin.js:32790
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Jiggle"
+msgstr ""
+
+#: assets/js/admin.js:32799
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Color Transition"
+msgstr ""
+
+#: assets/js/admin.js:32804
+#: assets/js/admin.js:32829
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Tooltip is a PRO feature. Upgrade to PRO to enable tooltip for the toggle switch."
+msgstr ""
+
+#: assets/js/admin.js:32818
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Choose the attention effect for the toggle switch."
+msgstr ""
+
+#: assets/js/admin.js:32822
+#: assets/js/admin.js:35381
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Show Tooltip"
+msgstr ""
+
+#: assets/js/admin.js:32842
+#: assets/js/admin.js:35392
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Show/ hide the toggle button tooltip text."
+msgstr ""
+
+#: assets/js/admin.js:32848
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Light Tooltip Text"
+msgstr ""
+
+#: assets/js/admin.js:32860
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enter the toggle switch button tooltip text for light mode."
+msgstr ""
+
+#: assets/js/admin.js:32866
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Dark Tooltip Text"
+msgstr ""
+
+#: assets/js/admin.js:32878
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enter the toggle switch button tooltip text for dark mode."
+msgstr ""
+
+#: assets/js/admin.js:32882
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Draggable Floating Toggle"
+msgstr ""
+
+#: assets/js/admin.js:32889
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to enable users to drag and adjust the floating toggle position."
+msgstr ""
+
+#: assets/js/admin.js:32902
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Allow users to drag the floating toggle button to any position on the screen."
+msgstr ""
+
+#: assets/js/admin.js:32906
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Floating Toggle Position"
+msgstr ""
+
+#: assets/js/admin.js:32911
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to set custom floating toggle position."
+msgstr ""
+
+#: assets/js/admin.js:32924
+#: assets/js/admin.js:32964
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Left"
+msgstr ""
+
+#: assets/js/admin.js:32928
+#: assets/js/admin.js:32968
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Right"
+msgstr ""
+
+#: assets/js/admin.js:32943
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Choose the position of the floating toggle switch."
+msgstr ""
+
+#: assets/js/admin.js:32970
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Choose the side of the page where the toggle switch will be shown."
+msgstr ""
+
+#: assets/js/admin.js:32972
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Side Offset"
+msgstr ""
+
+#: assets/js/admin.js:32995
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Bottom Offset"
+msgstr ""
+
+#: assets/js/admin.js:33016
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the bottom offset of the toggle switch from the bottom of the screen."
+msgstr ""
+
+#: assets/js/admin.js:33020
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Absolute Toggle Position"
+msgstr ""
+
+#: assets/js/admin.js:33027
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO enable Absolute Toggle position."
+msgstr ""
+
+#: assets/js/admin.js:33040
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Enable to make the floating toggle scroll from it's position with page scrolling."
+msgstr ""
+
+#: assets/js/admin.js:33046
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Navigation Menus Not Supported"
+msgstr ""
+
+#: assets/js/admin.js:33048
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Your active theme is a Block Theme. Block themes do not support classic navigation menus. To display the Dark Mode toggle in a menu, please use the “Dracula Dark Mode Switch” block inside your site’s Navigation block."
+msgstr ""
+
+#: assets/js/admin.js:33059
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Display Toggle In Menu"
+msgstr ""
+
+#: assets/js/admin.js:33070
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Turn on to display the dark mode toggle button in a menu."
+msgstr ""
+
+#: assets/js/admin.js:33074
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Menu Toggle Placement"
+msgstr ""
+
+#: assets/js/admin.js:33078
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Add the Dracula Dark Mode Switch to your WordPress menus"
+msgstr ""
+
+#: assets/js/admin.js:33078
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Drag & drop the Dark Mode Switcher into any menu from Appearance → Menus in your WordPress dashboard."
+msgstr ""
+
+#: assets/js/admin.js:33083
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Open Menu Settings"
+msgstr ""
+
+#: assets/js/admin.js:33096
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Floating Toggle Size"
+msgstr ""
+
+#: assets/js/admin.js:33096
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Menu Toggle Size"
+msgstr ""
+
+#: assets/js/admin.js:33101
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to set custom toggle size."
+msgstr ""
+
+#: assets/js/admin.js:33143
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Choose the size of the floating toggle switch."
+msgstr ""
+
+#: assets/js/admin.js:33149
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Custom Toggle Size"
+msgstr ""
+
+#: assets/js/admin.js:33173
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Set the custom size (px) of the dark mode toggle button."
+msgstr ""
+
+#: assets/js/admin.js:33193
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Element Selector"
+msgstr ""
+
+#: assets/js/admin.js:33202
+#: assets/js/admin.js:33224
+#: assets/js/admin.js:33234
+#: assets/js/admin.js:33254
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Upgrade to PRO to use the Custom Trigger."
+msgstr ""
+
+#: assets/js/admin.js:33217
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Action"
+msgstr ""
+
+#: assets/js/admin.js:33265
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Add New Trigger"
+msgstr ""
+
+#: assets/js/admin.js:33272
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "You can toggle the dark mode using any custom elements or buttons of your choice."
+msgstr ""
+
+#: assets/js/admin.js:33347
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "This style is only available in the Pro version."
+msgstr ""
+
+#: assets/js/admin.js:33366
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Custom Toggles"
+msgstr ""
+
+#: assets/js/admin.js:33480
+msgid "Enable Auto-save Settings"
+msgstr ""
+
+#: assets/js/admin.js:33493
+msgid "Enable automatic saving when you change a setting"
+msgstr ""
+
+#: assets/js/admin.js:33505
+msgid "Export"
+msgstr ""
+
+#: assets/js/admin.js:33519
+msgid "Import"
+msgstr ""
+
+#: assets/js/admin.js:33571
+msgid "Reset"
+msgstr ""
+
+#: assets/js/admin.js:33669
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Typography Settings"
+msgstr ""
+
+#: assets/js/admin.js:33674
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Change Font"
+msgstr ""
+
+#: assets/js/admin.js:33690
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Use a different font-family for the dark mode scheme."
+msgstr ""
+
+#: assets/js/admin.js:33764
+#: assets/js/elementor-editor.js:1
+#: assets/js/live-edit.js:1
+msgid "Select a font family for the dark mode scheme."
+msgstr ""
+
+#: assets/js/admin.js:33806
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the font-size in the dark mode."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:33812
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Custom Font Size"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:33835
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Text Stroke"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:33868
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the text stroke in the dark mode."
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Excludes Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Exclude Posts/ Pages"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Exclude Pages is a PRO feature. Please upgrade to PRO version to use this feature."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Search & select posts/ pages"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select posts, pages, and custom post types to exclude from dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Exclude All : "
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Except : "
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Search and select posts/pages"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Exclude Taxonomies"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Exclude Taxonomies is a PRO feature. Please upgrade to PRO version to use this feature."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Search & select categories/ tags"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select categories, tags, and taxonomies to omit posts from dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Search and select category/ tags"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Add Element"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Exclude specific sections/ elements in a page from dark mode. You can use CSS selectors or HTML tags to exclude elements."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Hide Elements"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Hide specific sections/ elements in a page/post. You can use CSS selectors to hide elements."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Normal Mode CSS"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Add normal mode CSS here. This CSS will be applied both in light and dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to unlock custom CSS feature."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Dark Mode CSS"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Add Dark Mode CSS here. This CSS will be applied only when the dark mode is activated."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "You don't need to add any dark mode prefix selectors here. It will be added automatically."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable Auto-save Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable automatic saving when you change a setting"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Export"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Import"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Reset"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Sorry, No image found!"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Please try to insert the image link manually."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Ok"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Images Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Image Replacement"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Image Behavior"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Replace specific images when dark mode is enabled."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Light Mode Images"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Enter the image links or select the images that are shown in the light mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Dark Mode Images"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Enter the image links or select the images that will be displayed in the dark mode replacing the light images."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Browse"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Update"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Remove"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Add New Group"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Darken background images on dark mode to make them more readable."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Darken Level"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Set the darken level of the background images on dark mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Low Brightness Images"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Enable low image brightness on dark mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Set the brightness level of the images on dark mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Grayscale Images"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Enable grayscale image on dark mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Grayscale Level"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Set the grayscale level of the images on dark mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Invert Images"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Enable invert colors of images on dark mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Invert Level"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Set the invert level of the images on dark mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Admin Dark Mode Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable Admin Dark Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable/ disable the dark mode in the backend dashboard for the site admins."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "A new Dark Mode color scheme will be added to the admin color scheme settings in the user profile edit page."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Admin Dark Mode Position"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Floating "
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Admin Bar"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set admin dark monde position for display Admin Dark Mode Toggle Button in Dashboard."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Classic Editor Dark Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable/ disable the dark mode in the classic editor."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Block Editor Dark Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable/ disable the dark mode in the block editor."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Dark Mode User Roles"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Select the user roles that can use the dark mode in the backend dashboard."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Single"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Blog Page"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Archive Page"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Search Page"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable Reading Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Reading Mode is a pro feature. Upgrade to PRO to enable the dark mode reading mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Distraction-free Reading Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Show/ hide the reading mode button in the frontend for the users to click reading mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Display Post Types"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Display Post Type is a pro feature. Upgrade to PRO to enable the dark mode display post type."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Select the post types, where the Reading Mode button will be displayed."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Pro Feature"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to display the Reading Mode button on "
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Select the pages where the Reading Mode button will be displayed."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Button Style"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use this button style."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Choose the button style to enable the Reading Mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Button Position"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use this button position."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Button Label Text"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Reading Mode Button Label is a pro feature. Upgrade to PRO to enable the dark mode reading mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable Reading Mode button label."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Pro Features"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use this Label Text."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enter the Reading Mode button label text."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Button Icon"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use button icon."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Choose the reading mode button icon."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use custom button icon."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upload Icon"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "You can also upload and select any custom image as the button icon."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Button Size"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to customize the button size."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Choose the button size for the Reader Mode, Text-to-Speech, Translation & Reading Time button."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to customize the button alignment."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Choose the button size."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the reading mode button background color."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the reading mode button text color."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Preview"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Components"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Show Toolbar"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Show/ hide the toolbar tools for the users in the reading mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Toolbar Tools"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to enable "
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Select the tools that will be displayed in the reading mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Source URL"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use Source URL."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Show/ hide post/page/article source URL in the reading mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Reading Time"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use reading time."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Show/ hide the estimated reading time in the reading mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Post Date"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use show date."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Show/ hide the post publish date in the reading mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Author Name"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use Author Name."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Show/ hide the author name in the reading mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Open Link in New Tab"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use Open Link in New Tab."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "If enabled, on Reading Mode all the links in the content will be opened in a new tab."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/reading-mode.js:1
-msgid "Appearance"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Content Width"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the reader mode content body width."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Color Theme"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use Theme."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/reading-mode.js:1
-msgid "System"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Choose the color theme for the reader mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Choose the font family for the reader mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use Font size."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the font-size for the reading mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Progress Bar Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable Reading Progress"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use Reading Progress Bar."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Show/ hide the reading progress bar in the general mode posts."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Progress Bar Position"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to use Progress Bar Position."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Select display position reading progress bar."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Progress Bar Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Color Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to change the progress bar color."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Solid"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Gradient"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to customize the progress bar color."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the progressbar color."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Progress Bar Height"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to customize the progress bar height."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the progressbar height."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Search and select the posts/ pages that you want to exclude from the reading mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Reading Mode Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Reading Mode Button"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Reading Mode Layout"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Advanced Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Start Time"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "End Time"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable the time-based dark mode to switch your website to dark mode during specific hours, based on the user's local time."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to enable performance mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "URL Parameter"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to enable/disable dark mode by URL parameter."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable/disable dark mode by adding the following parameter to the URL."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable dark mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Disable dark mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable keyboard shortcut to toggle dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Sorry, No video found!"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Please try to insert the video link manually."
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34002
+#: assets/js/admin.js:34016
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Video Replacement"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34010
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Video Behavior"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34016
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Replace specific videos when dark mode is enabled. You can replace any self-hosted, youtube, vimeo and dailymotion videos."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34024
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Light Mode Videos"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34024
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enter the video links or select the videos that are shown in the light mode."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34030
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Dark Mode Videos"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34030
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enter the video links or select the videos that will be displayed in the dark mode replacing the light videos."
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34145
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Low Brightness Videos"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34156
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enable low video brightness on dark mode"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34180
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the brightness level of the videos on dark mode"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34184
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Grayscale Videos"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34195
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Enable grayscale video on dark mode"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34219
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
 msgid "Set the grayscale level of the videos on dark mode"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Animation Settings"
+#: assets/js/admin.js:34410
+msgid "Skip"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Scale & Fade"
+#: assets/js/admin.js:34411
+#: assets/js/admin.js:34412
+msgid "Skip Setup"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Zoom"
+#: assets/js/admin.js:34420
+#: assets/js/admin.js:34421
+#: assets/js/admin.js:34422
+#: assets/js/admin.js:35088
+msgid "Back"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Skew"
+#: assets/js/admin.js:34435
+msgid "Done"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Curtain"
+#: assets/js/admin.js:34435
+msgid "Continue"
 msgstr ""
 
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Blur"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Twist"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Squeeze"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Wave"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to enable page transition while activating/ deactivating dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Select the animation for dark mode page transition."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Analytics Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to Enable Analytics"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable dark mode usage analytics"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enable user feedback collection for dark mode usage."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "After toggling dark mode 4-5 times, users will be prompted with a feedback form."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "No toggle button created yet!"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Click on the button below to create your first toggle button."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Create new button"
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34603
 msgid "Move"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:34621
+#: assets/js/admin.js:34677
+#: assets/js/admin.js:38201
+#: assets/js/elementor-editor.js:1
+#: assets/js/frontend.js:1
+#: assets/js/live-edit.js:1
+msgid "Dark Mode Toggle"
+msgstr ""
+
+#: assets/js/admin.js:34907
+msgid "Updated!"
+msgstr ""
+
+#: assets/js/admin.js:34908
+msgid "Toggle has been updated."
+msgstr ""
+
+#: assets/js/admin.js:34922
+msgid "Something went wrong while updating the toggle."
+msgstr ""
+
+#: assets/js/admin.js:34954
+msgid "Toggle has been deleted."
+msgstr ""
+
+#: assets/js/admin.js:34968
+msgid "Something went wrong while deleting the toggle."
+msgstr ""
+
+#: assets/js/admin.js:34989
+msgid "Duplicated!"
+msgstr ""
+
+#: assets/js/admin.js:34990
+msgid "Toggle has been duplicated."
+msgstr ""
+
+#: assets/js/admin.js:35065
+msgid "Edit Toggle"
+msgstr ""
+
+#: assets/js/admin.js:35065
+msgid "Add New Toggle"
+msgstr ""
+
+#: assets/js/admin.js:35096
+#: assets/js/admin.js:35862
+msgid "Delete"
+msgstr ""
+
+#: assets/js/admin.js:35113
+msgid "Add New"
+msgstr ""
+
+#: assets/js/admin.js:35143
+msgid "Upgrade to PRO to create customized dark mode toggle button."
+msgstr ""
+
+#: assets/js/admin.js:35146
+msgid "Custom Dark Mode Toggle Button"
+msgstr ""
+
+#: assets/js/admin.js:35260
+msgid "Button Text"
+msgstr ""
+
+#: assets/js/admin.js:35277
+msgid "Enter the text for the button."
+msgstr ""
+
+#: assets/js/admin.js:35292
+msgid "Show/ hide the button icon."
+msgstr ""
+
+#: assets/js/admin.js:35296
+msgid "Choose Icon"
+msgstr ""
+
+#: assets/js/admin.js:35298
+msgid "Choose the button icon. You can also upload your own SVG icon."
+msgstr ""
+
+#: assets/js/admin.js:35334
+msgid "Upload SVG"
+msgstr ""
+
+#: assets/js/admin.js:35398
+msgid "Tooltip Text"
+msgstr ""
+
+#: assets/js/admin.js:35416
+msgid "Enter the toggle switch button tooltip text."
+msgstr ""
+
+#: assets/js/admin.js:35420
+msgid "Button Classes"
+msgstr ""
+
+#: assets/js/admin.js:35433
+msgid "Add custom classes to the button."
+msgstr ""
+
+#: assets/js/admin.js:35454
+msgid "No toggle button created yet!"
+msgstr ""
+
+#: assets/js/admin.js:35454
+msgid "Click on the button below to create your first toggle button."
+msgstr ""
+
+#: assets/js/admin.js:35462
+msgid "Create new button"
+msgstr ""
+
+#: assets/js/admin.js:35513
+#: assets/js/admin.js:37217
+msgid "Copied"
+msgstr ""
+
+#: assets/js/admin.js:35514
+#: assets/js/admin.js:37218
+msgid "Shortcode copied to clipboard"
+msgstr ""
+
+#: assets/js/admin.js:35544
+msgid "Layout"
+msgstr ""
+
+#: assets/js/admin.js:35548
+msgid "Content"
+msgstr ""
+
+#: assets/js/admin.js:35552
+msgid "Style"
+msgstr ""
+
+#: assets/js/admin.js:35693
+msgid "Choose button layout"
+msgstr ""
+
+#: assets/js/admin.js:35780
 msgid "All Toggles"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35782
 msgid "Item"
 msgid_plural "Items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35800
 msgid "Columns"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35820
 msgid "Item(s) selected"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35828
 msgid "Clear Selection"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35837
 msgid "Duplicate"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35842
+#: assets/js/admin.js:35963
 msgid "Are you sure?"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35843
 msgid "You will not be able to recover this shortcode!"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35846
+#: assets/js/admin.js:35967
 msgid "Yes, delete it!"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Delete"
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35885
 msgid "ID"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35895
 msgid "Title"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35899
 msgid "Shortcode"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35905
 msgid "Created at"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35907
 msgid "Actions"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35942
 msgid "Copy shortcode"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35958
 msgid "Delete toggle"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35964
 msgid "You won't be able to revert this!"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35968
 msgid "No, cancel!"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:35988
 msgid "Duplicate toggle"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:36002
 msgid "Edit toggle"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Button Text"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enter the text for the button."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Show/ hide the button icon."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Choose Icon"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Choose the button icon. You can also upload your own SVG icon."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upload SVG"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Tooltip Text"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Enter the toggle switch button tooltip text."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Button Classes"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Add custom classes to the button."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Style Settings"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Width"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the button width."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Padding"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the button padding spacing."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Text & Icon Size"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the text and icon size."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Text & Icon Spacing"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the spacing between the text and icon."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Text & Icon Color"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the button text and icon color."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Choose the button background color type."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the button background color."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Border Width"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the border button width."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the border color."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Border Radius"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Set the border radius of the button."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Choose button layout"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Layout"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Content"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Style"
-msgstr ""
-
-#: assets/js/admin.js:1
+#: assets/js/admin.js:36058
 msgid "Copy Shortcode"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Updated!"
+#: assets/js/admin.js:36131
+msgid "Style Settings"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Toggle has been updated."
+#: assets/js/admin.js:36135
+msgid "Width"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Error!"
+#: assets/js/admin.js:36152
+msgid "Set the button width."
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Something went wrong while updating the toggle."
+#: assets/js/admin.js:36156
+msgid "Padding"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Deleted!"
+#: assets/js/admin.js:36173
+msgid "Set the button padding spacing."
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Toggle has been deleted."
+#: assets/js/admin.js:36177
+msgid "Text & Icon Size"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Something went wrong while deleting the toggle."
+#: assets/js/admin.js:36194
+msgid "Set the text and icon size."
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Edit Toggle"
+#: assets/js/admin.js:36198
+msgid "Text & Icon Spacing"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Add New Toggle"
+#: assets/js/admin.js:36215
+msgid "Set the spacing between the text and icon."
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Back"
+#: assets/js/admin.js:36219
+msgid "Text & Icon Color"
 msgstr ""
 
-#: assets/js/admin.js:1
+#: assets/js/admin.js:36236
+msgid "Set the button text and icon color."
+msgstr ""
+
+#: assets/js/admin.js:36257
+msgid "Choose the button background color type."
+msgstr ""
+
+#: assets/js/admin.js:36330
+msgid "Set the button background color."
+msgstr ""
+
+#: assets/js/admin.js:36334
+msgid "Border Width"
+msgstr ""
+
+#: assets/js/admin.js:36351
+msgid "Set the border button width."
+msgstr ""
+
+#: assets/js/admin.js:36372
+msgid "Set the border color."
+msgstr ""
+
+#: assets/js/admin.js:36376
+msgid "Border Radius"
+msgstr ""
+
+#: assets/js/admin.js:36393
+msgid "Set the border radius of the button."
+msgstr ""
+
+#: assets/js/admin.js:36663
 #: assets/js/elementor-editor.js:1
 #: assets/js/live-edit.js:1
-msgid "Save"
+msgid "Settings saved successfully."
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Add New"
+#: assets/js/admin.js:37782
+msgid "Are You Enjoying This Plugin?"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Duplicated!"
+#: assets/js/admin.js:37783
+msgid "Your feedback helps us create a better experience for you."
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Toggle has been duplicated."
+#: assets/js/admin.js:37786
+msgid "Yes, I'm enjoying it!"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Something went wrong."
+#: assets/js/admin.js:37787
+msgid "Not really"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to create customized dark mode toggle button."
+#: assets/js/admin.js:37798
+msgid "We're glad to hear that!"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Custom Dark Mode Toggle Button"
+#: assets/js/admin.js:37799
+msgid "Would you mind taking a few minutes to rate us and write a review?"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Dark Mode Analytics"
+#: assets/js/admin.js:37802
+msgid "Sure, I'd be happy to"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "From"
+#: assets/js/admin.js:37803
+msgid "Maybe later"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "To"
+#: assets/js/admin.js:37822
+msgid "Sorry to hear that!"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Filter"
+#: assets/js/admin.js:37823
+msgid "Could you please provide us with some feedback to help us improve?"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Export Analytics"
+#: assets/js/admin.js:37825
+msgid "Enter your feedback here..."
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "All analytics data has been deleted."
+#: assets/js/admin.js:37827
+msgid "Submit"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Clear Analytics"
+#: assets/js/admin.js:37838
+msgid "Thank you for your feedback!"
 msgstr ""
 
-#: assets/js/admin.js:1
-msgid "Usage Summary"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Total Users"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Total number of users who visited the site."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Dark Mode Users"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Total number of users who used dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Percentage of Dark Mode Users"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Percentage of users who used dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Daily Dark Mode Activation Chart"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Dark Mode Activation & Deactivation Summary"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Total Activation"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Total number of dark mode activation."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Total Deactivation"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Total number of dark mode deactivation."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Page View Summary"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Total Page Views"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Total number of page views."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Dark Mode Page Views"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Total number of page views in dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Percentage of Dark Mode Page Views"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Percentage of page views in dark mode."
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "User Feedbacks"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Message"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "No data found!"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Upgrade to PRO to access dark mode usage analytics."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Current Page"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Apply the settings to the current page only."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Template"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Apply the settings to all pages of current post type."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Global"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Apply the settings to the entire website."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Saving.."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Adjustments"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Page-Specific Dark Mode"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Enable and customize page-specific dark mode for this page"
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Upgrade to PRO to set page specific dark mode appearance."
-msgstr ""
-
-#: assets/js/admin.js:1
-#: assets/js/elementor-editor.js:1
-#: assets/js/live-edit.js:1
-msgid "Page Specific Dark Mode Appearance"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Skip"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Skip Setup"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Done"
-msgstr ""
-
-#: assets/js/admin.js:1
-msgid "Continue"
+#: assets/js/admin.js:37839
+msgid "We'll use your feedback to improve our plugin."
 msgstr ""
 
 #: assets/js/reading-mode.js:1

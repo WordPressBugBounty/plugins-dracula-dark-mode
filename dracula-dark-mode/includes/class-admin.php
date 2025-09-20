@@ -8,7 +8,7 @@ class Dracula_Admin
     private static $instance = null;
 
     public $admin_pages = array(
-        'toggle_builder' => '',
+            'toggle_builder' => '',
     );
 
     public function __construct()
@@ -44,6 +44,18 @@ class Dracula_Admin
 
         // Redirect URL after activation
         ddm_fs()->add_filter('connect_url', [$this, 'redirect_after_activation']);
+
+        // Menu Metabox
+        if (dracula_get_settings('displayInMenu')) {
+            add_action('admin_head-nav-menus.php', array($this, 'switch_meta_box'));
+
+            // Menu Custom Fields
+            add_action('wp_nav_menu_item_custom_fields', array($this, 'edit_switch_item'), 10, 5);
+
+            // Save Menu Custom Fields
+            add_action('wp_update_nav_menu_item', array($this, 'save_switch_item'), 10, 3);
+        }
+
     }
 
     public function redirect_after_activation($url)
@@ -58,7 +70,6 @@ class Dracula_Admin
             if ($file === false || strpos($file, 'dracula-dark-mode') === false) {
                 return $url;
             }
-
         } catch (\ReflectionException $e) {
             // Optionally log the error here for debugging
             return $url;
@@ -108,10 +119,10 @@ class Dracula_Admin
         global $current_screen;
 
         if (!empty($current_screen) && !in_array($current_screen->id, [
-                'dracula_page_dracula-getting-started',
-                'dracula_page_dracula-toggle-builder',
-                'toplevel_page_dracula',
-            ])) {
+                        'dracula_page_dracula-getting-started',
+                        'dracula_page_dracula-toggle-builder',
+                        'toplevel_page_dracula',
+                ])) {
             return;
         }
 
@@ -136,7 +147,7 @@ class Dracula_Admin
             <td>
                 <label for="admin_bar_toggle">
                     <input name="admin_bar_toggle" type="checkbox" id="admin_bar_toggle"
-                           value="on"<?php checked('off' != $profile_user->admin_bar_toggle); ?> />
+                           value="on" <?php checked('off' != $profile_user->admin_bar_toggle); ?> />
                     <?php _e('Show dark mode toggle in the top admin bar.', 'dracula-dark-mode'); ?>
                 </label><br/>
             </td>
@@ -184,7 +195,6 @@ class Dracula_Admin
             } else if ('auto' === window.draculaMode) {
                 window.draculaDarkMode.auto();
             }
-
         </script>
         <?php
     }
@@ -199,8 +209,8 @@ class Dracula_Admin
         $admin_text_color = dracula_get_settings('adminTextColor', '#e8e6e3');
 
         wp_admin_css_color('z_dracula', __('Dark Mode', 'dracula-dark-mode'), '', [
-            $admin_background_color,
-            $admin_text_color
+                $admin_background_color,
+                $admin_text_color
         ], '');
     }
 
@@ -223,17 +233,16 @@ class Dracula_Admin
         }
 
         $args = [
-            'parent' => 'top-secondary',
-            'id' => 'dracula',
-            'title' => <<<HTML
+                'parent' => 'top-secondary',
+                'id' => 'dracula',
+                'title' => <<<HTML
     <button
         class="dracula-toggle admin-menu-item dracula-ignore style-14"
         onclick="draculaDarkMode.toggle()"
     >
         <i class="dracula-toggle-icon"></i>
     </button>
-HTML
-            ,
+HTML,
         ];
 
         $wp_admin_bar->add_node($args);
@@ -263,14 +272,13 @@ HTML
         </button>
 </div>
 HTML;
-
     }
 
     public function add_admin_menu()
     {
         $this->admin_pages['dracula'] = add_menu_page('Dracula Dark Mode', 'Dark Mode', 'manage_options', 'dracula', array(
-            $this,
-            'admin_page'
+                $this,
+                'admin_page'
         ), DRACULA_ASSETS . '/images/dracula-icon.svg', 50);
 
         // Settings Page
@@ -278,24 +286,21 @@ HTML;
 
         // Toggle Builder Page
         $this->admin_pages['toggle_builder'] = add_submenu_page('dracula', __('Toggle Builder - Dracula', 'dracula-dark-mode'), __('Toggle Builder', 'dracula-dark-mode'), 'manage_options', 'dracula-toggle-builder', array(
-            'Dracula_Toggle_Builder',
-            'view'
+                'Dracula_Toggle_Builder',
+                'view'
         ));
 
         // Getting Started Page
         $this->admin_pages['getting_started'] = add_submenu_page('dracula', __('Getting Started - Dracula', 'dracula-dark-mode'), __('Getting Started', 'dracula-dark-mode'), 'manage_options', 'dracula-getting-started', array(
-            $this,
-            'render_getting_started_page'
+                $this,
+                'render_getting_started_page'
         ));
 
         do_action('dracula_admin_menu', $this);
-
     }
 
     public function render_getting_started_page()
     {
-
-
         if (isset($_GET['setup_complete'])) {
             update_option('dracula_setup_complete', true);
         }
@@ -305,13 +310,10 @@ HTML;
         } else {
             include_once DRACULA_INCLUDES . '/views/setup.php';
         }
-
     }
 
-
     public function admin_page()
-    {
-        ?>
+    { ?>
         <div id="dracula-settings-app"></div>
     <?php }
 
@@ -337,12 +339,112 @@ HTML;
 
         if ($screen->id === 'dark-mode_page_dracula-getting-started') {
             // Exclude until setup is complete.
-            return !(bool)get_option('dracula_setup_complete', false);
+            return !get_option('dracula_setup_complete', false);
         }
 
         return false;
     }
 
+    public function switch_meta_box()
+    {
+
+        // Add meta box.
+        add_meta_box(
+                'dracula_dark_mode_nav_link',
+                __('Dark Mode Switcher', 'dracula-dark-mode'),
+                [$this, 'render_menu_switch'],
+                'nav-menus',
+                'side',
+                'low'
+        );
+
+    }
+
+    public function render_menu_switch()
+    {
+        ?>
+        <div id="posttype-dracula-dark-mode-switcher" class="posttypediv">
+            <div id="tabs-panel-darkmode-switcher-endpoints" class="tabs-panel tabs-panel-active">
+                <ul id="darkmode-switcher-endpoints-checklist" class="categorychecklist form-no-clear">
+                    <li>
+                        <label class="menu-item-title">
+                            <input type="checkbox" class="menu-item-checkbox" name="menu-item[-1][menu-item-object-id]"
+                                   checked value="-1"/>
+                            <?php esc_html_e('Dark Mode Switcher', 'dracula-dark-mode'); ?>
+                        </label>
+
+                        <input type="hidden" class="menu-item-object" name="menu-item[-1][menu-item-object]"
+                               value="dracula-dark-mode-switch"/>
+                        <input type="hidden" class="menu-item-type" name="menu-item[-1][menu-item-type]"
+                               value="dracula-dark-mode-switch"/>
+                        <input type="hidden" class="menu-item-title" name="menu-item[-1][menu-item-title]"
+                               value="Dark Mode Switcher"/>
+                        <input type="hidden" class="menu-item-description" name="menu-item[-1][menu-item-description]"
+                               value="Dark Mode Switcher"/>
+                        <input type="hidden" class="menu-item-type" name="menu-item[-1][menu-item-style]" value="1"/>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="button-controls">
+                <span class="add-to-menu">
+                    <button type="submit" class="button-secondary submit-add-to-menu right"
+                            name="add-post-type-menu-item" id="submit-posttype-dracula-dark-mode-switcher">
+                        <?php esc_attr_e('Add to Menu', 'dracula-dark-mode'); ?>
+                    </button>
+                    <span class="spinner"></span>
+                </span>
+            </p>
+        </div>
+        <?php
+    }
+
+    public function edit_switch_item($item_id = null, $menu_item = null, $depth = null, $args = null, $current_object_id = null)
+    {
+
+        // return if menu_item, item_id is null
+        if (!$menu_item || !$item_id) {
+            return;
+        }
+
+        // return if object not dracula-dark-mode-switch
+        if ($menu_item->object !== 'dracula-dark-mode-switch') {
+            return;
+        }
+
+        $style_id = get_post_meta($item_id, 'dracula_dark_mode_switch', true) ?? 1;
+
+        ?>
+        <div class="dracula-dark-mode-switches-panel">
+            <h3 class="label"><?php echo esc_html__('Switch Style', 'dracula-dark-mode') ?></h3>
+
+            <div class="dracula-dark-mode-switches" id="dracula-dark-mode-switches"
+                 data-style="<?php echo esc_attr($style_id) ?>"></div>
+
+            <input type="hidden" name="menu-item[<?php echo esc_attr($item_id) ?>][menu-item-style]"
+                   value="<?php echo esc_attr($style_id) ?>">
+        </div>
+        <?php
+    }
+
+    public function save_switch_item($menu_id = null, $menu_item_db_id = null, $args = null)
+    {
+        // return if args is empty
+        if (!$args || empty($args)) {
+            return;
+        }
+
+        // return if menu-item-object is not dracula-dark-mode-switch
+        if ($args['menu-item-object'] !== 'dracula-dark-mode-switch') {
+            return;
+        }
+
+        // get style id
+        $style_id = isset($_REQUEST['menu-item'][$menu_item_db_id]['menu-item-style']) ? intval($_REQUEST['menu-item'][$menu_item_db_id]['menu-item-style']) : 1;
+
+        // update post meta
+        update_post_meta($menu_item_db_id, 'dracula_dark_mode_switch', $style_id);
+    }
 
     public static function instance()
     {
@@ -352,7 +454,6 @@ HTML;
 
         return self::$instance;
     }
-
 }
 
 Dracula_Admin::instance();

@@ -96,12 +96,12 @@ if ( $is_static || 'custom' == $color_mode ) {
 // Toggle size css
 $toggle_size = dracula_get_settings( 'toggleSize', 'normal' );
 if ( in_array( $toggle_size, ['small', 'large'] ) ) {
-    $toggle_scale = ( 'small' == $toggle_size ? '.8' : '1.5' );
+    $toggle_scale = ( 'small' == $toggle_size ? '.8' : '1.2' );
 }
 // Menu toggle size css
 $menu_toggle_size = dracula_get_settings( 'menuToggleSize', 'normal' );
 if ( in_array( $menu_toggle_size, ['small', 'large'] ) ) {
-    $menu_toggle_scale = ( 'small' == $menu_toggle_size ? '.8' : '1.5' );
+    $menu_toggle_scale = ( 'small' == $menu_toggle_size ? '.8' : '1.2' );
 }
 ?>
 <style id="dracula-inline-css" class="dracula-inline-css">
@@ -111,7 +111,7 @@ if ( isset( $toggle_scale ) ) {
     echo sprintf( '.dracula-toggle-wrap:not(.menu-item) .dracula-toggle{ --toggle-scale: %s; }', $toggle_scale );
 }
 if ( isset( $menu_toggle_scale ) ) {
-    echo sprintf( '.dracula-toggle-wrap.menu-item .dracula-toggle{ --toggle-scale: %s; }', $menu_toggle_scale );
+    echo sprintf( '.menu-item-type-dracula-dark-mode-switch .dracula-toggle{ --toggle-scale: %s; }', $menu_toggle_scale );
 }
 // Toggle absolute position css
 if ( !empty( $absolute_toggle_position ) ) {
@@ -144,13 +144,12 @@ if ( 'auto' == $scrollbar_dark_mode || 'custom' == $scrollbar_dark_mode ) {
         $thumb_color = dracula_get_settings( 'scrollbarColor', $thumb_color );
     }
     ?>
-
     <style id="dracula-scrollbar-css">
         html,
-        *{
+        * {
             scrollbar-width: thin;
 
-            &[data-dracula-scheme="dark"]{
+            &[data-dracula-scheme="dark"] {
                 scrollbar-color: <?php 
     echo esc_attr( $thumb_color );
     ?> <?php 
@@ -162,73 +161,6 @@ if ( 'auto' == $scrollbar_dark_mode || 'custom' == $scrollbar_dark_mode ) {
 <?php 
 }
 ?>
-
-<!-- Initialize listeners for cross-tab session management.  -->
-<script>
-    window.draculaCrossTabSession = {
-
-        init: function() {
-            window.addEventListener("storage", this.sessionStorageTransfer.bind(this));
-            if (!sessionStorage.length) {
-                localStorage.setItem('getSessionStorage', 'init');
-                localStorage.removeItem('getSessionStorage');
-            }
-        },
-
-        /**
-         * Handle the transfer of sessionStorage between tabs.
-         */
-        sessionStorageTransfer: function(event) {
-            if (!event.newValue) return;
-
-            switch (event.key) {
-                case 'getSessionStorage':
-                    this.sendSessionStorageToTabs();
-                    break;
-                case 'sessionStorage':
-                    if (!sessionStorage.length) {
-                        this.receiveSessionStorageFromTabs(event.newValue);
-                    }
-                    break;
-            }
-        },
-
-        /**
-         * Send current sessionStorage to other tabs.
-         */
-        sendSessionStorageToTabs: function() {
-            localStorage.setItem('sessionStorage', JSON.stringify(sessionStorage));
-            localStorage.removeItem('sessionStorage');
-        },
-
-        /**
-         * Populate current tab's sessionStorage with data from another tab.
-         */
-        receiveSessionStorageFromTabs: function(dataValue) {
-            const data = JSON.parse(dataValue);
-            for (let key in data) {
-                sessionStorage.setItem(key, data[key]);
-            }
-        },
-
-        /**
-         * Set data to sessionStorage and share it across tabs.
-         */
-        set: function(key, value) {
-            sessionStorage.setItem(key, value);
-            this.sendSessionStorageToTabs();
-        },
-
-        /**
-         * Get data from sessionStorage.
-         */
-        get: function(key) {
-            return sessionStorage.getItem(key);
-        }
-    };
-
-    window.draculaCrossTabSession.init();
-</script>
 
 <script>
     const isPerformanceMode = <?php 
@@ -324,7 +256,7 @@ echo json_encode( $config );
         }
 
         if (draculaDarkMode?.isEnabled()) {
-            jQuery(document).ready(function() {
+            jQuery(document).ready(function () {
                 // Change toggle text
                 const toggleTextElements = document.querySelectorAll('.toggle-prefix-text');
                 toggleTextElements.forEach(el => {

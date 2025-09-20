@@ -23,17 +23,18 @@ class Dracula_Hooks {
                 // Render Floating Toggle
                 add_action( 'wp_footer', array($this, 'render_floating_toggle') );
                 add_action( 'login_footer', array($this, 'render_floating_toggle') );
-                add_action(
-                    'wp_nav_menu_items',
-                    [$this, 'add_menu_toggle'],
-                    10,
-                    2
-                );
                 // Add page transition animation
                 add_filter( 'body_class', [$this, 'add_page_transition_class'] );
             }
         }
         add_filter( 'autoptimize_filter_js_exclude', array($this, 'exclude_js_from_cache_plugins') );
+        // Render Nav Toggle
+        add_filter(
+            'walker_nav_menu_start_el',
+            array($this, 'render_nav_toggle'),
+            10,
+            4
+        );
     }
 
     public function exclude_js_from_cache_plugins( $excludes ) {
@@ -58,52 +59,6 @@ class Dracula_Hooks {
         if ( !empty( $css ) ) {
             echo '<style type="text/css" id="dracula-light-mode-css">' . $css . '</style>';
         }
-    }
-
-    public function add_menu_toggle( $items, $args ) {
-        $display_in_menu = dracula_get_settings( 'displayInMenu', false );
-        if ( !$display_in_menu ) {
-            return $items;
-        }
-        if ( empty( $args->menu->slug ) ) {
-            return $items;
-        }
-        $menu_id = $args->menu->slug;
-        $toggleMenus = dracula_get_settings( 'toggleMenus', [] );
-        if ( in_array( $menu_id, $toggleMenus ) ) {
-            $position = dracula_get_settings( 'menuTogglePosition', 'end' );
-            $style = dracula_get_settings( 'menuToggleStyle', '14' );
-            $class = 'dracula-toggle-wrap menu-item';
-            $id = '';
-            if ( strpos( $style, 'custom-' ) !== false ) {
-                $id = str_replace( 'custom-', '', $style );
-            }
-            if ( !empty( $id ) ) {
-                $class .= " custom-toggle";
-                $toggle = Dracula_Toggle_Builder::instance()->get_toggle( $id );
-                if ( !empty( $toggle->config ) ) {
-                    $data = unserialize( $toggle->config );
-                    $item = sprintf(
-                        '<li class="%s" data-id="%s" data-data="%s"></li>',
-                        $class,
-                        $id,
-                        json_encode( $data )
-                    );
-                }
-            } else {
-                $item = '<li class="dracula-toggle-wrap menu-item" data-style="' . $style . '"></li>';
-            }
-            if ( dracula_page_excluded() || dracula_taxonomy_excluded() ) {
-                $items;
-            } else {
-                if ( 'start' == $position ) {
-                    $items = $item . $items;
-                } else {
-                    $items .= $item;
-                }
-            }
-        }
-        return $items;
     }
 
     public function add_defer_attribute( $tag, $handle ) {
@@ -277,6 +232,20 @@ class Dracula_Hooks {
             return '<span class="reading-mode-buttons">' . $content_prefix . '</span>' . $excerpt;
         }
         return $excerpt;
+    }
+
+    public function render_nav_toggle(
+        $item_output,
+        $menu_item,
+        $depth,
+        $args
+    ) {
+        // return if menu-item-object is not dracula-dark-mode-switch
+        if ( $menu_item->object !== 'dracula-dark-mode-switch' ) {
+            return $item_output;
+        }
+        $style_id = get_post_meta( $menu_item->ID, 'dracula_dark_mode_switch', true ) ?? 1;
+        return do_shortcode( wp_sprintf( '[dracula_toggle style="%s"]', esc_attr( $style_id ) ) );
     }
 
     public static function instance() {

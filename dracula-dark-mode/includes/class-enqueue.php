@@ -7,6 +7,7 @@ class Dracula_Enqueue {
     public function __construct() {
         add_action( 'wp_enqueue_scripts', array($this, 'frontend_scripts'), 999 );
         add_action( 'login_enqueue_scripts', array($this, 'frontend_scripts') );
+        add_action( 'enqueue_block_assets', array($this, 'frontend_scripts') );
         add_action( 'admin_enqueue_scripts', array($this, 'admin_scripts') );
     }
 
@@ -28,9 +29,10 @@ class Dracula_Enqueue {
         wp_add_inline_style( 'dracula-frontend', $custom_css );
         // JS Scripts
         $deps = ['wp-i18n', 'wp-util'];
+        $color_type = dracula_get_settings( 'colorType', 'dynamic' );
         wp_register_script(
             'dracula-dark-mode',
-            DRACULA_ASSETS . '/js/' . (( dracula_get_settings( 'colorType', 'dynamic' ) === 'dynamic' ? 'dark-mode' : 'dark-mode-static' )) . '.js',
+            DRACULA_ASSETS . '/js/' . (( $color_type === 'dynamic' ? 'dark-mode' : 'dark-mode-static' )) . '.js',
             [],
             DRACULA_VERSION
         );
@@ -57,7 +59,7 @@ class Dracula_Enqueue {
         }
         $is_reading_mode = dracula_get_settings( 'readingMode' );
         // Custom Dark Mode Style
-        if ( dracula_get_settings( 'colorType' ) === 'static' || 'custom' === dracula_get_settings( 'colorMode' ) ) {
+        if ( $color_type === 'static' || 'custom' === dracula_get_settings( 'colorMode' ) ) {
             wp_enqueue_style( 'dracula-dark-mode' );
         }
         // Frontend Scripts
@@ -182,7 +184,6 @@ class Dracula_Enqueue {
         );
         wp_enqueue_media();
         wp_enqueue_script( 'dracula-sweetalert2' );
-        wp_enqueue_script( 'jquery-ui-draggable' );
         wp_enqueue_script( 'wp-theme-plugin-editor' );
         $cm_settings = [
             'codeEditor' => wp_enqueue_code_editor( array(
@@ -203,6 +204,7 @@ class Dracula_Enqueue {
     public function get_localize_data( $hook = false ) {
         $data = array(
             'homeUrl'        => home_url(),
+            'adminUrl'       => admin_url(),
             'ajaxUrl'        => admin_url( 'admin-ajax.php' ),
             'pluginUrl'      => DRACULA_URL,
             'settings'       => dracula_get_settings(),
@@ -217,7 +219,7 @@ class Dracula_Enqueue {
             $data['isAdmin'] = true;
             $admin_pages = Dracula_Admin::instance()->get_admin_pages();
             if ( $admin_pages['dracula'] === $hook ) {
-                $data['menus'] = dracula_get_menus();
+                $data['isBlockTheme'] = function_exists( 'wp_is_block_theme' ) && wp_is_block_theme();
                 $data['userRoles'] = dracula_get_user_roles();
                 $data['excludeList'] = dracula_get_exclude_list();
                 $data['excludeReadingList'] = dracula_get_exclude_reading_list();
@@ -230,7 +232,6 @@ class Dracula_Enqueue {
         $is_live_edit = current_user_can( 'manage_options' ) && ($is_active || !empty( $_GET['dracula-live-edit'] ));
         $is_editor = dracula_is_block_editor_page() || dracula_is_classic_editor_page() || dracula_is_elementor_editor_page();
         if ( $is_live_edit || $is_editor ) {
-            $data['menus'] = dracula_get_menus();
         }
         return $data;
     }

@@ -3,6 +3,17 @@
 defined('ABSPATH') || exit;
 
 $logs = [
+        'v1.3.1' => [
+                'date' => '2025-09-20',
+                'fix' => [
+                        'Fixed text highlight color issue.',
+                        'Fixed toggle switch dragging issue.',
+                ],
+                'enhancement' => [
+                        'Improved toggle display option in nav menus.',
+                        'Improved overall performance and speed.',
+                ],
+        ],
         'v1.2.9' => [
                 'date' => '2025-07-13',
                 'new' => [
@@ -98,102 +109,6 @@ $logs = [
                         'Improved dark mode algorithm',
                         'Improved overall plugin performance & security.',
                 ],
-        ],
-        'v1.0.9' => [
-                'date' => '2023-01-31',
-                'new' => [
-                        'Added Reading Mode',
-                ],
-                'fix' => [
-                        'Fixed scrollbar dark mode color options not working.',
-                        'Fixed draggable toggle button not working properly.',
-                ],
-                'enhancement' => [
-                        'Improved overall plugin performance.',
-                ],
-        ],
-        'v1.0.8' => [
-                'date' => '2023-12-21',
-                'fix' => [
-                        'Fixed Disqus comment compatibility issue.',
-                ],
-                'enhancement' => [
-                        'Improved overall plugin performance.',
-                ],
-        ],
-        'v1.0.7' => [
-                'date' => '2023-12-21',
-                'new' => [
-                        'Added scrollbar dark mode color customization option.',
-                ],
-                'fix' => [
-                        'Fixed Image replacement not working properly.',
-                ],
-        ],
-        'v1.0.6' => [
-                'date' => '2023-12-03',
-                'fix' => [
-                        'Fixed Gutenberg editor dark mode switch block.',
-                        'Fixed cache plugin compatibility issue.',
-                ],
-        ],
-        'v1.0.5' => [
-                'date' => '2023-11-22',
-                'new' => [
-                        'Added link,button and input field dark mode color customization option.',
-                ],
-                'fix' => [
-                        'Fixed image replacement issue.',
-                        'Fix auto match OS theme issue.',
-                ],
-        ],
-        'v1.0.4' => [
-                'date' => '2023-11-12',
-                'fix' => [
-                        'Fixed excludes elements not working.',
-                        'Fixed default dark mode issue.',
-                ],
-        ],
-        'v1.0.3' => [
-                'date' => '2023-11-04',
-                'new' => [
-                        'Added 4 new dark mode toggle button styles.',
-                        'Added large font-size toggle button.',
-                ],
-                'fix' => [
-                        'Fixed performance mode not working properly issue.',
-                        'Fixed color picker issue.',
-                ],
-        ],
-        'v1.0.2' => [
-                'date' => '2023-10-05',
-                'fix' => [
-                        'Fix gutenberg editor dark mode issue.',
-                        'Fix safari browser dark mode issue.',
-                ],
-                'enhancement' => [
-                        'Reduced the javascript file size.',
-                ],
-        ],
-        'v1.0.1' => [
-                'date' => '2023-09-23',
-                'new' => [
-                        'Added page-specific dark mode settings for Gutenberg, Classic Editor, and Elementor.',
-                        'Added dark to light mode.',
-                        'Added 15+ new dark mode color presets.',
-                        'Added page transition animation.',
-                        'Added dark mode toggle button Attention Effect Animation.',
-                        'Added dark mode usage analytics.',
-                        'Added user feedback for dark mode experience.',
-                        'Added Gutenberg dark mode toggle switch block.',
-                        'Added Elementor dark mode toggle switch widget.',
-                        'Added tooltip for dark mode toggle button.',
-                ],
-                'enhancement' => [
-                        'Improved overall plugin performance.',
-                        'Improved toggle switch builder UI.',
-                ],
-                'video' => '1zjoU7i3H-w',
         ],
 
 ];
